@@ -1,0 +1,32 @@
+/* hr style 1 */
+.hrstyle-one { 
+  border: 0; 
+  height: 1px; 
+  background: #333; 
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+/* Navigation Bar */
+.navigation-bar {
+    height: 10%
+    width: 100%
+    padding-bottom: 10px
+}
+.navigation-bar ul {
+    padding: 0px
+    margin: 0px
+    text-align: center
+}
+.navigation-bar li {
+    list-style-type: none
+    padding: 0px
+    height: inherit
+    text-align: center
+    display: inline
+}
+.navigation-bar li a {
+    color: gray
+    font-size: 20px
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif
+    text-decoration: none
+    padding-right: 15px
+}

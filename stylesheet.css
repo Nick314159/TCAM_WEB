@@ -27,6 +27,13 @@
 .navigation-bar li a:hover {
     color: blue;
 }
+/* -- Logo -- */
+.logo {
+  float: center;
+  max-width: 80px;
+  max-height: 80px;
+  margin-bottom: -25px;
+}
 /* -- Header -- */
 .header {
     color: black;

@@ -12,9 +12,10 @@
 <div class="navigation-bar">
     <ul>
         <li><a href="pages/cv.pdf" target="_blank">Curriculum Vitae</a></li>
-        <li><a href="pages/publications.html">Publications</a></li>
-        <li><a href="pages/get_involved.html">Get Involved</a></li>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/publications.html">Research</a></li>
+        <li><a href="index.php"><img class="logo" src="pictures/tcico.png"></a></li>
+        <li><a href="pages/get_involved.html">Courses</a></li>
+        <li><a href="index.html">Get Involved</a></li>
     </ul>
 </div>
 <hr class="hrstyle-one" style="width: 50%">
@@ -37,7 +38,7 @@
     <div style="float: left; width: 30%;">
     <!-- Main Pic -->
     <div class="main-pic">
-        <img src="pages/IMG.jpg" style="width:100%;">
+        <img src="pictures/IMG2.jpg" style="width:100%;">
     </div>
     </div>
     <!-- Right Margin -->

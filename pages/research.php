@@ -53,8 +53,8 @@
     <hr class="hrstyle-one" style="width: 50%">
     <div class="list">
     <ul>
-        <li>Leo Trujilo, <em>The numerical range of a matrix polynomial</em>, presented at the 2016-2017 College of Idaho undergraduate research fair, The College of Idaho.</li>
-        <li>Will Callahan, Sam Chandler, Johanna Mori, and Leo Trujilo, <em>Using Chebyshev polynomials to solve ordinary differential equations</em>, presented at the 2016 Murdock Undergraduate Conference, The College of Idaho.</li>
+        <li>Leo Trujilo, <em>The numerical range of a matrix polynomial</em>, presented at the 2016-2017 College of Idaho Undergraduate Research Conference, The College of Idaho.</li>
+        <li>Will Callahan, Sam Chandler, Johanna Mori, and Leo Trujilo, <em>Using Chebyshev polynomials to solve ordinary differential equations</em>, presented at the 2016 Murdock Undergraduate Research Conference, The College of Idaho.</li>
         <li>Nikolas Steckley, <em>A personalized grade management system using MySQL and PHP</em>, Washington State University.</li>
         <li>Grant Hutchings, <em>Numerical Algorithms for matrix computations and applications</em>, Washington State University.</li>
         <li>Michael Newsham, <em>Bernstein Polynomials and companion matrices</em>, Washington State University.</li>

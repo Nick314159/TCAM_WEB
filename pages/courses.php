@@ -28,10 +28,10 @@
       <h3>Fall 2017</h3>
     </div>
     <hr class="hrstyle-one" style="width: 50%">
-    <div class="class-list">
+    <div class="list">
       <ul>
         <li><a href="">MAT-150: Linear Algebra</a></li>
-        <li><a href="">MAT-220: Discrete Structures</a></li>
+        <li><a href="">CSC/MAT-220: Discrete Structures</a></li>
       </ul>
     </div>
     <hr class="hrstyle-one" style="width: 50%">
@@ -42,7 +42,7 @@
       <h3>Spring 2018</h3>
     </div>
     <hr class="hrstyle-one" style="width: 50%">
-    <div class="class-list">
+    <div class="list">
       <ul>
         <li><a href="">MAT-230: Sets and Proofs</a></li>
         <li><a href="">MAT-450: Advanced Linear Algebra</a></li>

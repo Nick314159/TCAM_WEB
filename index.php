@@ -3,6 +3,7 @@
 <html>
 <!DOCTYPE HTML>
 <head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Thomas R. Cameron</title>
 </head>
 

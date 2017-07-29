@@ -5,6 +5,12 @@
   background: #333; 
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
+/* hr style 2 */
+.hrstyle-two { 
+  border: 0; 
+  border-bottom: 1px dashed #ccc; 
+  background: #999; 
+}
 /* Navigation Bar */
 .navigation-bar {
     height: 10%;
@@ -89,4 +95,19 @@
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+/* -- Title -- */
+.title {
+  position: relative;
+  color: gray;
+  font-size: 20px;
+  font-family: 'Lobster', Georgia, Times, serif;
+  text-align: center;
+  text-decoration: none;
+}
+/* -- Schedule container -- */
+.schedule-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
 }

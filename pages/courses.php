@@ -3,6 +3,7 @@
 <html>
 <!DOCTYPE HTML>
 <head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Courses</title>
 </head>
 
@@ -12,11 +13,11 @@
 <!-- Navigation Bar -->
 <div class="navigation-bar">
     <ul>
-        <li><a href="../pages/cv.pdf" target="_blank">Curriculum Vitae</a></li>
-        <li><a href="../pages/research.php">Research</a></li>
+        <li><a href="cv.pdf" target="_blank">Curriculum Vitae</a></li>
+        <li><a href="research.php">Research</a></li>
         <li><a href="../index.php"><img class="logo" src="../pictures/logo.png"></a></li>
-        <li><a href="../pages/courses.php">Courses</a></li>
-        <li><a href="../pages/get_involved.php">Get Involved</a></li>
+        <li><a href="courses.php">Courses</a></li>
+        <li><a href="get_involved.php">Get Involved</a></li>
     </ul>
 </div>
 <hr class="hrstyle-one" style="width: 50%">
@@ -30,8 +31,8 @@
     <hr class="hrstyle-one" style="width: 50%">
     <div class="list">
       <ul>
-        <li><a href="">MAT-150: Linear Algebra</a></li>
-        <li><a href="">CSC/MAT-220: Discrete Structures</a></li>
+        <li><a href="MAT-150/mat_150.php">MAT-150: Linear Algebra</a></li>
+        <li><a href="MAT-220/mat_220.php">CSC/MAT-220: Discrete Structures</a></li>
       </ul>
     </div>
     <hr class="hrstyle-one" style="width: 50%">

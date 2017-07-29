@@ -30,8 +30,8 @@
 /* -- Logo -- */
 .logo {
   float: center;
-  max-width: 90px;
-  max-height: 90px;
+  max-width: 80px;
+  max-height: 80px;
   margin-bottom: -25px;
 }
 /* -- Header -- */
@@ -53,6 +53,7 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+/* -- Main Pic -- */
 .main-pic {
   text-align: center;
   position: relative;
@@ -60,31 +61,31 @@
   padding-top: 25px;
   padding-left: 50px;
 }
-/* -- Class List -- */
-.class-list {
+/* -- List -- */
+.list {
   width: 100%;
 }
-.class-list ul {
+.list ul {
   padding: 0px;
   margin: 0px;
   text-align: center;
 }
-.class-list li {
+.list li {
   list-style-type: none;
   padding: 5px 10px 5px 10px;
 }
-.class-list li a {
+.list li a {
   color: gray;
   font-size: 16px;
   font-family: Times New Roman, serif;
   text-decoration: none;
 }
-.class-list li a:hover {
+.list li a:hover {
   color: blue;
   background-color: transparent;
   text-decoration: none;
 }
-.class-list li a:active {
+.list li a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;

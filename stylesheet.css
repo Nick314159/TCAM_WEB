@@ -69,7 +69,7 @@
 }
 /* -- List -- */
 .list {
-  width: 100%;
+  max-width: 100%;
 }
 .list ul {
   padding: 0px;
@@ -110,4 +110,35 @@
   max-width: 800px;
   position: relative;
   margin: auto;
+}
+/* -- Schedule Table -- */
+table.schedule {text-align: center; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+table.schedule th {font-size: 16px; color: white; font-family: 'Lobster', Georgia, Times, serif; text-align: center; background:#4d94ff; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+table.schedule td {font-size: 14px; color: #5c5c3d; font-family: Times New Roman, serif; text-align: center; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+table.schedule td a {font-size: 12px; color: #5c5c3d; font-family: Times New Roman, serif; text-align: center; text-decoration: none; }
+table.schedule td a:hover {color: blue; background-color: transparent; text-decoration: none; }
+table.schedule td a:active {color: yellow; background-color: transparent; text-decoration: none; }
+/* -- Next & previous buttons -- */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: auto;
+  margin-top: -12px;
+  padding: 16px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* -- Position the "next button" to the right -- */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* -- On hover, add a black background color with a little bit see-through -- */
+.prev:hover, .next:hover {
+  color: blue;
+  background-color: rgba(0,0,0,0.8);
 }

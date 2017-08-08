@@ -30,7 +30,8 @@
       <li><strong>Important Dates</strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><strong>Midterm: </strong>
+          <li><strong>Review: </strong>October 6 - 13</li>
+          <li><strong>Final: </strong>December 8 - 14</li>
         </ul>
       </li>
       <li><strong>Links </strong>

@@ -37,7 +37,7 @@
       <li><strong>Links </strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><a href="syllabus.pdf" target="_blank">Syllabus</a></li>
+          <li><a href="mat_150_syllabus.pdf" target="_blank">Syllabus</a></li>
           <li><a href="" target="_blank">Grades</a></li>
         </ul>
       </li>

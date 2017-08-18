@@ -84,7 +84,7 @@
   color: gray;
   font-size: 16px;
   font-family: Times New Roman, serif;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .list li a:hover {
   color: blue;
@@ -115,7 +115,7 @@
 table.schedule {text-align: center; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
 table.schedule th {font-size: 16px; color: white; font-family: 'Lobster', Georgia, Times, serif; text-align: center; background:#4d94ff; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
 table.schedule td {font-size: 14px; color: #5c5c3d; font-family: Times New Roman, serif; text-align: center; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
-table.schedule td a {font-size: 12px; color: #5c5c3d; font-family: Times New Roman, serif; text-align: center; text-decoration: none; }
+table.schedule td a {color: gray; font-size: 12px; font-family: Times New Roman, serif; text-align: center; text-decoration: underline; }
 table.schedule td a:hover {color: blue; background-color: transparent; text-decoration: none; }
 table.schedule td a:active {color: yellow; background-color: transparent; text-decoration: none; }
 /* -- Next & previous buttons -- */

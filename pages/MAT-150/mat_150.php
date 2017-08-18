@@ -30,7 +30,8 @@
       <li><strong>Important Dates</strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><strong>Review: </strong>October 6 - 13</li>
+          <li><strong>Midterm: </strong>October 6 - 13</li>
+          <li><strong><a href="https://www.davidson.edu/academics/mathematics-and-computer-science/student-activities/bernard-lecture">Bernard Lecture:</a> </strong>October 23
           <li><strong>Final: </strong>December 8 - 14</li>
         </ul>
       </li>
@@ -61,7 +62,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Introduction<br>Motivation for Systems of Linear of Equations<br><strong>Read: Section 1.1</strong></td><td>Solving Linear Systems<br>and Vector Equations<br><strong>Read: Section 1.2-1.3</strong></td><td>Lab Day<br><a href="../../notebooks/MAT_150_Lab1.nb">Lab 1: Due 8/28/2017</a></td>
+        <td>Introduction<br>Motivation for Systems of Linear of Equations<br><strong>Read: Section 1.1</strong></td><td>Solving Linear Systems<br>and Vector Equations<br><strong>Read: Section 1.2-1.3</strong></td><td>Lab Day<br><strong><a href="../../notebooks/MAT_150_Lab1.nb">Lab 1: Due 8/28/2017</a></strong></td>
       </tr>
       </table>
     </div>

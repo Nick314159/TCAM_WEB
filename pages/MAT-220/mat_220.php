@@ -62,7 +62,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Introduction<br>Motivation for Systems of Linear of Equations<br><strong>Read: Section 1.1</strong></td><td>Solving Linear Systems<br>and Vector Equations<br><strong>Read: Section 1.2-1.3</strong></td><td>Lab Day<br><strong><a href="../../notebooks/MAT_150_Lab1.nb">Lab 1: Due 8/28/2017</a></strong></td>
+        <td></td><td></td><td></td>
       </tr>
       </table>
     </div>
@@ -74,7 +74,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Matrix Equations<br>Solution Sets of Linear Equations<br><strong>Read: Section 1.4-1.5</strong></td><td>Applications of Linear Systems<br><strong>Read: Section 1.6</strong></td><td>Homework 1: Due Today</td>
+        <td></td><td></td><td></td>
       </tr>
       </table>
     </div>

@@ -32,7 +32,7 @@
         <ul>
           <li><strong>Midterm: </strong>October 6 - 13</li>
           <li><strong><a href="https://www.davidson.edu/academics/mathematics-and-computer-science/student-activities/bernard-lecture">Bernard Lecture:</a> </strong>October 23
-          <li><strong>Final: </strong>December 8 - 14</li>
+          <li><strong>Final: </strong>December 6 - 13</li>
         </ul>
       </li>
       <li><strong>Links </strong>

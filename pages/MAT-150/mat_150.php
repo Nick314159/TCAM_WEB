@@ -74,7 +74,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Matrix Equations<br>Solution Sets of Linear Equations<br><strong>Read: Section 1.4-1.5</strong></td><td>Applications of Linear Systems<br><strong>Read: Section 1.6</strong></td><td>Homework 1: Due Today</td>
+        <td>Matrix Equations<br>Solution Sets of Linear Equations<br><strong>Read: Section 1.4-1.5</strong></td><td>Applications of Linear Systems<br><strong>Read: Section 1.6</strong></td><td>Linear Independence<br><a href="homework/homework1.pdf">Homework 1: Due Today</a><br><strong>Read: Section 1.7</td>
       </tr>
       </table>
     </div>

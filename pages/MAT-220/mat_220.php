@@ -32,7 +32,7 @@
         <ul>
           <li><strong>Midterm: </strong>October 6 - 13</li>
           <li><strong><a href="https://www.davidson.edu/academics/mathematics-and-computer-science/student-activities/bernard-lecture">Bernard Lecture:</a> </strong>October 23
-          <li><strong>Final: </strong>December 6 - 13</li>
+          <li><strong>Final: </strong>December 6 - 14</li>
         </ul>
       </li>
       <li><strong>Links </strong>
@@ -62,7 +62,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Introduction<br>Mathematical Writing<br><strong>Read: Section 1.1-1.2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 1.3-1.4</td><td>The proof or<br>disproof of a statement<br><a href="">Homework 1 Due Today</a></td>
+        <td>Introduction<br><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a><br><strong>Read: Section 1.1-1.2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 1.3-1.4</td><td>The proof of a statement<br><a href="homework/homework1.pdf">Homework 1 Due Today</a><br><strong>Read: Section 1.5</strong></td>
       </tr>
       </table>
     </div>

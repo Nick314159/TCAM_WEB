@@ -38,7 +38,7 @@
       <li><strong>Links </strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><a href="mat_220_syllabus.pdf" target="_blank">Syllabus</a></li>
+          <li><a href="syllabus/mat_220_syllabus.pdf" target="_blank">Syllabus</a></li>
           <li><a href="" target="_blank">Grades</a></li>
         </ul>
       </li>
@@ -62,7 +62,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Introduction<br>Mathematical Writing<br><strong>Read: Section 1.1-1.2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 1.3-1.4</td><td>The proof or<br>disproof of a statement<br><a href="">Homework 1 Due Today</a></td>
       </tr>
       </table>
     </div>

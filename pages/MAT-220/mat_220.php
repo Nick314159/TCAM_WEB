@@ -61,7 +61,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Introduction<br><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a><br><strong>Read: Section 1.1-1.2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 1.3-1.4</td><td>The proof of a statement<br><a href="homework/homework1.pdf">Homework 1 Due Today</a><br><strong>Read: Section 1.5</strong></td>
+        <td>Introduction<br><strong><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a></strong><br><strong>Read: Section 1.1-1.2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 1.3-1.4</td><td>The proof of a statement<br><strong><a href="homework/homework1.pdf">Homework 1 Due Today</a></strong><br><strong>Read: Section 1.5</strong><br><strong><a href="homework/solution1.pdf">Homework 1 Solution</a></strong><br><strong><a href="efy/efy1.pdf">EFY 1 Solution</a></strong></td>
       </tr>
       </table>
     </div>

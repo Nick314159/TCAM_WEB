@@ -77,11 +77,23 @@
       </tr>
       </table>
     </div>
+    <!-- Week 3 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 3 (9/4 - 9/8)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Linear Transformations<br>Acting on Vectors<br><strong>Read: Section 1.8</strong></td><td>Matrix Representations<br>of Linear Transformations<br><strong>Read: Section 1.9</strong></td><td>Lab Day<br><strong><a href="">Lab 2: Due 9/11/2017</a></strong></td>
+      </tr>
+      </table>
+    </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 1;
+  var slideIndex = 2;
   showSlides(slideIndex);
 
   function plusSlides(n) {

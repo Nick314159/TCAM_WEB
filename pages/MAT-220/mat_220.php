@@ -61,7 +61,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Introduction<br><strong><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a></strong><br><strong>Read: Section 1.1-1.2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 1.3-1.4</td><td>The proof of a statement<br><strong><a href="homework/homework1.pdf">Homework 1 Due Today</a></strong><br><strong>Read: Section 1.5</strong><br><strong><a href="homework/solution1.pdf">Homework 1 Solution</a></strong><br><strong><a href="efy/efy1.pdf">EFY 1 Solution</a></strong></td>
+        <td>Introduction<br><strong><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a></strong><br><strong>Read: Section 1-2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 3-4</td><td>The proof of a statement<br><strong><a href="homework/homework1.pdf">Homework 1 Due Today</a></strong><br><strong>Read: Section 5</strong><br><strong><a href="homework/solution1.pdf">Homework 1 Solution</a></strong><br><strong><a href="efy/efy1.pdf">EFY 1 Solution</a></strong></td>
       </tr>
       </table>
     </div>
@@ -73,7 +73,19 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Boolean Algebra<br><strong>Read: Section 6-7</strong></td><td>Lists and Factorials<br><strong>Read: Section 8-9</strong></td><td>Lab Day<br><strong><a href="lab/sml_tutorial.pdf">Lab 1: Due 9/4/2017</a></strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 3 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 3 (9/4 - 9/8)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Sets and Quantifiers<br><strong>Read: Section 10-11</strong></td><td>Set Operations and Proof<br><strong>Read: Section 12-13</strong></td><td>Lab Day<br><strong><a href="">Lab 2: Due 9/11/2017</a></strong><br><strong><a href="homework/homework2.pdf">Homework 2: Due Today</a></strong></td>
       </tr>
       </table>
     </div>
@@ -81,7 +93,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 1;
+  var slideIndex = 2;
   showSlides(slideIndex);
 
   function plusSlides(n) {

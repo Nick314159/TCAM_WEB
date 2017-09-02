@@ -3,7 +3,7 @@
 <html>
 <!DOCTYPE HTML>
 <head>
-    <title>Programming</title>
+    <title>Programs</title>
 </head>
 
 <link rel="stylesheet" type="text/css" href="../stylesheet.css" media="screen" />
@@ -20,6 +20,21 @@
     </ul>
 </div>
 <hr class="hrstyle-one" style="width: 50%">
+<div style="width: 100%">
+    <div class="list">
+    <ul>
+        <li>Thomas R. Cameron, <em>The Testing of Descartes' Rule of Signs for Matrix Polynomials</em>, 2017
+            <ul><li><a href="program_files/drsmp/DRSMP_testing.py">Download Python File</a></li></ul>
+        </li>
+        <li>Thomas R. Cameron, <em>The Numerical Range of a Matrix Polynomial and its Derivative</em>, 2017
+            <ul><li><a href="program_files/drsmp/num_range_der.py">Download Python File</a></li></ul>
+        </li>
+        <li>Thomas R. Cameron, Leonardo Trujillo, <em>The Numerical Range of a Matrix Polynomial</em>, 2017
+            <ul><li><a href="program_files/drsmp/num_range.py">Download Python File</a></li></ul>
+        </li>
+    </ul>
+    </div>
+</div>
 </body>
 
 </html>

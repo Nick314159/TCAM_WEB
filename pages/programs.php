@@ -23,6 +23,9 @@
 <div style="width: 100%">
     <div class="list">
     <ul>
+        <li>Thomas R. Cameron, Nikolas Steckley, <em>LMPEP: Laguerre's Method applied to the Polynomial Eigenvalue Problem</em>, 2017
+            <ul><li><a href="../lmpep-doc/index.html">Link to Documentation Page</a> | <a href="https://github.com/Nick314159/LMPEP/tree/develop">Link to GitHub Page</a></li></ul>
+        </li>
         <li>Thomas R. Cameron, <em>The Testing of Descartes' Rule of Signs for Matrix Polynomials</em>, 2017
             <ul><li><a href="program_files/drsmp/DRSMP_testing.py">Download Python File</a></li></ul>
         </li>

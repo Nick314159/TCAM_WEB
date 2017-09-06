@@ -73,7 +73,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Matrix Equations<br>Solution Sets of Linear Equations<br><strong>Read: Section 1.4-1.5</strong></td><td>Applications of Linear Systems<br><strong>Read: Section 1.6</strong><br><strong><a href="efy/efy2.pdf">EFY2 Solution</a></strong></td><td>Linear Independence<br><strong><a href="homework/homework1.pdf">Homework 1: Due Today</a></strong><br><strong>Read: Section 1.7</td>
+        <td>Matrix Equations<br>Solution Sets of Linear Equations<br><strong>Read: Section 1.4-1.5</strong></td><td>Applications of Linear Systems<br><strong>Read: Section 1.6</strong><br><strong><a href="efy/efy2.pdf">EFY2 Solution</a></strong></td><td>Linear Independence<br><strong><a href="homework/homework1.pdf">Homework 1: Due Today</a></strong><br><strong>Read: Section 1.7<br><strong><a href="homework/solution1.pdf">Solution 1</a></strong></td>
       </tr>
       </table>
     </div>
@@ -97,7 +97,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Matrix Operations<br>the Matrix Exponential<br><strong>Read: Section 2.1</strong></td><td>The Inverse<br>of a Matrix<br><strong>Read: Section 2.2-2.3</strong></td><td>Matrix Factorizations<br>solving Matrix Equations<br><strong><a href="">Homework 2: Due Today</a></strong><br><strong>Read: Section 2.5</strong></td>
+        <td>Matrix Operations<br>the Matrix Exponential<br><strong>Read: Section 2.1</strong></td><td>The Inverse<br>of a Matrix<br><strong>Read: Section 2.2-2.3</strong></td><td>Matrix Factorizations<br>solving Matrix Equations<br><strong><a href="homework/homework2.pdf">Homework 2: Due Today</a></strong><br><strong>Read: Section 2.5</strong></td>
       </tr>
       </table>
     </div>

@@ -101,6 +101,18 @@
       </tr>
       </table>
     </div>
+    <!-- Week 5 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 5 (9/18 - 9/22)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day<br><strong><a href="">Lab 2: Due Today<a/></strong></td></td><td></td>
+      </tr>
+      </table>
+    </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>

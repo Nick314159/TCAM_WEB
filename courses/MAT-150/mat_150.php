@@ -85,7 +85,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Linear Transformations<br>Acting on Vectors<br><strong>Read: Section 1.8</strong></td><td>Matrix Representations<br>of Linear Transformations<br><strong>Read: Section 1.9</strong><br><strong><a href="efy/efy3.pdf">EFY3 Solution</a></strong></td><td>Lab Day<br><strong><a href="">Lab 2: Due 9/11/2017</a></strong></td>
+        <td>Linear Transformations<br>Acting on Vectors<br><strong>Read: Section 1.8</strong></td><td>Matrix Representations<br>of Linear Transformations<br><strong>Read: Section 1.9</strong><br><strong><a href="efy/efy3.pdf">EFY3 Solution</a></strong></td><td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab2.nb">Lab 2: Due 9/11/2017</a></strong></td>
       </tr>
       </table>
     </div>
@@ -98,6 +98,18 @@
       </tr>
       <tr>
         <td>Matrix Operations<br>the Matrix Exponential<br><strong>Read: Section 2.1</strong></td><td>The Inverse<br>of a Matrix<br><strong>Read: Section 2.2-2.3</strong></td><td>Matrix Factorizations<br>solving Matrix Equations<br><strong><a href="homework/homework2.pdf">Homework 2: Due Today</a></strong><br><strong>Read: Section 2.5</strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 5 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 5 (9/18 - 9/22)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td></td><td></td><td>Lab Day<br><strong><a href="">Lab 3: Due 9/25/2017</a></strong></td>
       </tr>
       </table>
     </div>

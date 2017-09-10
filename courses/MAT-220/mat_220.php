@@ -97,7 +97,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Relations<br><strong>Read: Section 14</strong></td><td>Equivalence Relations<br><strong>Read: Section 15</strong></td><td>Lab Day<br><strong><a href="">Lab 2: Due 9/18/2017</a></strong></td>
+        <td>Relations<br><strong>Read: Section 14</strong></td><td>Equivalence Relations<br><strong>Read: Section 15</strong></td><td>Lab Day<br><strong><a href="">Lab 2: Due 9/22/2017</a></strong></td>
       </tr>
       </table>
     </div>
@@ -109,7 +109,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="">Lab 2: Due Today<a/></strong></td></td><td></td>
+        <td>Lab Day<br><strong><a href="">Lab 2: Due 9/22/2017<a/></strong></td><td>Partitions<br><strong>Read: Section 16</strong></td><td>Discuss Homework<br>and Puzzle of the Week<br><strong><a href="">Homework 3: Due Today</a></strong></td>
       </tr>
       </table>
     </div>
@@ -117,7 +117,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 3;
+  var slideIndex = 4;
   showSlides(slideIndex);
 
   function plusSlides(n) {

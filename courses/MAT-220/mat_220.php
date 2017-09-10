@@ -85,7 +85,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Sets and Quantifiers<br><strong>Read: Section 10-11</strong></td><td>Set Operations and Proof<br><strong>Read: Section 12-13</strong></td><td>Discuss Homework<br> and Puzzle of the Week<br><strong><a href="homework/homework2.pdf">Homework 2: Due Today</a></strong></td>
+        <td>Sets and Quantifiers<br><strong>Read: Section 10-11</strong><br><strong><a href="efy/efy2.pdf">EFY2 Solution</a></strong></td><td>Set Operations and Proof<br><strong>Read: Section 12-13</strong></td><td>Discuss Homework<br> and Puzzle of the Week<br><strong><a href="homework/homework2.pdf">Homework 2: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

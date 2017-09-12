@@ -85,7 +85,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Linear Transformations<br>Acting on Vectors<br><strong>Read: Section 1.8</strong></td><td>Matrix Representations<br>of Linear Transformations<br><strong>Read: Section 1.9</strong><br><strong><a href="efy/efy3.pdf">EFY3 Solution</a></strong></td><td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab2.nb">Lab 2: Due 9/11/2017</a></strong></td>
+        <td>Linear Transformations<br>Acting on Vectors<br><strong>Read: Section 1.8</strong></td><td>Matrix Representations<br>of Linear Transformations<br><strong>Read: Section 1.9</strong><br><strong><a href="efy/efy3.pdf">EFY3 Solution</a></strong></td><td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab2.nb">Lab 2: Due 9/11/2017</a></strong><br><strong><a href="notebooks/MAT_150_Solution2.nb">Lab 2 Solution</a></strong></td>
       </tr>
       </table>
     </div>

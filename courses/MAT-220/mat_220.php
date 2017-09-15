@@ -97,7 +97,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Relations<br><strong>Read: Section 14</strong></td><td>Equivalence Relations<br><strong>Read: Section 15</strong></td><td>Lab Day<br><strong><a href="">Lab 2: Due 9/22/2017</a></strong></td>
+        <td>Relations<br><strong>Read: Section 14</strong></td><td>Equivalence Relations<br><strong>Read: Section 15</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab2.pdf">Lab 2: Due 9/22/2017</a></strong></td>
       </tr>
       </table>
     </div>

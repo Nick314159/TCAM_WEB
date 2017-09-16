@@ -6,3 +6,4 @@ ldap.php
 *.log*
 *.aux*
 *.out*
+*.gz*

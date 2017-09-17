@@ -1,8 +1,14 @@
-\begin{tikzpicture}
-\node[circle, shading=ball, ball color=blue] (a) at (0,0) {A};
-\node[circle, shading=ball, ball color=white] (b) at (1,1) {B};
-\node[circle, shading=ball, ball color=red] (c) at (2,-1) {C};
-
-\foreach \from/\to in {a/b, b/c, c/a}
+\begin{tikzpicture}[x=5em,y=5em]
+%set style options the same for each node
+\tikzstyle{every node}=[circle, shading=ball, ball color=white];
+\node (a) at (0,0) {$1$};
+\node (b) at (1,0) {$2$};
+\node (c) at (1,1) {$5$};
+\node (d) at (0,1) {$10$};
+%draw (a,b), (a,c), (a,d), (b,d), and (c,d)
+\foreach \from/\to in {a/b, a/c, a/d, b/d, c/d}
 	\draw[->] (\from) -- (\to);
+%draw (a,a), (b,b), (c,c), and (d,d)
+\foreach \from/\to in {a/a, b/b, c/c, d/d}
+	\draw[->] (\from) to [in=15, out=90, looseness=5] (\to);
 \end{tikzpicture}

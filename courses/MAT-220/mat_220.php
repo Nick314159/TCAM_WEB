@@ -97,7 +97,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Relations<br><strong>Read: Section 14</strong></td><td>Equivalence Relations<br><strong>Read: Section 15</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab2.pdf">Lab 2: Due 9/22/2017</a></strong></td>
+        <td>Relations<br><strong>Read: Section 14</strong><br><strong><a href="efy/efy3.pdf">EFY3 Solution</a></strong></td><td>Equivalence Relations<br><strong>Read: Section 15</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab2.pdf">Lab 2: Due 9/22/2017</a></strong></td>
       </tr>
       </table>
     </div>
@@ -113,11 +113,23 @@
       </tr>
       </table>
     </div>
+    <!-- Week 6 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 6 (9/25 - 9/29)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Binomial Coefficients<br><strong>Read: Section 17</strong></td><td>Counting Multisets<br><strong>Read: Section 18</strong></td><td>Lab Day<br><strong><a href="">Lab 3: Due 10/6/2017</a></strong></td>
+      </tr>
+      </table>
+    </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 4;
+  var slideIndex = 5;
   showSlides(slideIndex);
 
   function plusSlides(n) {

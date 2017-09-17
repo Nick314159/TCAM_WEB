@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+\node[circle, shading=ball, ball color=blue] (a) at (0,0) {A};
+\node[circle, shading=ball, ball color=white] (b) at (1,1) {B};
+\node[circle, shading=ball, ball color=red] (c) at (2,-1) {C};
+
+\foreach \from/\to in {a/b, b/c, c/a}
+	\draw[->] (\from) -- (\to);
+\end{tikzpicture}

@@ -97,7 +97,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Matrix Operations<br>the Matrix Exponential<br><strong>Read: Section 2.1</strong></td><td>The Inverse<br>of a Matrix<br><strong>Read: Section 2.2-2.3</strong></td><td>Matrix Factorizations<br>solving Matrix Equations<br><strong><a href="homework/homework2.pdf">Homework 2: Due Today</a></strong><br><strong>Read: Section 2.5</strong></td>
+        <td>Matrix Operations<br>the Matrix Exponential<br><strong>Read: Section 2.1</strong></td><td>The Inverse<br>of a Matrix<br><strong>Read: Section 2.2-2.3</strong></td><td>Matrix Factorizations<br>solving Matrix Equations<br><strong><a href="homework/homework2.pdf">Homework 2: Due Today</a></strong><br><strong>Read: Section 2.5</strong><br><strong><a href="homework/solution2.pdf">Solution 2</a></strong></td>
       </tr>
       </table>
     </div>
@@ -113,11 +113,23 @@
       </tr>
       </table>
     </div>
+    <!-- Week 6 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 6 (9/25 - 9/29)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td>
+      </tr>
+      </table>
+    </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 4;
+  var slideIndex = 5;
   showSlides(slideIndex);
 
   function plusSlides(n) {

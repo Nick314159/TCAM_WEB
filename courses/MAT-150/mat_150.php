@@ -121,7 +121,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Volume, Orientation,<br>and Linear Transformations</td><td>The Determinant<br>and its Properties</td><td>Computing the Determinant<br><strong><a href="homework/homework3.pdf">Homework 3: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

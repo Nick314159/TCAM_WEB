@@ -109,7 +109,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Applications to Computer Graphics<br><strong>Read: Section 2.7</strong></td><td>Subspaces, Dimension,<br>and Rank<br><strong>Read: Section 2.8-2.9</strong></td><td>Lab Day<br><strong><a href="">Lab 3: Due 9/25/2017</a></strong></td>
+        <td>Applications to Computer Graphics<br><strong>Read: Section 2.7</strong></td><td>Subspaces, Dimension,<br>and Rank<br><strong>Read: Section 2.8-2.9</strong></td><td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab3.nb">Lab 3: Due 9/25/2017</a></strong></td>
       </tr>
       </table>
     </div>

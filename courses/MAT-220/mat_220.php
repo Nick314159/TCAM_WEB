@@ -121,7 +121,19 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Binomial Coefficients<br><strong>Read: Section 17</strong></td><td>Counting Multisets<br><strong>Read: Section 18</strong></td><td>Lab Day<br><strong><a href="">Lab 3: Due 10/6/2017</a></strong></td>
+        <td>Binomial Coefficients<br><strong>Read: Section 17</strong></td><td>Contradiction<br><strong>Read: Section 20</strong></td><td>Lab Day<br><strong><a href="">Lab 3: Due 10/4/2017</a></strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 7 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 7 (10/2 - 10/6)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Smallest Counterexample<br>Only even and odd integers<br><strong>Read: Section 21</strong></td><td>Induction<br><strong>Read: Section 22</strong></td><td>Review Homework<br>and puzzle of the week<br>Handout Midterm<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong></td>
       </tr>
       </table>
     </div>
@@ -129,7 +141,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 5;
+  var slideIndex = 6;
   showSlides(slideIndex);
 
   function plusSlides(n) {

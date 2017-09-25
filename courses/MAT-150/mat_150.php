@@ -125,11 +125,23 @@
       </tr>
       </table>
     </div>
+    <!-- Week 7 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 7 (10/2 - 10/6)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td>
+      </tr>
+      </table>
+    </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 5;
+  var slideIndex = 6;
   showSlides(slideIndex);
 
   function plusSlides(n) {

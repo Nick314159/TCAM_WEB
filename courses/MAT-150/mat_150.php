@@ -133,7 +133,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>The Determinant<br>cofactor expansion<br>and review</td><td></td><td></td>
       </tr>
       </table>
     </div>

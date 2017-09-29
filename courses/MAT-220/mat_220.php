@@ -29,7 +29,7 @@
       <li><strong>Important Dates</strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><strong>Midterm: </strong>October 6 - 13</li>
+          <li><strong>Midterm: </strong>October 6 - 16</li>
           <li><strong><a href="https://www.davidson.edu/academics/mathematics-and-computer-science/student-activities/bernard-lecture" target="_blank">Bernard Lecture:</a> </strong>October 23
           <li><strong>Final: </strong>December 6 - 14</li>
         </ul>
@@ -121,7 +121,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Binomial Coefficients<br><strong>Read: Section 17</strong></td><td>Contradiction<br><strong>Read: Section 20</strong></td><td>Lab Day<br><strong><a href="">Lab 3: Due 10/4/2017</a></strong></td>
+        <td>Binomial Coefficients<br><strong>Read: Section 17</strong></td><td>Contradiction<br><strong>Read: Section 20</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab3.pdf">Lab 3: Due 10/4/2017</a></strong></td>
       </tr>
       </table>
     </div>

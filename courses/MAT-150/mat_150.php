@@ -29,7 +29,7 @@
       <li><strong>Important Dates</strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><strong>Midterm: </strong>October 6 - 13</li>
+          <li><strong>Midterm: </strong>October 6 - 16</li>
           <li><strong><a href="https://www.davidson.edu/academics/mathematics-and-computer-science/student-activities/bernard-lecture" target="_blank">Bernard Lecture:</a> </strong>October 23
           <li><strong>Final: </strong>December 8 - 14</li>
         </ul>
@@ -121,7 +121,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Volume, Orientation,<br>and Linear Transformations</td><td>The Determinant<br>and its Properties</td><td>Computing the Determinant<br><strong><a href="homework/homework3.pdf">Homework 3: Due Today</a></strong></td>
+        <td>Volume, Orientation,<br>and Linear Transformations<br><strong><a herf="efy/efy5.pdf">EFY5: Due 10/4/2017</a></strong></td><td>The Determinant<br>and its Properties</td><td>Computing the Determinant<br><strong><a href="homework/homework3.pdf">Homework 3: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

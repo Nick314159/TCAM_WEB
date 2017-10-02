@@ -1,0 +1,18 @@
+\begin{figure}[h]
+\centering
+\begin{tabular}{c | c | c | c | c | c | c | c | c |}
+& Su & M & Tu & W & Th & F & Sa\\
+\hline
+Lion & 1 & 0 & 0 & 0 & 1 & 1 & 1\\
+Unicorn & 1 & 1 & 1 & 1 & 0 & 0 & 0\\
+\end{tabular}
+\caption{Truth = $1$ and Lie = $0$.}
+\end{figure}
+
+Let $p_{1}$ denote the Lion's statement, and $p_{2}$ the Unicorn's statement. Note that on no day of the week can both the Lion and the Unicorn be lying. Therefore, all that remains is the following statements and their implications
+\begin{align*}
+&p_{1}\land p_{2}\implies\text{ Day = Su }\implies \lnot p_{1}\land p_{2}\implies\text{ contradiction}\\
+&\lnot p_{1}\land p_{2}\implies\text{ Day = M or Tu or W }\implies \underset{\text{M}}{(\lnot p_{1}\land \lnot p_{2})}\lor\underset{\text{Tu or W}}{(p_{1}\land\lnot p_{2})}\implies\text{ contradiction}\\
+&p_{1}\land\lnot p_{2}\implies\text{ Day = Th or F or Sa }\implies \underset{\text{Th}}{(p_{1}\land\lnot p_{2})}\lor\underset{\text{F or Sa}}{(\lnot p_{1}\land p_{2})}\implies\text{ Day = Th }.
+\end{align*}
+Therefore, the day is Thursday.

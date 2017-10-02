@@ -121,7 +121,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Binomial Coefficients<br><strong>Read: Section 17</strong></td><td>Contradiction<br><strong>Read: Section 20</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab3.pdf">Lab 3: Due 10/4/2017</a></strong></td>
+        <td>Binomial Coefficients<br><strong>Read: Section 17</strong><br><strong><a href="efy/efy6.pdf">EFY6 Solution</a></strong></td><td>Contradiction<br><strong>Read: Section 20</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab3.pdf">Lab 3: Due 10/4/2017</a></strong></td>
       </tr>
       </table>
     </div>

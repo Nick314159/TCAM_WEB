@@ -133,7 +133,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Smallest Counterexample<br>Only even and odd integers<br><strong>Read: Section 21</strong></td><td>Induction<br><strong>Read: Section 22</strong></td><td>Review Homework<br>and puzzle of the week<br>Handout Midterm<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong></td>
+        <td>Smallest Counterexample<br>Only even and odd integers<br><strong>Read: Section 21</strong><br><strong><a href="efy/efy7.pdf">EFY7 Solution</a></strong></td><td>Induction<br><strong>Read: Section 22</strong></td><td>Review Homework<br>and puzzle of the week<br>Handout Midterm<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

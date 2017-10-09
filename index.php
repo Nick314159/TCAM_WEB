@@ -31,7 +31,7 @@
     <hr class="hrstyle-one" style="width: 50%">
     <div class="margin">
         <p> Thomas Cameron is currently a visiting assistant professor of Mathematics and Computer Science at Davidson College. He received a B.S. in Mathematics from the University of Minnesota Duluth and a Ph.D. in Mathematics from Washington State University.</p>
-        <p>Thomas Cameron is a passionate educator, researcher, and programmer who specializes in linear algebra and the numerical solution of both the linear and nonlinear eigenvalue problems. Additional interests include dynamical systems, matrix polynomials, programming, and spectral theory.</p>
+        <p>Thomas Cameron is a passionate mathematician, educator, and programmer whose interests include linear algebra, operator theory, numerical analysis and computer science. Current projects include the generalization of well known results form matrix theory and complex analysis to the area of matrix polynomials, and the development of a Fortran library for the numerical solution of the polynomial eigenvalue problem.
     </div>
     <hr class="hrstyle-one" style="width: 50%">
     </div>

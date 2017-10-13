@@ -145,7 +145,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Fall Break</td><td>Review Day</td><td>Lab Day<br><strong><a href="lab/lab4.pdf">Lab 4: Due 10/18/2017</a></strong></td>
+        <td>Fall Break</td><td>Review Day</td><td>Lab Day<br><strong><a href="lab/lab4.pdf">Lab 4</a></strong></td>
       </tr>
       </table>
     </div>

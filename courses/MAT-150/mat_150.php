@@ -145,7 +145,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Fall Break</td><td>Review Day</td><td>Lab Day<br><strong><a href="notebooks/MAT_150_lab4.nb">Lab 4</td>
+        <td>Fall Break</td><td>Review Day</td><td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab4.nb">Lab 4</td>
       </tr>
       </table>
     </div>

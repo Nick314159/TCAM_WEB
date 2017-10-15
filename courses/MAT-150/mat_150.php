@@ -157,7 +157,31 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Midterm Due</td><td></td><td></td>
+        <td><strong>Midterm Due</strong><br>Motivation and Existence of Eigenvalues<br><strong>Read: Section 5.1</strong></td><td>Computing Eigenvalues<br><strong>Read: Section 5.2</strong></td><td>Eigenvectors, Diagonalization<br>and Linear Transformations<br><strong>Read: Section 5.3-5.4</strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 10 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 10 (10/23 - 10/27)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Inner Product,<br>Length and Angles<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong>Read: Section 6.2</strong></td><td>Lab Day</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 11 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 11 (10/30 - 11/3)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day</td><td>Orthogonal Projections<br><strong>Read: Section 6.3</strong></td><td>Constructing Orthogonal Sets<br><strong><a href="">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.4</strong></td>
       </tr>
       </table>
     </div>
@@ -165,7 +189,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 8;
+  var slideIndex = 9;
   showSlides(slideIndex);
 
   function plusSlides(n) {

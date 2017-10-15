@@ -157,7 +157,31 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Midterm Due</td><td></td><td></td>
+        <td>Midterm Due<br>Review Midterm<br><strong><a href="">Puzzle of the Week</a></strong></td><td>Recurrence Relations<br><strong>Read: Section 23</strong></td><td>Lab Day</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 10 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 10 (10/23 - 10/27)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td></td><td></td><td>Lab Day</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 11 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 11 (10/30 - 11/3)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day</td><td></td><td></td>
       </tr>
       </table>
     </div>
@@ -165,7 +189,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 8;
+  var slideIndex = 9;
   showSlides(slideIndex);
 
   function plusSlides(n) {

@@ -28,6 +28,25 @@ in
 end
 
 
-(* pow3: *)
+(* pow3: minimize the number of subproblmes*)
 val rec pow3 : real*int->real =
     fn (a:real,0) => 1.0 | (a:real,n:int) => if (n mod 2)=0 then pow3(a,n div 2)*pow3(a,n div 2) else a*pow3(a,n-1)
+
+(* Horner's Method *)
+val x:real list = [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0]
+
+local
+    val rec helper : real list*real*real*int->real =
+        fn  (x:real list,t:real,r:real,0) => r
+        |   (x:real list,t:real,r:real,1) => helper(x,t,r*t+List.nth(x,0),0)
+        |   (x:real list,t:real,r:real,n:int) => helper(x,t,r*t+List.nth(x,n-1),n-1)
+in
+    fun horner(x:real list,t:real):real =
+        let
+            val n:int = List.length(x)
+        in
+            helper(x,t,List.nth(x,n),n)
+        end
+end
+
+

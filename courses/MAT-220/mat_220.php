@@ -157,7 +157,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Midterm Due<br>Review Midterm<br><strong><a href="efy/efy8.pdf">EFY 8</a></strong></td><td>Recurrence Relations<br><strong>Read: Section 23</strong></td><td>Lab Day<br><strong><a href="lab/lab5.pdf">Lab 5</a></strong></td>
+        <td>Midterm Due<br>Review Midterm<br><strong><a href="efy/efy8.pdf">EFY 8</a></strong></td><td>Recurrence Relations<br><strong>Read: Section 23</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab5.pdf">Lab 5</a></strong></td>
       </tr>
       </table>
     </div>

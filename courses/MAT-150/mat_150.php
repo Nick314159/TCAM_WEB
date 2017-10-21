@@ -157,7 +157,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td><strong>Midterm Due</strong><br>Motivation and Existence of Eigenvalues<br><strong>Read: Section 5.1</strong></td><td>Computing Eigenvalues<br><strong>Read: Section 5.2</strong></td><td>Eigenvectors, Diagonalization<br>and Linear Transformations<br><strong>Read: Section 5.3-5.4</strong></td>
+        <td><strong>Midterm Due</strong><br>Motivation and Existence of Eigenvalues<br><strong>Read: Section 5.1</strong><br><strong><a href="efy/efy6.pdf">EFY 6 Solution</a></strong><br><strong><a href="exams/midterm_sol.pdf">Midterm Solution</a></strong></td><td>Computing Eigenvalues<br><strong>Read: Section 5.2</strong></td><td>Eigenvectors, Diagonalization<br>and Linear Transformations<br><strong>Read: Section 5.3-5.4</strong></td>
       </tr>
       </table>
     </div>
@@ -169,7 +169,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Inner Product,<br>Length and Angles<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong>Read: Section 6.2</strong></td><td>Lab Day</td>
+        <td>How to Compute Eigenvalues<br>Part 1<br><strong>Read: Section 5.8</strong></td><td>How to Compute Eigenvalues<br>Part 2<br><strong><a href="http://www.math.wsu.edu/faculty/watkins/slides/ilas10.pdf">Read these slides</a></strong><br>(You may not understand everything, that is OK!)</td><td>Lab Day</td>
       </tr>
       </table>
     </div>
@@ -181,7 +181,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day</td><td>Orthogonal Projections<br><strong>Read: Section 6.3</strong></td><td>Constructing Orthogonal Sets<br><strong><a href="">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.4</strong></td>
+        <td>Lab Day</td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
       </tr>
       </table>
     </div>

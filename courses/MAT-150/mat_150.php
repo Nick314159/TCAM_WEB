@@ -169,7 +169,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>How to Compute Eigenvalues<br>Part 1<br><strong>Read: Section 5.8</strong></td><td>How to Compute Eigenvalues<br>Part 2<br><strong><a href="EP.pdf">Read these slides</a></strong><br>(You may not understand everything, that is OK!)</td><td>Lab Day</td>
+        <td>How to Compute Eigenvalues<br>Part 1<br><strong>Read: Section 5.8</strong><br><strong><a href="efy/efy7.pdf">EFY 7</a></strong></td><td>How to Compute Eigenvalues<br>Part 2<br><strong><a href="EP.pdf">Read these slides</a></strong><br>(You may not understand everything, that is OK!)</td><td>Day Off</td>
       </tr>
       </table>
     </div>
@@ -181,7 +181,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day</td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
+        <td>Lab Day</td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
       </tr>
       </table>
     </div>

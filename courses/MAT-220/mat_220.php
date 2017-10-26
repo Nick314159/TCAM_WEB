@@ -181,7 +181,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day</td><td></td><td></td>
+        <td>Lab Day</td><td>The Pigenhole Principle<br><strong>Read: Section 25</strong></td><td>Applications to Infinity<br>the Story of Cantor</td>
       </tr>
       </table>
     </div>

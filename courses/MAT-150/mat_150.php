@@ -181,7 +181,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day</td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
+        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab5.pdf">Lab 5</a></strong></td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
       </tr>
       </table>
     </div>
@@ -189,7 +189,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 10;
+  var slideIndex = 11;
   showSlides(slideIndex);
 
   function plusSlides(n) {

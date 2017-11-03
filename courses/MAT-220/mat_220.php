@@ -24,7 +24,7 @@
   <hr class="hrstyle-one" style="width: 50%">
   <div class="list">
     <ul>
-      <li><strong>Time: </strong> M,W,F 9:30 - 10:20 am</li>
+      <li><strong>Time: </strong> M,W,F 1:30 - 2:20 pm</li>
       <li><strong>Place: </strong> WALL 320 (classroom), WALL 380 (lab)</li>
       <li><strong>Important Dates</strong>
       <hr class="hrstyle-two" style="width: 25%">
@@ -182,6 +182,66 @@
       </tr>
       <tr>
         <td>Lab Day<br><strong><a href="lab/sml_lab6.pdf">Lab 6: Due Novemeber 3</a></strong><br><strong><a href="efy/efy11.pdf">EFY 11</a></strong></td><td>The Pigenhole Principle<br><strong>Read: Section 25</strong></td><td>Applications to Infinity<br>the Story of Cantor</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 12 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 12 (11/6 - 11/10)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Permutations<br><strong>Read: Section 27</strong><br><strong><a href="efy/efy12.pdf">EFY 12</a></strong></td><td>Symmetry<br><strong>Read: Section 28</strong></td><td>The Determinant<br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 13 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 13 (11/13 - 11/17)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Sample Space<br>and Events<br><strong>Read: Section 30-31</strong><br><strong><a href="efy/efy13.pdf">EFY 13</a></strong></td><td>Conditional Probability<br>and Independence<br><strong>Read: Section 32</strong></td><td>Lab Day<br><strong><a href="">Lab 6: Due Novemeber 21</a></strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 14 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 14 (11/20 - 11/24)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day<br><strong><a href="">Lab 6: Due Novemeber 21</a></strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 15 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 15 (11/27 - 12/1)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Fundamentals of<br>Graph Theory<br><strong>Read: Section 47</strong></td><td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection and Trees<br><strong>Read: Section 49-50</strong><br><strong><a href="">Homework 6: Due Today</a></strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 16 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 16 (12/4 - 12/8)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day<br><strong><a href="">Lab 7</a></strong></td><td>Lab Day<br><strong><a href="">Lab 7</a></strong><br><strong>Hand out Finals</strong></td><td>Good Luck on Finals</td>
       </tr>
       </table>
     </div>

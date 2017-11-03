@@ -185,6 +185,18 @@
       </tr>
       </table>
     </div>
+    <!-- Week 12 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 11 (10/30 - 11/3)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab5.pdf">Lab 5</a></strong></td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
+      </tr>
+      </table>
+    </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>

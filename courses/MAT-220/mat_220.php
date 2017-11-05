@@ -193,7 +193,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Permutations<br><strong>Read: Section 27</strong><br><strong><a href="efy/efy12.pdf">EFY 12</a></strong></td><td>Symmetry<br><strong>Read: Section 28</strong></td><td>The Determinant<br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong></td>
+        <td>Permutations<br><strong>Read: Section 27</strong><br><strong><a href="efy/efy12.pdf">EFY 12</a></strong></td><td>Symmetry<br><strong>Read: Section 28</strong></td><td>Sample Space and Events<br><strong>Read: Section 30-31</strong><br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong></td>
       </tr>
       </table>
     </div>
@@ -205,7 +205,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Sample Space<br>and Events<br><strong>Read: Section 30-31</strong><br><strong><a href="efy/efy13.pdf">EFY 13</a></strong></td><td>Conditional Probability<br>and Independence<br><strong>Read: Section 32</strong></td><td>Lab Day<br><strong><a href="">Lab 6: Due Novemeber 21</a></strong></td>
+        <td>Conditional Probability<br>and Independence<br><strong>Read: Section 32</strong><br><strong><a href="efy/efy13.pdf">EFY 13</a></strong></td><td>Random Variables<br>and Expectation<br><strong>Read: Section 33-34</strong></td><td>Lab Day<br><strong><a href="">Lab 6: Due Novemeber 21</a></strong></td>
       </tr>
       </table>
     </div>
@@ -241,7 +241,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="">Lab 7</a></strong></td><td>Lab Day<br><strong><a href="">Lab 7</a></strong><br><strong>Hand out Finals</strong></td><td>Good Luck on Finals</td>
+        <td>Lab Day<br><strong><a href="">Lab 7</a></strong></td><td>Lab Day<br><strong><a href="">Lab 7</a></strong><br><strong>Handout Finals</strong></td><td>Good Luck on Finals</td>
       </tr>
       </table>
     </div>
@@ -249,7 +249,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 11;
+  var slideIndex = 12;
   showSlides(slideIndex);
 
   function plusSlides(n) {

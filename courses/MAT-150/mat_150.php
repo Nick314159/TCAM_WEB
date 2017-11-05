@@ -181,19 +181,67 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab5.pdf">Lab 5</a></strong></td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
+        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab5.pdf">Lab 5: Due 11/6/2017</a></strong><br><strong><a href="efy/efy8.pdf">EFY 8</a></strong></td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
       </tr>
       </table>
     </div>
     <!-- Week 12 -->
     <div class="mySlides fade">
-      <div class="header"><h3>Week 11 (10/30 - 11/3)</h3></div>
+      <div class="header"><h3>Week 12 (11/6 - 11/10)</h3></div>
       <table width="100%" align="center" class="schedule">
       <tr>
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab5.pdf">Lab 5</a></strong></td><td>Inner Product<br><strong>Read: Section 6.1</strong></td><td>Orthogonal Sets<br><strong><a href="homework/homework4.pdf">Homework 4: Due Today</a></strong><br><strong>Read: Section 6.2</strong></td>
+        <td>Orthogonal Projections<br><strong>Read Section 6.3</strong><br><strong><a href="">EFY 8</a></strong></td><td>Orthogonalization<br>Part 1<br><strong>Read: Section 6.4</strong></td><td>Orthogonalization<br>Part 2</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 13 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 13 (11/13 - 11/17)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Diagonalization<br>of Symmetric Matrices<br><strong>Read: Section 7.1</strong></td><td>Quadratic Forms<br><strong>Read: Section 7.2</strong></td><td>Constrained Optimization<br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong><br><strong>Read: Section 7.3</strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 14 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 14 (11/20 - 11/24)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day</td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 15 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 15 (11/27 - 12/21)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>SVD: Part 1<br><strong>Read: Section 7.4</td><td>SVD: Part 2</td><td>Applications to Image Processing<br><strong>Read: Section 7.5</strong></td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 16 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 16 (12/4 - 12/8)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Monday</th><th>Wednesday</th><th>Friday</th>
+      </tr>
+      <tr>
+        <td>Lab Day</td><td>Lab Day<br><strong>Handout Finals</strong></td><td>Good Luck on Finals</td>
       </tr>
       </table>
     </div>
@@ -201,7 +249,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 11;
+  var slideIndex = 12;
   showSlides(slideIndex);
 
   function plusSlides(n) {

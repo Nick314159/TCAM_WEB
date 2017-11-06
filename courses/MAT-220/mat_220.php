@@ -217,7 +217,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="">Lab 6: Due Novemeber 21</a></strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
+        <td>Fundamentals of<br>Graph Theory<br><strong>Read: Section 47</strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
       </tr>
       </table>
     </div>
@@ -229,7 +229,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Fundamentals of<br>Graph Theory<br><strong>Read: Section 47</strong></td><td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection and Trees<br><strong>Read: Section 49-50</strong><br><strong><a href="">Homework 6: Due Today</a></strong></td>
+        <td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection<br><strong>Read: Section 49</strong></td><td>Trees<br><strong>Read: Section 50</strong><br><strong><a href="">Homework 6: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

@@ -193,7 +193,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Orthogonal Projections<br><strong>Read Section 6.3</strong><br><strong><a href="">EFY 8</a></strong></td><td>Orthogonalization<br>Part 1<br><strong>Read: Section 6.4</strong></td><td>Orthogonalization<br>Part 2</td>
+        <td>Orthogonal Projections<br><strong>Read Section 6.3</strong><br><strong><a href="">EFY 9</a></strong></td><td>Orthogonalization<br>Part 1<br><strong>Read: Section 6.4</strong></td><td>Orthogonalization<br>Part 2</td>
       </tr>
       </table>
     </div>

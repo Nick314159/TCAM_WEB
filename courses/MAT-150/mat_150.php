@@ -249,7 +249,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 12;
+  var slideIndex = 13;
   showSlides(slideIndex);
 
   function plusSlides(n) {

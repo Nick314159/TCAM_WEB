@@ -205,7 +205,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Conditional Probability<br>and Independence<br><strong>Read: Section 32</strong><br><strong><a href="efy/efy13.pdf">EFY 13</a></strong></td><td>Random Variables<br>and Expectation<br><strong>Read: Section 33-34</strong></td><td>Lab Day<br><strong><a href="">Lab 7: Due Novemeber 21</a></strong></td>
+        <td>Conditional Probability<br>and Independence<br><strong>Read: Section 32</strong><br><strong><a href="efy/efy13.pdf">EFY 13</a></strong></td><td>Random Variables<br>and Expectation<br><strong>Read: Section 33-34</strong></td><td>Lab Day<br><strong><a href="lab/sml_lab7.pdf">Lab 7: Due Novemeber 21</a></strong></td>
       </tr>
       </table>
     </div>

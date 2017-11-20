@@ -217,7 +217,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day</td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
+        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab6.nb">Lab 6</a></strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
       </tr>
       </table>
     </div>
@@ -249,7 +249,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 13;
+  var slideIndex = 14;
   showSlides(slideIndex);
 
   function plusSlides(n) {

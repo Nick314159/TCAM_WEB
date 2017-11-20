@@ -1,0 +1,1002 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     38524,        994]
+NotebookOptionsPosition[     34484,        917]
+NotebookOutlinePosition[     34869,        934]
+CellTagsIndexPosition[     34826,        931]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["MAT: 150 -- Lab 6", "Title",
+ CellChangeTimes->{{3.7201355342658453`*^9, 3.72013553931319*^9}, {
+  3.720135579845504*^9, 
+  3.720135580181223*^9}},ExpressionUUID->"07fb428c-c9b0-49b4-9390-\
+6dedf0a29b0c"],
+
+Cell["\<\
+Date: 11/20/2017
+Due: 11/21/2017\
+\>", "Subtitle",
+ CellChangeTimes->{{3.7201355929728193`*^9, 
+  3.720135615382588*^9}},ExpressionUUID->"7f6aecc3-558a-43c9-b4dd-\
+aa027615243e"],
+
+Cell[CellGroupData[{
+
+Cell["Inner Product and Orthogonal Sets", "Section",
+ CellChangeTimes->{{3.7201356917209*^9, 
+  3.720135710749648*^9}},ExpressionUUID->"95a78f35-6776-4a37-8166-\
+4b4c37cbf1f2"],
+
+Cell[TextData[{
+ "The inner product of two vectors in ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["R", "n"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "c44a95a6-439a-4d1d-b773-26b33dd04078"],
+ " is often referred to as the dot product and can be computed in Mathematica \
+using the Dot function."
+}], "Text",
+ CellChangeTimes->{{3.72013573523883*^9, 3.72013577944591*^9}, {
+  3.7201359565002947`*^9, 3.720135973676332*^9}, {3.720136008062345*^9, 
+  3.720136019150324*^9}},ExpressionUUID->"3d634316-c74b-43ef-b865-\
+373991a9c5a6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Two", " ", "vectors", " ", "u", " ", "and", " ", "v"}], " ", 
+   "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"u", "=", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], ";", 
+    RowBox[{"v", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "1", ",", 
+       RowBox[{"-", "3"}]}], "}"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Print", " ", "Dot", " ", "Product"}], " ", "*)"}], "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<<u,v> = \>\"", ",", " ", 
+     RowBox[{"Dot", "[", 
+      RowBox[{"u", ",", "v"}], "]"}]}], "]"}]}]}]], "Code",
+ CellChangeTimes->{{3.720136024846167*^9, 3.720136112848361*^9}, {
+  3.720138963974318*^9, 
+  3.720138983371222*^9}},ExpressionUUID->"735bad35-dfee-4945-90a6-\
+67349ea2e93d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"<u,v> = \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "8"}]}],
+  SequenceForm["<u,v> = ", -8],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.7201361136136427`*^9, 3.7201409642997*^9, {3.720141110208243*^9, 
+   3.720141110978916*^9}, 3.720142441459258*^9, {3.7201424813453617`*^9, 
+   3.720142502256131*^9}, 3.720143667473113*^9, 3.720174072538014*^9, {
+   3.7201747184104633`*^9, 3.720174719281221*^9}, {3.720181188648794*^9, 
+   3.720181189570384*^9}, 
+   3.720181256996736*^9},ExpressionUUID->"0fd8ed96-4da2-42a8-90b4-\
+5eece0b8b1bb"]
+}, Open  ]],
+
+Cell[TextData[{
+ "We saw that two vectors u and v are orthogonal if and only if their dot \
+product is zero. Furthermore, a set of vectors {u1,u2,...,up} is orthogonal \
+if <ui,uj>=0 for all i \[NotEqual]j. We can check this by forming a matrix U \
+= {u1,u2,...,up} and then computing ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["UU", "T"], TraditionalForm]],ExpressionUUID->
+  "0a52f66f-7081-474e-b53f-cb1886a0f263"],
+ " which should be diagonal. Note the slight difference ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    SuperscriptBox["UU", "T"]}], TraditionalForm]],ExpressionUUID->
+  "a2bb0081-aa3f-40d8-83a9-aaecf3a9d5ad"],
+ " vs. ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["U", "T"], TraditionalForm]],ExpressionUUID->
+  "336babd0-0fba-4936-b302-bf2a1391f20d"],
+ "U), this is due to the row-oriented storage of Mathematica (i.e. matrices \
+are stored as rows not columns). "
+}], "Text",
+ CellChangeTimes->{{3.720136365896378*^9, 3.7201365297967787`*^9}, {
+   3.7201365752103367`*^9, 3.7201365910903788`*^9}, {3.720136645493011*^9, 
+   3.720136693643571*^9}, {3.7201435012088337`*^9, 3.72014360508853*^9}, {
+   3.720172759166782*^9, 3.720172759694017*^9}, 
+   3.720175575982519*^9},ExpressionUUID->"9e519205-8d7e-486d-8ab2-\
+e145288db8a7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Orthogonal", " ", "vectors"}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"u1", "=", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], ";", 
+    RowBox[{"u2", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0", ",", "1"}], "}"}]}], ";", 
+    RowBox[{"u3", "=", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", 
+       RowBox[{"-", "2"}], ",", "1"}], "}"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Store", " ", "vectors", " ", "as", " ", "rows", " ", "of", " ", "U"}], 
+    " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"U", "=", 
+     RowBox[{"{", 
+      RowBox[{"u1", ",", "u2", ",", "u3"}], "}"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Print", " ", 
+     SuperscriptBox["UU", "T"]}], " ", "*)"}], "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<U = \>\"", ",", " ", 
+     RowBox[{"MatrixForm", "[", "U", "]"}], ",", " ", 
+     "\"\< and \!\(\*SuperscriptBox[\(UU\), \(T\)]\) = \>\"", ",", " ", 
+     RowBox[{"MatrixForm", "[", 
+      RowBox[{"U", ".", 
+       RowBox[{"Transpose", "[", "U", "]"}]}], "]"}]}], "]"}]}]}]], "Code",
+ CellChangeTimes->{{3.720136700843246*^9, 3.720136777020762*^9}, {
+  3.7201368393719063`*^9, 3.72013686708838*^9}, {3.720136907350809*^9, 
+  3.7201369724275017`*^9}, {3.720138986461542*^9, 3.720139047890905*^9}, {
+  3.7201436149158697`*^9, 
+  3.7201436629430017`*^9}},ExpressionUUID->"3d785d0c-70e2-4068-91bc-\
+9d9feb12df83"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"U = \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"1", "1", "1"},
+       {
+        RowBox[{"-", "1"}], "0", "1"},
+       {"1", 
+        RowBox[{"-", "2"}], "1"}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]], 
+   "\[InvisibleSpace]", "\<\" and \\!\\(\\*SuperscriptBox[\\(UU\\), \
+\\(T\\)]\\) = \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"3", "0", "0"},
+       {"0", "2", "0"},
+       {"0", "0", "6"}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]]}],
+  SequenceForm["U = ", 
+   MatrixForm[{{1, 1, 1}, {-1, 0, 1}, {1, -2, 1}}], 
+   " and \!\(\*SuperscriptBox[\(UU\), \(T\)]\) = ", 
+   MatrixForm[{{3, 0, 0}, {0, 2, 0}, {0, 0, 6}}]],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.720136920178961*^9, {3.72013695700414*^9, 3.720136972811966*^9}, 
+   3.7201409644017*^9, {3.72014111054259*^9, 3.7201411110630493`*^9}, 
+   3.720142441597698*^9, {3.720142481481535*^9, 3.720142502368623*^9}, {
+   3.720143667808341*^9, 3.72014366818925*^9}, 3.720174072889846*^9, {
+   3.720174718813714*^9, 3.720174719347748*^9}, {3.720181189017941*^9, 
+   3.720181189659379*^9}, 
+   3.720181257143008*^9},ExpressionUUID->"4e4c5f38-8e1e-4a82-b2be-\
+c3a9cda978f1"]
+}, Open  ]],
+
+Cell[TextData[{
+ "If the rows of U are orthonormal, then the result of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["UU", "T"], TraditionalForm]],ExpressionUUID->
+  "971556e0-2a7f-41f4-a0b9-dabfb013f6a0"],
+ " will be the identity matrix. As we saw in class, the power of working with \
+an orthogonal basis is that every vector in the corresponding subspace can be \
+written as a linear combination, where the weights are easy to compute. The \
+example below makes use of an orthonormal basis {u1,u2} for a subspace W to \
+decompose a random vector y from ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["R", "3"], TraditionalForm]],ExpressionUUID->
+  "5a4fc142-7af4-43a7-8cfc-2a3fc62a2099"],
+ " into two parts: ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["y", "^"], TraditionalForm]],ExpressionUUID->
+  "42b2d884-dd29-4df3-84c0-ff0697c2e0ec"],
+ " in W and z orthogonal to W."
+}], "Text",
+ CellChangeTimes->{{3.720136992911463*^9, 3.720137034838306*^9}, {
+   3.720137542021051*^9, 3.7201376952548323`*^9}, {3.720137739468539*^9, 
+   3.720137763786522*^9}, 3.720137836235693*^9, {3.720138464785924*^9, 
+   3.720138545283224*^9}, {3.720143690228312*^9, 
+   3.7201436992089777`*^9}},ExpressionUUID->"a097c75a-e03d-43b8-9b27-\
+2f4432a35a95"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Orthonormal", " ", "basis", " ", "for", " ", "subspace", " ", "W"}], " ", 
+   "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"u1", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "3", "]"}]}], ")"}], "*", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "1"}], "}"}]}]}], ";", 
+    RowBox[{"u2", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "/", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ")"}], "*", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "0", ",", "1"}], "}"}]}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Random", " ", "vector", " ", "in", " ", 
+     SuperscriptBox["R", "3"]}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"y", "=", 
+     RowBox[{"RandomVariate", "[", 
+      RowBox[{
+       RowBox[{"NormalDistribution", "[", 
+        RowBox[{"0", ",", "1"}], "]"}], ",", 
+       RowBox[{"{", "3", "}"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Decompose", " ", "as", " ", "y"}], " ", "=", " ", 
+     RowBox[{
+      OverscriptBox["y", "^"], "+", "z"}]}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{
+     OverscriptBox["y", "^"], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Dot", "[", 
+        RowBox[{"y", ",", "u1"}], "]"}], "*", "u1"}], "+", 
+      RowBox[{
+       RowBox[{"Dot", "[", 
+        RowBox[{"y", ",", "u2"}], "]"}], "*", "u2"}]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"z", "=", 
+     RowBox[{"y", "-", 
+      OverscriptBox["y", "^"]}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Print", " ", "results"}], " ", "*)"}], "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+    "\"\<y = \!\(\*OverscriptBox[\(y\), \(^\)]\)+z : \>\"", ",", " ", 
+     RowBox[{"MatrixForm", "[", "y", "]"}], ",", " ", "\"\< = \>\"", ",", " ", 
+     RowBox[{"MatrixForm", "[", 
+      OverscriptBox["y", "^"], "]"}], ",", " ", "\"\< + \>\"", ",", " ", 
+     RowBox[{"MatrixForm", "[", "z", "]"}]}], "]"}], "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<Error = \>\"", ",", " ", 
+     RowBox[{"Norm", "[", "z", "]"}]}], "]"}]}]}]], "Code",
+ CellChangeTimes->{{3.7201378574538097`*^9, 3.720137922354968*^9}, {
+  3.720138035343316*^9, 3.720138060137459*^9}, {3.720138105378458*^9, 
+  3.720138144923931*^9}, {3.720138184805066*^9, 3.7201382232670937`*^9}, {
+  3.720138311130578*^9, 3.72013833094716*^9}, {3.720138551328672*^9, 
+  3.72013872663463*^9}, {3.720138831503833*^9, 3.720138832436954*^9}, {
+  3.720138870760024*^9, 3.72013891761981*^9}, {3.720141691099782*^9, 
+  3.72014169120303*^9}},ExpressionUUID->"fff68838-fa3b-4543-b21b-\
+c8d8331bdcc8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"y = \\!\\(\\*OverscriptBox[\\(y\\), \\(^\\)]\\)+z : \"\>", 
+   "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", 
+     TagBox[GridBox[{
+        {
+         RowBox[{"-", "0.8931782211504439`"}]},
+        {"1.192863542216335`"},
+        {
+         RowBox[{"-", "1.135898927413995`"}]}
+       },
+       GridBoxAlignment->{
+        "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+         "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.5599999999999999]}, 
+           Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}, "RowsIndexed" -> {}}],
+      Column], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]], "\[InvisibleSpace]", "\<\" = \"\>", 
+   "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", 
+     TagBox[GridBox[{
+        {
+         RowBox[{"-", "0.15737751565092584`"}]},
+        {
+         RowBox[{"-", "0.2787378687827014`"}]},
+        {
+         RowBox[{"-", "0.40009822191447697`"}]}
+       },
+       GridBoxAlignment->{
+        "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+         "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.5599999999999999]}, 
+           Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}, "RowsIndexed" -> {}}],
+      Column], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]], "\[InvisibleSpace]", "\<\" + \"\>", 
+   "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", 
+     TagBox[GridBox[{
+        {
+         RowBox[{"-", "0.735800705499518`"}]},
+        {"1.4716014109990363`"},
+        {
+         RowBox[{"-", "0.735800705499518`"}]}
+       },
+       GridBoxAlignment->{
+        "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+         "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.5599999999999999]}, 
+           Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}, "RowsIndexed" -> {}}],
+      Column], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]]}],
+  SequenceForm["y = \!\(\*OverscriptBox[\(y\), \(^\)]\)+z : ", 
+   MatrixForm[{-0.8931782211504439, 1.192863542216335, -1.135898927413995}], 
+   " = ", 
+   MatrixForm[{-0.15737751565092584`, -0.2787378687827014, \
+-0.40009822191447697`}], " + ", 
+   MatrixForm[{-0.735800705499518, 1.4716014109990363`, -0.735800705499518}]],
+  
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.7201387270975647`*^9, 3.720138841836233*^9, {3.720138903272069*^9, 
+   3.720138918131422*^9}, 3.7201409644521713`*^9, {3.720141110631322*^9, 
+   3.720141111151189*^9}, 3.720142441698992*^9, {3.720142481568104*^9, 
+   3.72014250244048*^9}, 3.7201436678752317`*^9, 3.7201740729603977`*^9, {
+   3.7201747188955803`*^9, 3.720174719417*^9}, {3.720181189109108*^9, 
+   3.7201811897441463`*^9}, 
+   3.720181257214758*^9},ExpressionUUID->"cacbc1ca-1228-40cf-81bf-\
+d11812955db3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Error = \"\>", "\[InvisibleSpace]", "1.8023362808536956`"}],
+  SequenceForm["Error = ", 1.8023362808536956`],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.7201387270975647`*^9, 3.720138841836233*^9, {3.720138903272069*^9, 
+   3.720138918131422*^9}, 3.7201409644521713`*^9, {3.720141110631322*^9, 
+   3.720141111151189*^9}, 3.720142441698992*^9, {3.720142481568104*^9, 
+   3.72014250244048*^9}, 3.7201436678752317`*^9, 3.7201740729603977`*^9, {
+   3.7201747188955803`*^9, 3.720174719417*^9}, {3.720181189109108*^9, 
+   3.7201811897441463`*^9}, 
+   3.7201812572236834`*^9},ExpressionUUID->"14d6c897-9e28-4932-8064-\
+38fc2686e6c5"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+A wonderful application of the orthogonal decomposition theorem (Theorem 8 of \
+Section 6.3) was given in Problem 23 of Section 6.3. You are asked to work \
+with this application in Problem 1. \
+\>", "Text",
+ CellChangeTimes->{{3.720139063144174*^9, 3.7201391062134657`*^9}, {
+  3.720139656032271*^9, 
+  3.720139667104389*^9}},ExpressionUUID->"c136fba1-b14f-4a7e-adaf-\
+5a3ab14bbe25"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Orthonormalization", "Section",
+ CellChangeTimes->{{3.720139681547607*^9, 3.720139683851687*^9}, 
+   3.7201397248574867`*^9},ExpressionUUID->"42092e34-c638-41cd-99ba-\
+bcdce9db6522"],
+
+Cell[TextData[{
+ "The first method for orthogonalizing a set of vectors that we covered was \
+the Gram-Schmidt process (Section 6.4). Mathematica has a built in function \
+for orthogonalizing a set of vectors, we can specify that they use the \
+Gram-Schmidt process by using the method->\[CloseCurlyDoubleQuote]GramSchmidt\
+\[CloseCurlyDoubleQuote] option. Below is an example where I will take a \
+random set of vectors in ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["R", "3"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "37bc8fa0-9720-4ba5-9e25-cf8c59646aff"],
+ " and create orthonormal vectors."
+}], "Text",
+ CellChangeTimes->{{3.720139849896051*^9, 3.720139878599332*^9}, {
+  3.720140606985959*^9, 3.720140627767564*^9}, {3.720141390072338*^9, 
+  3.720141510200078*^9}, {3.7201416052166224`*^9, 
+  3.720141659735661*^9}},ExpressionUUID->"54aeadb0-94eb-423c-9667-\
+4112aa0f53f0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Random", " ", "vectors", " ", "in", " ", 
+    SuperscriptBox["R", "3"]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"v1", "=", 
+     RowBox[{"RandomVariate", "[", 
+      RowBox[{
+       RowBox[{"NormalDistribution", "[", 
+        RowBox[{"0", ",", "1"}], "]"}], ",", 
+       RowBox[{"{", "3", "}"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"v2", "=", 
+     RowBox[{"RandomVariate", "[", 
+      RowBox[{
+       RowBox[{"NormalDistribution", "[", 
+        RowBox[{"0", ",", "1"}], "]"}], ",", 
+       RowBox[{"{", "3", "}"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"v3", "=", 
+     RowBox[{"RandomVariate", "[", 
+      RowBox[{
+       RowBox[{"NormalDistribution", "[", 
+        RowBox[{"0", ",", "1"}], "]"}], ",", 
+       RowBox[{"{", "3", "}"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Gram", "-", 
+     RowBox[{"Schmidt", " ", "Process", " ", "with", " ", "normalization"}]}],
+     " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"u1", ",", "u2", ",", "u3"}], "}"}], "=", 
+     RowBox[{"Orthogonalize", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"v1", ",", "v2", ",", "v3"}], "}"}], ",", 
+       RowBox[{"Method", "\[Rule]", "\"\<GramSchmidt\>\""}]}], "]"}]}], ";"}],
+    "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Check", " ", 
+     SuperscriptBox["UU", "T"]}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"U", "=", 
+     RowBox[{"{", 
+      RowBox[{"u1", ",", "u2", ",", "u3"}], "}"}]}], ";"}], "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<\!\(\*SuperscriptBox[\(UU\), \(T\)]\) = \>\"", ",", " ", 
+     RowBox[{"MatrixForm", "[", 
+      RowBox[{"U", ".", 
+       RowBox[{"Transpose", "[", "U", "]"}]}], "]"}]}], "]"}]}]}]], "Code",
+ CellChangeTimes->{{3.7201416805805407`*^9, 3.720141847415654*^9}, {
+   3.720142401184767*^9, 3.720142458329081*^9}, 
+   3.72014249102244*^9},ExpressionUUID->"46e23884-9eb9-4a3e-b745-\
+88b537877299"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SuperscriptBox[\\(UU\\), \\(T\\)]\\) = \"\>", 
+   "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"1.0000000000000002`", "5.551115123125783`*^-17", 
+        "2.7755575615628914`*^-17"},
+       {"5.551115123125783`*^-17", "1.`", "1.1102230246251565`*^-16"},
+       {"2.7755575615628914`*^-17", "1.1102230246251565`*^-16", 
+        "1.0000000000000002`"}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]]}],
+  SequenceForm["\!\(\*SuperscriptBox[\(UU\), \(T\)]\) = ", 
+   MatrixForm[{{1.0000000000000002`, 5.551115123125783*^-17, 
+    2.7755575615628914`*^-17}, {5.551115123125783*^-17, 1., 
+    1.1102230246251565`*^-16}, {2.7755575615628914`*^-17, 
+    1.1102230246251565`*^-16, 1.0000000000000002`}}]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.7201424155592003`*^9, 3.720142502544692*^9}, 
+   3.7201436679571667`*^9, 3.7201740730450373`*^9, {3.720174718984276*^9, 
+   3.720174719532736*^9}, {3.720181189208706*^9, 3.720181189844298*^9}, 
+   3.720181257297577*^9},ExpressionUUID->"aea32913-7719-4fa4-bcd4-\
+9ab686e8f5be"]
+}, Open  ]],
+
+Cell[TextData[{
+ "It looks like ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["UU", "T"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "40d5b23a-5851-4174-9788-30c3cbff0fba"],
+ " is the identity, at least as close as it can be in double-precision \
+arithmetic. It turns out, however, that the Gram-Schmidt process performs \
+poorly in certain situations, as we can see from the example below. "
+}], "Text",
+ CellChangeTimes->{{3.720143825787475*^9, 3.720143845144483*^9}, {
+  3.720143892241002*^9, 3.720143917936433*^9}, {3.7201441223335323`*^9, 
+  3.720144165107047*^9}, {3.7201442536739798`*^9, 
+  3.7201442559059896`*^9}},ExpressionUUID->"08ae396b-2297-4ead-9fd9-\
+46695c0d0d33"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Create", " ", "10", "x10", " ", "Hilbert", " ", "Matrix"}], " ", 
+   "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"n", "=", "10"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"A", "=", 
+     RowBox[{"N", "[", 
+      RowBox[{"HilbertMatrix", "[", "n", "]"}], "]"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Orthogonalize", " ", "with", " ", "Gram"}], "-", 
+     RowBox[{"Schmidt", " ", "Process"}]}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"U", "=", 
+     RowBox[{"Orthogonalize", "[", 
+      RowBox[{"A", ",", 
+       RowBox[{"Method", "->", "\"\<GramSchmidt\>\""}]}], "]"}]}], ";"}], 
+   "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Take", " ", "Max", " ", "of"}], " ", "|", 
+     RowBox[{
+      SuperscriptBox["UU", "T"], "-", "I"}], "|"}], " ", "*)"}], "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+    "\"\<Max[|\!\(\*SuperscriptBox[\(UU\), \(T\)]\)-I|] = \>\"", ",", " ", 
+     RowBox[{"Max", "[", 
+      RowBox[{"Abs", "[", 
+       RowBox[{
+        RowBox[{"U", ".", 
+         RowBox[{"Transpose", "[", "U", "]"}]}], "-", 
+        RowBox[{"IdentityMatrix", "[", "n", "]"}]}], "]"}], "]"}]}], 
+    "]"}]}]}]], "Code",
+ CellChangeTimes->{{3.720139922523551*^9, 3.72013997230732*^9}, {
+  3.720140042896473*^9, 3.72014004579143*^9}, {3.720140095104805*^9, 
+  3.7201401001267033`*^9}, {3.720140344756413*^9, 3.7201404561786222`*^9}, {
+  3.7201406320266047`*^9, 3.720140704350129*^9}, {3.7201408538985367`*^9, 
+  3.720140877307578*^9}, {3.720140918799553*^9, 3.720140948532441*^9}, {
+  3.7201411927785397`*^9, 3.7201411965839367`*^9}, {3.720141260583428*^9, 
+  3.72014130157371*^9}, {3.720141361865494*^9, 3.720141372217271*^9}, {
+  3.7201414770379333`*^9, 3.720141489236929*^9}, {3.720144265595263*^9, 
+  3.720144269649819*^9}, {3.720144357325625*^9, 3.720144485338347*^9}, {
+  3.7201445281864147`*^9, 3.7201445353132067`*^9}, {3.7201445802665777`*^9, 
+  3.7201446156132727`*^9}},ExpressionUUID->"6faa70ac-99ae-4d19-a4e0-\
+ff7c6d2854b2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Max[|\\!\\(\\*SuperscriptBox[\\(UU\\), \\(T\\)]\\)-I|] = \"\>",
+    "\[InvisibleSpace]", "0.9999126120717645`"}],
+  SequenceForm[
+  "Max[|\!\(\*SuperscriptBox[\(UU\), \(T\)]\)-I|] = ", 0.9999126120717645],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.720144606050654*^9, 3.720144616079962*^9}, 
+   3.720174073114031*^9, {3.720174719046645*^9, 3.720174719618535*^9}, {
+   3.720181189290716*^9, 3.720181189926066*^9}, 
+   3.720181257364194*^9},ExpressionUUID->"1401fef7-49f3-4f41-a7ee-\
+30f8f320f83d"]
+}, Open  ]],
+
+Cell["\<\
+Note that these results are not good at all. The problem is that roundoff \
+error has crept into our process and the resulting vectors are not \
+orthogonal. In fact, there are two vectors in that set whose dot product is \
+equal to 0.99913, this is pretty far from zero. In Problem 2 you are asked to \
+perform this same problem with different Method options and to compare the \
+results. \
+\>", "Text",
+ CellChangeTimes->{{3.720144494085347*^9, 3.720144514317664*^9}, {
+  3.72014462626258*^9, 3.720144799016205*^9}, {3.720173048405405*^9, 
+  3.720173094106138*^9}},ExpressionUUID->"f321b3c9-73e6-4fdb-90bd-\
+7dbf53178c23"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Least-Squares Problem", "Section",
+ CellChangeTimes->{{3.7201397018870783`*^9, 
+  3.720139707942503*^9}},ExpressionUUID->"e05f449f-bc69-4849-b396-\
+fea1bcd6cbec"],
+
+Cell["\<\
+In class, we saw that we can use the theory developed in Sections 6.1 - 6.4 \
+to solve the least-least squares problem, which one application of is to find \
+the line of best fit through a given collection of data points. For instance, \
+consider the example below.\
+\>", "Text",
+ CellChangeTimes->{{3.720173574165938*^9, 3.720173655286903*^9}, {
+  3.720173950450309*^9, 
+  3.720173957114068*^9}},ExpressionUUID->"ef35f787-b916-4401-a8e2-\
+c47b31cf8f80"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Create", " ", "matrix", " ", "A", " ", "and", " ", "vector", " ", "b"}], 
+   " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"A", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"4", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"b", "=", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0", ",", "11"}], "}"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Form", " ", "QR", " ", "decompositon", " ", "of", " ", "A"}], 
+     ",", " ", 
+     RowBox[{"in", " ", "floating", " ", "point", " ", "arithmatic"}]}], " ", 
+    "*)"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Q", ",", "R"}], "}"}], "=", 
+     RowBox[{"QRDecomposition", "[", 
+      RowBox[{"N", "[", "A", "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Note", " ", "that", " ", "A"}], "=", 
+      RowBox[{
+       SuperscriptBox["Q", "T"], "R"}]}], ",", " ", 
+     RowBox[{
+      RowBox[{"and", " ", 
+       SuperscriptBox["QQ", "T"]}], "=", "I"}]}], " ", "*)"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Solve", " ", "Ax"}], "=", 
+      RowBox[{"b", " ", "by", " ", "replacing", " ", "A", " ", "with", " ", 
+       SuperscriptBox["Q", "T"], "R"}]}], ",", " ", 
+     RowBox[{"multiplying", " ", "both", " ", "sides", " ", "by", " ", "Q"}], 
+     ",", " ", 
+     RowBox[{
+      RowBox[{"and", " ", "solving", " ", "Rx"}], "=", "Qb"}]}], " ", "*)"}], 
+   "\n", 
+   RowBox[{
+    RowBox[{
+     OverscriptBox["x", "^"], "=", 
+     RowBox[{"LinearSolve", "[", 
+      RowBox[{"R", ",", 
+       RowBox[{"Q", ".", "b"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Print", " ", "Solution"}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"Print", "[", 
+     RowBox[{"\"\<\!\(\*OverscriptBox[\(x\), \(^\)]\) = \>\"", ",", " ", 
+      OverscriptBox["x", "^"]}], "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Print", "[", 
+     RowBox[{"\"\<Error = \>\"", ",", " ", 
+      RowBox[{"Norm", "[", 
+       RowBox[{
+        RowBox[{"A", ".", 
+         OverscriptBox["x", "^"]}], "-", "b"}], "]"}]}], "]"}], 
+    ";"}]}]}]], "Code",
+ CellChangeTimes->{{3.7201739630178843`*^9, 3.720174099318698*^9}, {
+  3.720174139112322*^9, 3.72017415830156*^9}, {3.720174208765081*^9, 
+  3.720174391520184*^9}, {3.7201744789751377`*^9, 3.720174558621636*^9}, {
+  3.7201746281221533`*^9, 3.720174652086549*^9}, {3.720174759739963*^9, 
+  3.720174834020245*^9}},ExpressionUUID->"124612c1-7e57-4e2b-b9a5-\
+877c2256546a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*OverscriptBox[\\(x\\), \\(^\\)]\\) = \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1.`", ",", "2.`"}], "}"}]}],
+  SequenceForm["\!\(\*OverscriptBox[\(x\), \(^\)]\) = ", {1., 2.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.720174392566049*^9, 3.720174570278515*^9, {3.720174653697865*^9, 
+   3.7201746648811398`*^9}, {3.7201747191157427`*^9, 3.7201747350204973`*^9}, 
+   3.720174767596367*^9, 3.720174836372764*^9, {3.720181189369596*^9, 
+   3.720181190012032*^9}, 
+   3.7201812574340353`*^9},ExpressionUUID->"13962207-9f87-4fec-8a8a-\
+b7a71195d482"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Error = \"\>", "\[InvisibleSpace]", "9.16515138991168`"}],
+  SequenceForm["Error = ", 9.16515138991168],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.720174392566049*^9, 3.720174570278515*^9, {3.720174653697865*^9, 
+   3.7201746648811398`*^9}, {3.7201747191157427`*^9, 3.7201747350204973`*^9}, 
+   3.720174767596367*^9, 3.720174836372764*^9, {3.720181189369596*^9, 
+   3.720181190012032*^9}, 
+   3.72018125744429*^9},ExpressionUUID->"c3791a9d-4ca9-4387-9d66-\
+fd7ec57cf080"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+Please note that the way we described the solution to the least-squares \
+problem is slightly different then your books Section 6.5. Of course they are \
+equivalent in theory, but your book describes a routine that is not efficient \
+or stable in practice. In Problem 3 you are asked to write a function that \
+computes the slope and y-intercept of the line of best fit for a given \
+collection of data points using a method analogous to what I outlined in the \
+above example. \
+\>", "Text",
+ CellChangeTimes->{{3.720174870638432*^9, 
+  3.7201751147588387`*^9}},ExpressionUUID->"0160f339-c9f9-4af8-abef-\
+ceb821550aba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Assignment", "Section",
+ CellChangeTimes->{{3.720139120676838*^9, 
+  3.720139121931746*^9}},ExpressionUUID->"f644a4f9-fc2f-4009-80ec-\
+8032edfad646"],
+
+Cell["\<\
+Copy and past all problems below into a blank notebook. Include a title, your \
+name, and date at the top of the notebook. Furthermore, be sure to clearly \
+organize (comments and formatting) and evaluate your solutions in such a way \
+that when printed in PDF form it is easy to follow and grade your work. \
+\>", "Text",
+ CellChangeTimes->{{3.720139128940731*^9, 3.720139134676352*^9}, {
+  3.7201391840847692`*^9, 
+  3.720139354245668*^9}},ExpressionUUID->"4b554eef-f36e-4d67-8c1c-\
+d38a3d791803"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Consider the matrix A = {{1,2,3},{1,-2,1}} and vector b = {1,1}. Note that \
+the rows of A are orthogonal and the system Ax=b is consistent. Write the \
+solution vector x = p+u, where p  is a unique vector from Row A, and u is a \
+vector from Nul A. Show that Ap=b and Au=0. \
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.7201393979175587`*^9, 3.720139631716168*^9}, {
+  3.7201729035109367`*^9, 3.720172915838209*^9}, {3.720173102810948*^9, 
+  3.720173102811186*^9}},ExpressionUUID->"c14d49ce-5ae6-4eb4-b5b1-\
+b2bc8c4b7687"],
+
+Cell[TextData[{
+ "Create the 10x10 Hilbert matrix and store as A. Then, perform \
+orthonormalization on the rows of A using \
+Method->\[CloseCurlyDoubleQuote]GramSchmidt\[CloseCurlyDoubleQuote], Method->\
+\[CloseCurlyDoubleQuote]Reorthogonalization\[CloseCurlyDoubleQuote], and \
+Method->\[CloseCurlyDoubleQuote]Householder\[CloseCurlyDoubleQuote] options. \
+Note that Reorthogonalization is applying GramSchmidt twice, and Householder \
+is in essence what we did when applying rotations. Compare the results of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"Max", "[", 
+     RowBox[{"|", 
+      RowBox[{
+       SuperscriptBox["UU", "T"], "-", "I"}], "|"}], "]"}], " "}], 
+   TraditionalForm]],ExpressionUUID->"322fdb38-9a25-4684-b5f8-25522374f444"],
+ " for each method and place in a table. See Table, TableForm, or \
+Orthogonalize documentation for help."
+}], "ItemNumbered",
+ CellChangeTimes->{{3.7201393979175587`*^9, 3.720139631716168*^9}, {
+  3.7201729035109367`*^9, 3.720172915838209*^9}, {3.720173109135647*^9, 
+  3.7201734510950737`*^9}, {3.720173483930134*^9, 3.7201734839309483`*^9}, {
+  3.720173521077056*^9, 3.7201735257810698`*^9}, {3.7201811965695553`*^9, 
+  3.7201812432101*^9}},ExpressionUUID->"2fd16461-f9a5-4bc7-8444-e6621fa81d6d"],
+
+Cell["\<\
+Write a function called LinReg for computing the slope and line of best fit \
+for a collection of data that comes in the form of two lists x and y, where x \
+is independent data and y is the dependent data. Once you have written your \
+function, test it out on the follow set of points.\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.7201393979175587`*^9, 3.720139631716168*^9}, {
+  3.7201729035109367`*^9, 3.720172915838209*^9}, {3.720173109135647*^9, 
+  3.7201734510950737`*^9}, {3.720175122677775*^9, 
+  3.720175241910633*^9}},ExpressionUUID->"bf47f13e-32c2-4de8-90e4-\
+70b1c8d93ed9"]
+}, Open  ]],
+
+Cell["\<\
+x = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and y = {0.1, 1.1, 2.2, 3.0, 4.5, 5.2, \
+6.7, 7.5, 8.1, 9.9}\
+\>", "InlineFormula",
+ CellChangeTimes->{{3.7201752533337383`*^9, 3.720175346175219*^9}, {
+  3.720175377190173*^9, 
+  3.720175427354141*^9}},ExpressionUUID->"657344e4-da7f-42d5-953f-\
+dc192d15b843"],
+
+Cell["\<\
+Be sure to plot your results using the Plot function to convince me and \
+yourself that you have a line that well-approximates the trend in the given \
+data. \
+\>", "Text",
+ CellChangeTimes->{{3.720175436321477*^9, 
+  3.720175489951475*^9}},ExpressionUUID->"c3f7aba8-cb87-40b6-b609-\
+91d18255c517"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{1406, 709},
+WindowMargins->{{Automatic, 7}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 210, 4, 98, "Title",ExpressionUUID->"07fb428c-c9b0-49b4-9390-6dedf0a29b0c"],
+Cell[793, 28, 188, 6, 85, "Subtitle",ExpressionUUID->"7f6aecc3-558a-43c9-b4dd-aa027615243e"],
+Cell[CellGroupData[{
+Cell[1006, 38, 176, 3, 67, "Section",ExpressionUUID->"95a78f35-6776-4a37-8166-4b4c37cbf1f2"],
+Cell[1185, 43, 560, 13, 35, "Text",ExpressionUUID->"3d634316-c74b-43ef-b865-373991a9c5a6"],
+Cell[CellGroupData[{
+Cell[1770, 60, 834, 24, 110, "Code",ExpressionUUID->"735bad35-dfee-4945-90a6-67349ea2e93d"],
+Cell[2607, 86, 592, 13, 24, "Print",ExpressionUUID->"0fd8ed96-4da2-42a8-90b4-5eece0b8b1bb"]
+}, Open  ]],
+Cell[3214, 102, 1254, 28, 83, "Text",ExpressionUUID->"9e519205-8d7e-486d-8ab2-e145288db8a7"],
+Cell[CellGroupData[{
+Cell[4493, 134, 1497, 40, 151, "Code",ExpressionUUID->"3d785d0c-70e2-4068-91bc-9d9feb12df83"],
+Cell[5993, 176, 2201, 56, 56, "Print",ExpressionUUID->"4e4c5f38-8e1e-4a82-b2be-c3a9cda978f1"]
+}, Open  ]],
+Cell[8209, 235, 1239, 27, 81, "Text",ExpressionUUID->"a097c75a-e03d-43b8-9b27-2f4432a35a95"],
+Cell[CellGroupData[{
+Cell[9473, 266, 2667, 71, 227, "Code",ExpressionUUID->"fff68838-fa3b-4543-b21b-c8d8331bdcc8"],
+Cell[CellGroupData[{
+Cell[12165, 341, 3417, 89, 56, "Print",ExpressionUUID->"cacbc1ca-1228-40cf-81bf-d11812955db3"],
+Cell[15585, 432, 686, 13, 24, "Print",ExpressionUUID->"14d6c897-9e28-4932-8064-38fc2686e6c5"]
+}, Open  ]]
+}, Open  ]],
+Cell[16298, 449, 394, 8, 35, "Text",ExpressionUUID->"c136fba1-b14f-4a7e-adaf-5a3ab14bbe25"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16729, 462, 188, 3, 67, "Section",ExpressionUUID->"42092e34-c638-41cd-99ba-bcdce9db6522"],
+Cell[16920, 467, 912, 18, 58, "Text",ExpressionUUID->"54aeadb0-94eb-423c-9667-4112aa0f53f0"],
+Cell[CellGroupData[{
+Cell[17857, 489, 1996, 56, 208, "Code",ExpressionUUID->"46e23884-9eb9-4a3e-b745-88b537877299"],
+Cell[19856, 547, 1578, 34, 62, "Print",ExpressionUUID->"aea32913-7719-4fa4-bcd4-9ab686e8f5be"]
+}, Open  ]],
+Cell[21449, 584, 708, 15, 58, "Text",ExpressionUUID->"08ae396b-2297-4ead-9fd9-46695c0d0d33"],
+Cell[CellGroupData[{
+Cell[22182, 603, 2038, 48, 171, "Code",ExpressionUUID->"6faa70ac-99ae-4d19-a4e0-ff7c6d2854b2"],
+Cell[24223, 653, 555, 11, 25, "Print",ExpressionUUID->"1401fef7-49f3-4f41-a7ee-30f8f320f83d"]
+}, Open  ]],
+Cell[24793, 667, 633, 11, 58, "Text",ExpressionUUID->"f321b3c9-73e6-4fdb-90bd-7dbf53178c23"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25463, 683, 168, 3, 67, "Section",ExpressionUUID->"e05f449f-bc69-4849-b396-fea1bcd6cbec"],
+Cell[25634, 688, 464, 9, 58, "Text",ExpressionUUID->"ef35f787-b916-4401-a8e2-c47b31cf8f80"],
+Cell[CellGroupData[{
+Cell[26123, 701, 2730, 78, 230, "Code",ExpressionUUID->"124612c1-7e57-4e2b-b9a5-877c2256546a"],
+Cell[CellGroupData[{
+Cell[28878, 783, 636, 14, 24, "Print",ExpressionUUID->"13962207-9f87-4fec-8a8a-b7a71195d482"],
+Cell[29517, 799, 532, 11, 24, "Print",ExpressionUUID->"c3791a9d-4ca9-4387-9d66-fd7ec57cf080"]
+}, Open  ]]
+}, Open  ]],
+Cell[30076, 814, 630, 11, 81, "Text",ExpressionUUID->"0160f339-c9f9-4af8-abef-ceb821550aba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30743, 830, 155, 3, 67, "Section",ExpressionUUID->"f644a4f9-fc2f-4009-80ec-8032edfad646"],
+Cell[30901, 835, 509, 9, 58, "Text",ExpressionUUID->"4b554eef-f36e-4d67-8c1c-d38a3d791803"],
+Cell[CellGroupData[{
+Cell[31435, 848, 532, 9, 53, "ItemNumbered",ExpressionUUID->"c14d49ce-5ae6-4eb4-b5b1-b2bc8c4b7687"],
+Cell[31970, 859, 1257, 23, 75, "ItemNumbered",ExpressionUUID->"2fd16461-f9a5-4bc7-8444-e6621fa81d6d"],
+Cell[33230, 884, 594, 10, 53, "ItemNumbered",ExpressionUUID->"bf47f13e-32c2-4de8-90e4-70b1c8d93ed9"]
+}, Open  ]],
+Cell[33839, 897, 306, 7, 22, "InlineFormula",ExpressionUUID->"657344e4-da7f-42d5-953f-dc192d15b843"],
+Cell[34148, 906, 308, 7, 35, "Text",ExpressionUUID->"c3f7aba8-cb87-40b6-b609-91d18255c517"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

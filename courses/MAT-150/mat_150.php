@@ -229,7 +229,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>SVD: Part 1<br><strong>Read: Section 7.4</td><td>SVD: Part 2</td><td>Applications to Image Processing<br><strong>Read: Section 7.5</strong><br><strong><a href="">Homework 6: Due Today</a></strong></td>
+        <td>SVD: Part 1<br><strong>Read: Section 7.4</td><td>SVD: Part 2</td><td>Applications to Image Processing<br><strong>Read: Section 7.5</strong><br><strong><a href="homework/homework6.pdf">Homework 6: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

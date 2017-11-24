@@ -193,7 +193,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Permutations<br><strong>Read: Section 27</strong><br><strong><a href="efy/efy12.pdf">EFY 12</a></strong></td><td>Symmetry<br><strong>Read: Section 28</strong></td><td>Sample Space and Events<br><strong>Read: Section 30-31</strong><br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong></td>
+        <td>Permutations<br><strong>Read: Section 27</strong><br><strong><a href="efy/efy12.pdf">EFY 12</a></strong></td><td>Symmetry<br><strong>Read: Section 28</strong></td><td>Sample Space and Events<br><strong>Read: Section 30-31</strong><br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong><br><strong><a href="homework/solution5.pdf">Solution 5</a></strong></td>
       </tr>
       </table>
     </div>
@@ -217,7 +217,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Fundamentals of<br>Graph Theory<br><strong>Read: Section 47</strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
+        <td>Fundamentals of<br>Graph Theory<br><strong>Read: Section 47</strong><br><strong><a href="efy/efy14.pdf">EFY 14</a></strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
       </tr>
       </table>
     </div>
@@ -229,7 +229,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection<br><strong>Read: Section 49</strong></td><td>Trees<br><strong>Read: Section 50</strong><br><strong><a href="">Homework 6: Due Today</a></strong></td>
+        <td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection<br><strong>Read: Section 49</strong></td><td>Trees<br><strong>Read: Section 50</strong><br><strong><a href="homework/homework6.pdf">Homework 6: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

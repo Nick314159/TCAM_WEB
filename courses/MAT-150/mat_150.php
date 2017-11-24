@@ -205,7 +205,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Diagonalization<br>of Symmetric Matrices<br><strong>Read: Section 7.1</strong></td><td>Quadratic Forms<br><strong>Read: Section 7.2</strong></td><td>Constrained Optimization<br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong><br><strong>Read: Section 7.3</strong></td>
+        <td>Diagonalization<br>of Symmetric Matrices<br><strong>Read: Section 7.1</strong></td><td>Quadratic Forms<br><strong>Read: Section 7.2</strong></td><td>Constrained Optimization<br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong><br><strong><a href="homework/solution5.pdf">Solution 5</a></strong><br><strong>Read: Section 7.3</strong></td>
       </tr>
       </table>
     </div>
@@ -217,7 +217,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab6.nb">Lab 6</a></strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
+        <td>Lab Day<br><strong><a href="notebooks/MAT_150_Lab6.nb">Lab 6</a></strong><br><strong><a href="notebooks/MAT_150_Solution6.pdf">Lab 6 Solution</a></strong></td><td>Thanksgiving Break</td><td>Thanksgiving Break</td>
       </tr>
       </table>
     </div>

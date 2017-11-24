@@ -169,7 +169,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Guest: Greg Warrington<br>Puzzle and Testing<br><strong><a href="lab/alice_bob.sml">SML Testing Code</a></strong></td><td>Functions<br><strong>Read: Section24</strong></td><td>Day Off</td>
+        <td>Guest: Greg Warrington<br>Puzzle and Testing<br><strong><a href="lab/alice_bob.sml">SML Testing Code</a></strong><br><strong><a href="efy/efy9.pdf">EFY 9</a></strong></td><td>Functions<br><strong>Read: Section24</strong><br><strong><a href="efy/efy10.pdf">EFY 10</a></strong></td><td>Day Off</td>
       </tr>
       </table>
     </div>

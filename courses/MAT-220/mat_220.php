@@ -229,7 +229,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection<br><strong>Read: Section 49</strong></td><td>Trees<br><strong>Read: Section 50</strong><br><strong><a href="homework/homework6.pdf">Homework 6: Due Today</a></strong></td>
+        <td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection<br><strong>Read: Section 49</strong><br><strong><a href="efy/efy15.pdf">EFY 15</a></strong></td><td>Trees<br><strong>Read: Section 50</strong><br><strong><a href="homework/homework6.pdf">Homework 6: Due Today</a></strong></td>
       </tr>
       </table>
     </div>

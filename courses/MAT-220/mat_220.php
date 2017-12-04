@@ -241,7 +241,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="sml_lab8.pdf">Lab 8</a></strong></td><td>Lab Day<br><strong><a href="">Review</a></strong><br><strong>Handout Finals</strong></td><td>Good Luck on Finals</td>
+        <td>Lab Day<br><strong><a href="lab/sml_lab8.pdf">Lab 8</a></strong></td><td>Lab Day<br><strong><a href="">Review</a></strong><br><strong>Handout Finals</strong></td><td>Good Luck on Finals</td>
       </tr>
       </table>
     </div>

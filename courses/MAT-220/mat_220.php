@@ -181,7 +181,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="lab/sml_lab6.pdf">Lab 6: Due Novemeber 3</a></strong><br><strong><a href="efy/efy11.pdf">EFY 11</a></strong></td><td>The Pigenhole Principle<br><strong>Read: Section 25</strong></td><td>Applications to Infinity<br><strong><a href="handouts/inf_cantor.pdf">The Story of Cantor</a></strong></td>
+        <td>Lab Day<br><strong><a href="lab/sml_lab6.pdf">Lab 6: Due Novemeber 3</a></strong><br><strong><a href="efy/efy11.pdf">EFY 11</a></strong></td><td>The Pigenhole Principle<br><strong>Read: Section 25</strong></td><td>Applications to Infinity<br><strong><a href="handouts/inf_cantor.pdf">The Story of Cantor</a></strong><br><strong><a href="handouts/sentinel_inf.sml">Infinite Sentinel</a></strong></td>
       </tr>
       </table>
     </div>

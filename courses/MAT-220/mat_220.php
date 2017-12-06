@@ -193,7 +193,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Permutations<br><strong>Read: Section 27</strong><br><strong><a href="efy/efy12.pdf">EFY 12</a></strong></td><td>Symmetry<br><strong>Read: Section 28</strong><br><strong><a href="handouts/dihedral_group.pdf">Dihedral Group PDF</a></strong><strong><a href="handouts/dihedral_group.nb">Dihedral Group notebook</a></strong></td><strong></td><td>Sample Space and Events<br><strong>Read: Section 30-31</strong><br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong><br><strong><a href="homework/solution5.pdf">Solution 5</a></strong></td>
+        <td>Permutations<br><strong>Read: Section 27</strong><br><strong><a href="efy/efy12.pdf">EFY 12</a></strong></td><td>Symmetry<br><strong>Read: Section 28</strong><br><strong><a href="handouts/dihedral_group.pdf">Dihedral Group PDF</a></strong><br><strong><a href="handouts/dihedral_group.nb">Dihedral Group notebook</a></strong></td><strong></td><td>Sample Space and Events<br><strong>Read: Section 30-31</strong><br><strong><a href="homework/homework5.pdf">Homework 5: Due Today</a></strong><br><strong><a href="homework/solution5.pdf">Solution 5</a></strong></td>
       </tr>
       </table>
     </div>

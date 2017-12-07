@@ -229,7 +229,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection<br><strong>Read: Section 49</strong><br><strong><a href="efy/efy15.pdf">EFY 15</a></strong></td><td>Trees<br><strong>Read: Section 50</strong><br><strong><a href="homework/homework6.pdf">Homework 6: Due Today</a></strong></td>
+        <td>Subgraphs<br><strong>Read: Section 48</strong></td><td>Connection<br><strong>Read: Section 49</strong><br><strong><a href="efy/efy15.pdf">EFY 15</a></strong></td><td>Trees<br><strong>Read: Section 50</strong><br><strong><a href="homework/homework6.pdf">Homework 6: Due Today</a></strong><br><strong><a href="handouts/tree_classNotes.sml">SML Trees</a></strong></td>
       </tr>
       </table>
     </div>
@@ -241,7 +241,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Lab Day<br><strong><a href="lab/sml_lab8.pdf">Lab 8</a></strong><br><strong><a href="lab/thomas_cameron_lab8.sml">Lab 8 Solution</a></strong></td><td>Lab Day<br><strong><a href="">Summary</a></strong><br><strong>Handout Finals</strong></td><td>Good Luck on Finals</td>
+        <td>Lab Day<br><strong><a href="lab/sml_lab8.pdf">Lab 8</a></strong><br><strong><a href="lab/thomas_cameron_lab8.sml">Lab 8 Solution</a></strong></td><td>Lab Day<br><strong><a href="exams/final_summary.pdf">Summary</a></strong><br><strong>Handout Finals</strong></td><td>Good Luck on Finals</td>
       </tr>
       </table>
     </div>

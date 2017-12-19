@@ -44,7 +44,7 @@
     <hr class="hrstyle-one" style="width: 50%">
     <div class="list">
       <ul>
-        <li><a href="">MAT-230: Sets and Proofs</a></li>
+        <li><a href="">MAT-112: Calculus I and Modeling</a></li>
         <li><a href="">MAT-450: Advanced Linear Algebra</a></li>
       </ul>
     </div>

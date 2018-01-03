@@ -45,7 +45,7 @@
     <div class="list">
       <ul>
         <li><a href="">MAT-112: Calculus I and Modeling</a></li>
-        <li><a href="">MAT-450: Advanced Linear Algebra</a></li>
+        <li><a href="MAT-450/mat_450.php">MAT-450: Advanced Linear Algebra</a></li>
       </ul>
     </div>
     <hr class="hrstyle-one" style="width: 50%">

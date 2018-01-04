@@ -31,7 +31,7 @@
         <ul>
           <li><strong>Review 1: </strong>February 12 - 16</li>
 		  <li><strong>Review 2: </strong>March 12 - 16</li>
-		  <li><strong>Review 3: </strong>April 16 - 20</li>
+		  <li><strong>Review 3: </strong>April 23 - 27</li>
           <li><strong>Final Presentations: </strong>May 1 - 3</li>
         </ul>
       </li>

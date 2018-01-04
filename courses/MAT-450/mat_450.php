@@ -38,7 +38,7 @@
       <li><strong>Links </strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><a href="mat_150_syllabus.pdf" target="_blank">Syllabus</a></li>
+          <li><a href="syllabus/mat_450_spring2018_syllabus.pdf" target="_blank">Syllabus</a></li>
 					<li><a href="https://davidson.on.worldcat.org/oclc/895193937" target="_blank">Secondary Book</a></li>
         </ul>
       </li>

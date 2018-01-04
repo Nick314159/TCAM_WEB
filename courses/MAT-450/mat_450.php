@@ -29,9 +29,9 @@
       <li><strong>Important Dates</strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><strong>Review 1: </strong>February 13</li>
-		  <li><strong>Review 2: </strong>March 13</li>
-		  <li><strong>Review 3: </strong>April 10</li>
+          <li><strong>Review 1: </strong>February 12 - 16</li>
+		  <li><strong>Review 2: </strong>March 12 - 16</li>
+		  <li><strong>Review 3: </strong>April 16 - 20</li>
           <li><strong>Final Presentations: </strong>May 1 - 3</li>
         </ul>
       </li>
@@ -39,6 +39,7 @@
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
           <li><a href="mat_150_syllabus.pdf" target="_blank">Syllabus</a></li>
+					<li><a href="https://davidson.on.worldcat.org/oclc/895193937" target="_blank">Secondary Book</a></li>
         </ul>
       </li>
     </ul>
@@ -97,7 +98,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Change of Coordiantes,<br>Dual Spaces.<br><strong>Read Section 2.5-2.6</strong></td><td>Linear Differential<br>Equations.<br><strong>Read Section 2.7</strong><br><strong>Handout Review 1: Due 2/13</td>
+        <td>Change of Coordiantes<br><strong>Read Section 2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong>Homework 2: Due 2/9</strong>
       </tr>
       </table>
     </div>
@@ -109,7 +110,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td><strong>Read <a href="" target="_blank">Handout 5.A</a></strong></td><td><strong>Read <a href="" target="_blank">Handout 5.B</a></strong></td>
+        <td>Invariant Subspaces<br><strong>Read Secondary Book 5.A</strong></td><td>Eigenvectors and Schur's Theorem<br><strong>Read Secondary Book 5.B</strong></td>
       </tr>
       </table>
     </div>
@@ -121,7 +122,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td><strong>Read <a href="" target="_blank">Handout 5.C</a></strong></td><td>The Determinant I<br><strong>Read <a href="" target="_blank">Handout pp. 1 - 5</a></strong></td>
+        <td>Diagonalization<br><strong>Read Secondary Book 5.C</strong></td><td>The Determinant I<br><strong>Read <a href="" target="_blank">Handout pp. 1 - 5</a></strong><br><strong>Homework 3: Due 2/23</strong></td>
       </tr>
       </table>
     </div>
@@ -133,7 +134,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>The Determinant II<br><strong>Read <a href="" target="_blank">Handout pp. 5 - 10</a></strong></td><td>The Cayley-Hamilton Theorem<br><strong>Read Section 5.4</strong><br><strong>Handout Review 2: Due 3/13</td>
+        <td>The Determinant II<br><strong>Read <a href="" target="_blank">Handout pp. 5 - 10</a></strong></td><td>The Cayley-Hamilton Theorem<br>Minimal Polynomial<br><strong>Read Section 5.4</strong></td>
       </tr>
       </table>
     </div>
@@ -157,7 +158,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Inner Product Spaces<br><strong>Read Section 6.1</strong></td><td>Self-Adjoint and Normal Operators<br><strong>Read <a href="" target="_blank">Handout 7.A</a></strong></td>
+        <td>Inner Product Spaces<br><strong>Read Section 6.1</strong></td><td>Orthogonalization<br><strong>Read Section 6.2</strong></td>
       </tr>
       </table>
     </div>
@@ -169,7 +170,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>The Spectral Theorem<br><strong>Read <a href="" target="_blank">Handout 7.B</a></strong></td><td>Positive Operators and Isometries<br><strong>Read <a href="" target="_blank">Handout 7.C</strong></td>
+        <td>The Adjoint<br><strong>Read Section 6.3</strong></td><td>Self-Adjoint and Normal Operators<br><strong>Read Secondary Book 7.A</strong><br><strong>Homework 4: Due 3/23</strong></td>
       </tr>
       </table>
     </div>
@@ -181,7 +182,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Jordan Canonical Form I<br><strong>Read Section 7.1</strong></td><td>Jordan Canonical Form II<br><strong>Read Section 7.2</strong></td>
+        <td>The Spectral Theorem<br><strong>Read Secondary Book 7.B</strong></td><td>Positive Operators and Isometries<br><strong>Read Secondary Book 7.C</strong></td>
       </tr>
       </table>
     </div>
@@ -193,7 +194,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Easter Break</td><td>The Minimal Polynomial<br><strong>Read Section 7.3</strong><br><strong>Handout Review 3: Due 4/10</td>
+        <td>Easter Break</td><td>Polar Decomposition and SVD<br><strong>Read Secondary Book 7.D</strong><br><strong>Homework 5: Due 4/6</strong></td>
       </tr>
       </table>
     </div>
@@ -205,7 +206,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Special Topics</td><td>Special Topics</td>
+        <td>Jordan Canonical Form I<br><strong>Read Section 7.1</strong></td><td>Jordan Canonical Form II<br><strong>Read Section 7.2</strong></td>
       </tr>
       </table>
     </div>
@@ -217,7 +218,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Research Day</td><td>Research Day</td>
+        <td>Special Topics</td><td>Research Day<br><strong>Homework 6: Due 4/20</td>
       </tr>
       </table>
     </div>
@@ -241,7 +242,19 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Final Presentations</td><td>Final Presentations</td>
+        <td>Research Day</td><td>Final Presentations</td>
+      </tr>
+      </table>
+    </div>
+    <!-- Week 17 -->
+    <div class="mySlides fade">
+      <div class="header"><h3>Week 17 (5/7 - 5/11)</h3></div>
+      <table width="100%" align="center" class="schedule">
+      <tr>
+        <th>Tuesday</th><th>Thursday</th>
+      </tr>
+      <tr>
+        <td>Final Presentations</td><td>Have a Great Summer</td>
       </tr>
       </table>
     </div>

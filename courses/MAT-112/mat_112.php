@@ -73,7 +73,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Exponential and Log Functions.<br><strong>Read Sections 2.1 - 2.2</strong></td><td>Applications.<br><strong>Read Section 2.3</strong></td><td>Trig Functions.<br><strong>Read Section 2.4</strong><br><strong><a href="" target="_blank">Homework 1: Due 1/26</a></strong></td>
+        <td>Exponential and Log Functions.<br><strong>Read Sections 2.1 - 2.2</strong></td><td>Applications.<br><strong>Read Section 2.3</strong></td><td>Trig Functions.<br><strong>Read Section 2.4</strong><br><strong><a href="homework/homework1.pdf" target="_blank">Homework 1: Due 1/26</a></strong></td>
       </tr>
       </table>
     </div>

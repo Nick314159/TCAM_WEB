@@ -29,10 +29,11 @@
       <li><strong>Important Dates</strong>
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
-          <li><strong>Review 1: </strong>February</li>
-          <li><strong>Review 2: </strong>March</li>
+          <li><strong>Review 1: </strong>February 5 - 9</li>
+          <li><strong>Review 2: </strong>March 3 - 12</li>
           <li><strong>Review 3: </strong>April</li>
-		  <li><strong>Final Review: </strong>May</li>
+		  <li><strong>Alenda Lux symposium: </strong>May 9</li>
+		  <li><strong>Final Review: </strong>May 11 - 16</li>
         </ul>
       </li>
       <li><strong>Links </strong>
@@ -47,9 +48,9 @@
   </div>
   <!-- Right Margin -->
   <div style="float: left; width: 70%">
-  <!-- Calender -->
+  <!-- Calendar -->
   <div class="header">
-    <h3>Calender of Events</h3>
+    <h3>Calendar of Events</h3>
   </div>
   <hr class="hrstyle-one" style="width: 50%">
   <div class="schedule-container">
@@ -85,7 +86,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Inverse Functions.<br><strong>Read Section 0.4 from <a href="handouts/BeforeCalculus.pdf" target="_blank">before calculus handout</a></strong></td><td>Limits.<br><strong>Read Section 3.1</strong></td><td>Continuity.<br><strong>Read Section 3.2</strong><br><strong>Homework 2: Due 2/2</strong></td>
       </tr>
       </table>
     </div>
@@ -97,7 +98,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Rates of Change.<br><strong>Read Section 3.3</strong></td><td>The Derivative.<br><strong>Read Section 3.4</strong></td><td>Graphical Differentiation.<br><strong>Read Section 3.5</strong></td>
       </tr>
       </table>
     </div>
@@ -109,7 +110,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Computing Derivatives.<br><strong>Read Section 4.1</strong></td><td>Products and Quotients.<br><strong>Read Section 4.2</strong></td><td>Chain Rule.<br><strong>Read Section 4.3</strong><br><strong>Homework 3: Due 2/16</td>
       </tr>
       </table>
     </div>
@@ -121,7 +122,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Derivatives of Exponential Functions.<br><strong>Read Section 4.4</strong></td><td>Derivatives of Log Functions.<br><strong>Read Section 4.5</strong></td><td>Derivatives of Trigonometric Functions.<br><strong>Read Section 4.6</strong><br><strong>Homework 4: Due 2/23</strong></td>
       </tr>
       </table>
     </div>
@@ -133,7 +134,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Increasing/Decreasing Functions.<br><strong>Read Section 5.1</strong></td><td>Relative Extrema.<br><strong>Read Section 5.2</strong></td><td>Higher Derivatives.<br><strong>Read Section 5.3</strong><br><strong>Homework 5: Due 3/2</strong></td>
       </tr>
       </table>
     </div>
@@ -253,7 +254,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td>Have a Great Summer</td><td>Have a Great Summer</td>
+        <td></td><td>Good luck on finals.</td><td>Good luck on finals.</td>
       </tr>
       </table>
     </div>

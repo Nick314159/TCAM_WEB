@@ -33,6 +33,7 @@
 		  <li><strong>Review 2: </strong>March 12 - 16</li>
 		  <li><strong>Review 3: </strong>April 23 - 27</li>
           <li><strong>Final Presentations: </strong>May 3 & 8</li>
+		  <li><strong>Alenda Lux symposium: </strong>May 9</li>
         </ul>
       </li>
       <li><strong>Links </strong>
@@ -48,9 +49,9 @@
   </div>
   <!-- Right Margin -->
   <div style="float: left; width: 70%">
-  <!-- Calender -->
+  <!-- Calendar -->
   <div class="header">
-    <h3>Calender of Events</h3>
+    <h3>Calendar of Events</h3>
   </div>
   <hr class="hrstyle-one" style="width: 50%">
   <div class="schedule-container">
@@ -98,7 +99,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Change of Coordiantes<br><strong>Read Section 2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong>Homework 2: Due 2/9</strong>
+        <td>Change of Coordinates<br><strong>Read Section 2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong>Homework 2: Due 2/9</strong>
       </tr>
       </table>
     </div>
@@ -122,7 +123,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Diagonalization<br><strong>Read Secondary Book 5.C</strong></td><td>The Determinant I<br><strong>Read <a href="" target="_blank">Handout pp. 1 - 5</a></strong><br><strong>Homework 3: Due 2/23</strong></td>
+        <td><br><strong>Read Secondary Book 5.C</strong></td><td>The Determinant I<br><strong>Read <a href="" target="_blank">Handout pp. 1 - 5</a></strong><br><strong>Homework 3: Due 2/23</strong></td>
       </tr>
       </table>
     </div>

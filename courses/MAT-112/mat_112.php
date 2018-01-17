@@ -30,10 +30,10 @@
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
           <li><strong>Review 1: </strong>February 5 - 9</li>
-          <li><strong>Review 2: </strong>March 3 - 12</li>
-          <li><strong>Review 3: </strong>April</li>
+          <li><strong>Review 2: </strong>March 12 - 16</li>
+          <li><strong>Review 3: </strong>April 9 - 13</li>
+		  <li><strong>Final Presentations: </strong>April 30 - May 4</li>
 		  <li><strong>Alenda Lux symposium: </strong>May 9</li>
-		  <li><strong>Final Review: </strong>May 11 - 16</li>
         </ul>
       </li>
       <li><strong>Links </strong>
@@ -62,7 +62,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>MLK Day</td><td>Lines and Functions.<br><strong>Read Sections 1.1 and 1.3</strong></td><td>Quadratic, Polynomial<br>and Rational Functions.<br><strong>Read Sections 1.4 - 1.5</strong></td>
+        <td>MLK Day.</td><td>Lines and Functions.<br><strong>Read Sections 1.1 and 1.3</strong></td><td>Quadratic, Polynomial<br>and Rational Functions.<br><strong>Read Sections 1.4 - 1.5</strong></td>
       </tr>
       </table>
     </div>
@@ -146,7 +146,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Spring Break</td><td>Spring Break</td><td>Spring Break</td>
+        <td>Spring Break.</td><td>Spring Break.</td><td>Spring Break.</td>
       </tr>
       </table>
     </div>
@@ -158,7 +158,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Curve Sketching.<br><strong>Read Section 5.4</strong></td><td>Absolute Extrema.<br><strong>Read Section 6.1</strong></td><td>Applications of Extrema.<br><strong>Read Section 6.2</strong></td>
       </tr>
       </table>
     </div>
@@ -170,19 +170,19 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Implicit Differentiation.<br><strong>Read Section 6.3</strong></td><td>Related Rates.<br><strong>Read Section 6.4</strong></td><td>Differentials.<br><strong>Read Section 6.5</strong><br><strong>Homework 6: Due 3/23</strong></td>
       </tr>
       </table>
     </div>
     <!-- Week 11 -->
     <div class="mySlides fade">
-      <div class="header"><h3>Week 12 (3/26 - 3/30)</h3></div>
+      <div class="header"><h3>Week 11 (3/26 - 3/30)</h3></div>
       <table width="100%" align="center" class="schedule">
       <tr>
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Antiderivatives.<br><strong>Read Section 7.1</strong></td><td>Substitution.<br><strong>Read Section 7.2</strong></td><td>Area and the Definite Integral.<br><strong>Read Section 7.3</strong><br><strong>Homework 7: Due 3/30</strong></td>
       </tr>
       </table>
     </div>
@@ -194,7 +194,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Easter Break</td><td>Easter Break</td><td></td>
+        <td>Easter Break.</td><td>The Fundamental Theorem of Calculus I.<br><strong>Read Section 7.4</strong></td><td>The Fundamental Theorem of Calculus II.<br><strong>Read <a href="" target="_blank">Handout </a><br><strong>Homework 8: Due 4/6</strong></td>
       </tr>
       </table>
     </div>
@@ -206,7 +206,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Integration by Parts.<br><strong>Read Section 8.2</strong></td><td>Improper Integrals.<br><strong>Read Section 8.4</strong></td><td>Volume and Average Value.<br><strong>Read Section 8.3</strong></td>
       </tr>
       </table>
     </div>
@@ -218,7 +218,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Numerical Integration.<br><strong>Read Section 8.1</strong></td><td>Modeling with<br>Differential Equations I.<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>Modeling with<br>Differential Equations II.<br><strong>Read <a href="" target="_blank">Handout</a></strong><br><strong>Homework 9: Due 4/20</strong></td>
       </tr>
       </table>
     </div>
@@ -230,7 +230,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Research Day.</td><td>Research Day.</td><td>Research Day.</td>
       </tr>
       </table>
     </div>
@@ -242,7 +242,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td></td><td></td>
+        <td>Final Presentations.</td><td>Final Presentations.</td><td>Final Presentations.</td>
       </tr>
       </table>
     </div>
@@ -254,7 +254,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td></td><td>Good luck on finals.</td><td>Good luck on finals.</td>
+        <td>Have a Great Summer.</td><td>Have a Great Summer.</td><td>Have a Great Summer.</td>
       </tr>
       </table>
     </div>

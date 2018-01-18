@@ -63,7 +63,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Introduction,<br>Abstract Vector Spaces.<br><strong>Read Section 1.1-1.2</strong><br><strong><a href="handouts/math_writing.pdf" target="_blank">Mathematical Writing Guidelines</a></strong></td><td>Subspaces,<br>Linear Combinations.<br><strong>Read Section 1.3-1.4</strong>
+        <td>Introduction,<br>Abstract Vector Spaces.<br><strong>Read Section 1.1-1.2</strong><br><strong><a href="handouts/math_writing.pdf" target="_blank">Mathematical Writing Guidelines</a></strong></td><td>Subspaces,<br>Linear Combinations.<br><strong>Read Section 1.3-1.4</strong><br><strong><a herf="efys/efy1.pdf" target="_blank">EFY 1</a></strong></td>
       </tr>
       </table>
     </div>

@@ -62,7 +62,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>MLK Day.</td><td>Lines and Functions.<br><strong>Read Sections 1.1 and 1.3</strong></td><td>Quadratic, Polynomial<br>and Rational Functions.<br><strong>Read Sections 1.4 - 1.5</strong></td>
+        <td>MLK Day.</td><td>Lines and Functions.<br><strong>Read Sections 1.1 and 1.3</strong></td><td>Quadratic, Polynomial<br>and Rational Functions.<br><strong>Read Sections 1.4 - 1.5</strong><br><strong><a href="efy/efy1.pdf">EFY 1</a></strong></td>
       </tr>
       </table>
     </div>

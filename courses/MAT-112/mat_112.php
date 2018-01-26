@@ -86,7 +86,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Inverse Functions.<br><strong>Read Section 0.4 from <a href="handouts/BeforeCalculus.pdf" target="_blank">before calculus handout</a></strong></td><td>Limits.<br><strong>Read Section 3.1</strong></td><td>Continuity.<br><strong>Read Section 3.2</strong><br><strong>Homework 2: Due 2/2</strong></td>
+        <td>Inverse Functions.<br><strong>Read Section 0.4 from <a href="handouts/BeforeCalculus.pdf" target="_blank">before calculus handout</a></strong></td><td>Limits.<br><strong>Read Section 3.1</strong></td><td>Continuity.<br><strong>Read Section 3.2</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/2</a></strong></td>
       </tr>
       </table>
     </div>

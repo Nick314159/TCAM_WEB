@@ -75,7 +75,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Linear Dependence/Independence,<br>Bases and Dimension.<br><strong>Read Section 1.5-1.6</strong></td><td>Extensions to<br>Infinite Dimensional Vector Spaces.<br><strong>Read Section 1.7</strong><br><strong><a href="homework/homework1.pdf" target="_blank">Homework 1: Due 1/26</a></strong></td>
+        <td>Linear Dependence/Independence,<br>Bases and Dimension.<br><strong>Read Section 1.5-1.6</strong></td><td>Extensions to<br>Infinite Dimensional Vector Spaces.<br><strong>Read Section 1.7</strong><br><strong><a href="homework/homework1.pdf" target="_blank">Homework 1: Due 1/26</a></strong><br><strong><a href="homework/solution1.pdf" target="_blank">Solution 1</a></storng></td>
       </tr>
       </table>
     </div>
@@ -99,7 +99,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Change of Coordinates<br><strong>Read Section 2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong>Homework 2: Due 2/9</strong>
+        <td>Change of Coordinates<br><strong>Read Section 2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/9<a/></strong></td>
       </tr>
       </table>
     </div>
@@ -263,7 +263,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 2;
+  var slideIndex = 3;
   showSlides(slideIndex);
 
   function plusSlides(n) {

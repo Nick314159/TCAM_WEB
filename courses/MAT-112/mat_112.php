@@ -74,7 +74,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Exponential and Log Functions.<br><strong>Read Sections 2.1 - 2.2</strong></td><td>Applications.<br><strong>Read Section 2.3</strong><br><strong><a href="efy/efy2.pdf" target="_blank">EFY 2</a></strong></td><td>Trig Functions.<br><strong>Read Section 2.4</strong><br><strong><a href="homework/homework1.pdf" target="_blank">Homework 1: Due 1/26</a></strong></td>
+        <td>Exponential and Log Functions.<br><strong>Read Sections 2.1 - 2.2</strong></td><td>Applications.<br><strong>Read Section 2.3</strong><br><strong><a href="efy/efy2.pdf" target="_blank">EFY 2</a></strong></td><td>Trig Functions.<br><strong>Read Section 2.4</strong><br><strong><a href="homework/homework1.pdf" target="_blank">Homework 1: Due 1/26</a></strong><br><strong><a href="homework/solution1_other.pdf" target="_blank">Solution 1: Other Problems</a></strong><br><strong><a href="homework/solution1_book.pdf">Solution 1: Book Problems</a></strong></td>
       </tr>
       </table>
     </div>
@@ -262,7 +262,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 2;
+  var slideIndex = 3;
   showSlides(slideIndex);
 
   function plusSlides(n) {

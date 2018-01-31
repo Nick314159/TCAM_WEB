@@ -87,7 +87,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Linear Transformations,<br>Matrix Representations.<br><strong>Read Section 2.1-2.2</strong></td><td>Compositions, Invertibility,<br>and Isomorphisms.<br><strong>Read Section 2.3-2.4</strong></td>
+        <td>Linear Transformations.<br><strong>Read Section 2.1</strong></td><td>Matrix Representations,<br>Compositions.<br><strong>Read Section 2.2-2.3</strong></td>
       </tr>
       </table>
     </div>
@@ -99,7 +99,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Change of Coordinates<br><strong>Read Section 2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/9<a/></strong></td>
+        <td>Isomorphisms,<br>Change of Coordinates.<br><strong>Read Section 2.4-2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/9<a/></strong></td>
       </tr>
       </table>
     </div>

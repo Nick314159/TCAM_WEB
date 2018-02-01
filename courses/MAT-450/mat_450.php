@@ -99,7 +99,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Isomorphisms,<br>Change of Coordinates.<br><strong>Read Section 2.4-2.5</strong></td><td>Dual Spaces<br><strong>Read Section 2.6</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/9<a/></strong></td>
+        <td>Isomorphisms.<br><strong>Read Section 2.4</strong></td><td>Change of Coordinates.<br><strong>Read Section 2.5</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/9<a/></strong></td>
       </tr>
       </table>
     </div>
@@ -111,7 +111,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Invariant Subspaces<br><strong>Read Secondary Book 5.A</strong></td><td>Eigenvectors and Schur's Theorem<br><strong>Read Secondary Book 5.B</strong></td>
+        <td>Dual Spaces<br><strong>Read Section 2.6</strong></td><td>Invariant Subspaces<br><strong>Read Secondary Book 5.A</strong></td>
       </tr>
       </table>
     </div>
@@ -123,7 +123,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td><br><strong>Read Secondary Book 5.C</strong></td><td>The Determinant I<br><strong>Read <a href="" target="_blank">Handout pp. 1 - 5</a></strong><br><strong>Homework 3: Due 2/23</strong></td>
+        <td>Eigenvectors and Schur's Theorem<br><strong>Read Secondary Book 5.B</strong></td><td>Eigenspaces<br><strong>Read Secondary Book 5.C</strong><br><strong>Homework 3: Due 2/23</strong></td>
       </tr>
       </table>
     </div>
@@ -135,7 +135,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>The Determinant II<br><strong>Read <a href="" target="_blank">Handout pp. 5 - 10</a></strong></td><td>The Cayley-Hamilton Theorem<br>Minimal Polynomial<br><strong>Read Section 5.4</strong></td>
+        <td>The Determinant<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>The Cayley-Hamilton Theorem<br>Minimal Polynomial<br><strong>Read Section 5.4</strong></td>
       </tr>
       </table>
     </div>

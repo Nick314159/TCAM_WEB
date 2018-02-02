@@ -49,7 +49,7 @@
   <div style="float: left; width: 70%">
   <!-- Calender -->
   <div class="header">
-    <h3>Calender of Events</h3>
+    <h3>Calendar of Events</h3>
   </div>
   <hr class="hrstyle-one" style="width: 50%">
   <div class="schedule-container">

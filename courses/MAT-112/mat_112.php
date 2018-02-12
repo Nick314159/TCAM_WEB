@@ -98,7 +98,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Rates of Change.<br><strong>Read Section 3.3</strong></td><td>The Derivative.<br><strong>Read Section 3.4</strong><br><a href="efy/efy3.pdf" target="_blank">EFY 3</a></strong></td><td>Graphical Differentiation.<br><strong>Read Section 3.5</strong></td>
+        <td>Rates of Change.<br><strong>Read Section 3.3</strong></td><td>The Derivative.<br><strong>Read Section 3.4</strong><br><a href="efy/efy3.pdf" target="_blank">EFY 3</a></strong></td><td>Graphical Differentiation.<br><strong>Read Section 3.5</strong><br><strong><a href="efy/efy4.pdf" target="_blank">EFY 4</a></strong></td>
       </tr>
       </table>
     </div>
@@ -110,7 +110,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Computing Derivatives.<br><strong>Read Section 4.1</strong></td><td>Products and Quotients.<br><strong>Read Section 4.2</strong></td><td>Chain Rule.<br><strong>Read Section 4.3</strong><br><strong><a href="homework/homework3.pdf">Homework 3: Due 2/16</a></strong></td>
+        <td>Computing Derivatives.<br><strong>Read Section 4.1</strong></td><td>Products and Quotients.<br><strong>Read Section 4.2</strong></td><td>Chain Rule.<br><strong>Read Section 4.3</strong><br><strong><a href="homework/homework3.pdf" target="_blank">Homework 3: Due 2/16</a></strong></td>
       </tr>
       </table>
     </div>

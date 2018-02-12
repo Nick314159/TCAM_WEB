@@ -110,7 +110,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Computing Derivatives.<br><strong>Read Section 4.1</strong></td><td>Products and Quotients.<br><strong>Read Section 4.2</strong></td><td>Chain Rule.<br><strong>Read Section 4.3</strong><br><strong>Homework 3: Due 2/16</td>
+        <td>Computing Derivatives.<br><strong>Read Section 4.1</strong></td><td>Products and Quotients.<br><strong>Read Section 4.2</strong></td><td>Chain Rule.<br><strong>Read Section 4.3</strong><br><strong><a href="homework/homework3.pdf">Homework 3: Due 2/16</a></strong></td>
       </tr>
       </table>
     </div>

@@ -86,7 +86,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Inverse Functions.<br><strong>Read Section 0.4 from <a href="handouts/BeforeCalculus.pdf" target="_blank">before calculus handout</a></strong></td><td>Limits.<br><strong>Read Section 3.1</strong></td><td>Continuity.<br><strong>Read Section 3.2</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/2</a></strong><br><strong><a href="homework/solution2_other.pdf" target="_blank">Solution 2: Other Problems</a></strong><br><strong><a href="homework/solution2_book.pdf">Solution 2: Book Problems</a></strong></td>
+        <td>Inverse Functions.<br><strong>Read Section 0.4 from <a href="handouts/BeforeCalculus.pdf" target="_blank">before calculus handout</a></strong></td><td>Limits.<br><strong>Read Section 3.1</strong></td><td>Continuity.<br><strong>Read Section 3.2</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/2</a></strong><br><strong><a href="homework/solution2_other.pdf" target="_blank">Solution 2: Other Problems</a></strong><br><strong><a href="homework/solution2_book.pdf" target="_blank">Solution 2: Book Problems</a></strong></td>
       </tr>
       </table>
     </div>
@@ -110,7 +110,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Computing Derivatives.<br><strong>Read Section 4.1</strong></td><td>Products and Quotients.<br><strong>Read Section 4.2</strong></td><td>Chain Rule.<br><strong>Read Section 4.3</strong><br><strong><a href="homework/homework3.pdf" target="_blank">Homework 3: Due 2/16</a></strong><br><strong><a href="reviews/review1_sol.pdf" target="_blank">Review 1 Solution</a></strong></td>
+        <td>Computing Derivatives.<br><strong>Read Section 4.1</strong></td><td>Products and Quotients.<br><strong>Read Section 4.2</strong></td><td>Chain Rule.<br><strong>Read Section 4.3</strong><br><strong><a href="homework/homework3.pdf" target="_blank">Homework 3: Due 2/16</a></strong><br><strong><a href="reviews/review1_sol.pdf" target="_blank">Review 1 Solution</a></strong><br><strong><a href="homework/solution3_other.pdf" target="_blank">Solution 3: Other Problems</a></strong><br><strong><a href="homework/solution3_book.pdf" target="_blank">Solution 3: Book Problems</a></strong></td>
       </tr>
       </table>
     </div>

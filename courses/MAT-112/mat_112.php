@@ -122,7 +122,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Derivatives of Exponential Functions.<br><strong>Read Section 4.4</strong></td><td>Derivatives of Log Functions.<br><strong>Read Section 4.5</strong></td><td>Derivatives of Trigonometric Functions.<br><strong>Read Section 4.6</strong><br><strong>Homework 4: Due 2/23</strong></td>
+        <td>Derivatives of Exponential Functions.<br><strong>Read Section 4.4</strong></td><td>Derivatives of Log Functions.<br><strong>Read Section 4.5</strong></td><td>Derivatives of Trigonometric Functions.<br><strong>Read Section 4.6</strong><br><strong><a href="homework/homework4.pdf" target="_blank">Homework 4: Due 2/23</a></strong></td>
       </tr>
       </table>
     </div>

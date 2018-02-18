@@ -99,7 +99,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Isomorphisms.<br><strong>Read Section 2.4</strong></td><td>Change of Coordinates.<br><strong>Read Section 2.5</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/9<a/></strong></td>
+        <td>Isomorphisms.<br><strong>Read Section 2.4</strong></td><td>Change of Coordinates.<br><strong>Read Section 2.5</strong><br><strong><a href="homework/homework2.pdf" target="_blank">Homework 2: Due 2/9<a/></strong><br><strong><a href="homework/solution2.pdf" target="_blank">Solution 2</a></strong></td>
       </tr>
       </table>
     </div>
@@ -111,7 +111,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Dual Spaces<br><strong>Read Section 2.6</strong></td><td>Invariant Subspaces<br><strong>Read Secondary Book 5.A</strong></td>
+        <td>Dual Spaces<br><strong>Read Section 2.6</strong></td><td>Class Canceled</td>
       </tr>
       </table>
     </div>
@@ -123,7 +123,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Eigenvectors and Schur's Theorem<br><strong>Read Secondary Book 5.B</strong></td><td>Eigenspaces<br><strong>Read Secondary Book 5.C</strong><br><strong>Homework 3: Due 2/23</strong></td>
+        <td>Invariant Subspaces<br>Eigenvectors and Schur's Theorem<br><strong>Read Secondary Book 5.A - 5.B</strong></td><td>Eigenspaces<br><strong>Read Secondary Book 5.C</strong></td>
       </tr>
       </table>
     </div>
@@ -135,7 +135,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>The Determinant<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>The Cayley-Hamilton Theorem<br>Minimal Polynomial<br><strong>Read Section 5.4</strong></td>
+        <td>The Determinant<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>The Cayley-Hamilton Theorem<br>Minimal Polynomial<br><strong>Read Section 5.4</strong><br><strong><a href="homework/homework3.pdf" target="_blank">Homework 3: Due 2/23</a></strong></td>
       </tr>
       </table>
     </div>
@@ -263,7 +263,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 5;
+  var slideIndex = 6;
   showSlides(slideIndex);
 
   function plusSlides(n) {

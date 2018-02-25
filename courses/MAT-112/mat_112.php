@@ -122,7 +122,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Derivatives of Exponential Functions.<br><strong>Read Section 4.4</strong></td><td>Derivatives of Log Functions.<br><strong>Read Section 4.5</strong></td><td>Derivatives of Trigonometric Functions.<br><strong>Read Section 4.6</strong><br><strong><a href="homework/homework4.pdf" target="_blank">Homework 4: Due 2/23</a></strong></td>
+        <td>Derivatives of Exponential Functions.<br><strong>Read Section 4.4</strong></td><td>Derivatives of Log Functions.<br><strong>Read Section 4.5</strong></td><td>Derivatives of Trigonometric Functions.<br><strong>Read Section 4.6</strong><br><strong><a href="homework/homework4.pdf" target="_blank">Homework 4: Due 2/23</a></strong><br><strong><a href="homework/solution4_other.pdf" target="_blank">Solution 4: Other Problems</a></strong><br><strong><a href="homework/solution4_book.pdf" target="_blank">Solution 4: Book Problems</a></strong></td>
       </tr>
       </table>
     </div>
@@ -134,7 +134,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Increasing/Decreasing Functions.<br><strong>Read Section 5.1</strong></td><td>Relative Extrema.<br><strong>Read Section 5.2</strong></td><td>Higher Derivatives.<br><strong>Read Section 5.3</strong><br><strong>Homework 5: Due 3/2</strong></td>
+        <td>Increasing/Decreasing Functions.<br><strong>Read Section 5.1</strong></td><td>Relative Extrema.<br><strong>Read Section 5.2</strong></td><td>Higher Derivatives.<br><strong>Read Section 5.3</strong><br><strong><a href="homework/homework5.pdf" target="_blank">Homework 5: Due 3/2</a></strong></td>
       </tr>
       </table>
     </div>
@@ -262,7 +262,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 6;
+  var slideIndex = 7;
   showSlides(slideIndex);
 
   function plusSlides(n) {

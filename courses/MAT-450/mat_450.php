@@ -135,7 +135,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>The Determinant<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>The Cayley-Hamilton Theorem<br>Minimal Polynomial<br><strong>Read Section 5.4</strong><br><strong><a href="homework/homework3.pdf" target="_blank">Homework 3: Due 2/23</a></strong></td>
+        <td>The Determinant<br><strong>Read handout given in class</strong></td><td>The Cayley-Hamilton Theorem<br>Minimal Polynomial<br><strong>Read Section 5.4</strong><br><strong><a href="homework/homework3.pdf" target="_blank">Homework 3: Due 2/23</a></strong></td>
       </tr>
       </table>
     </div>
@@ -263,7 +263,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 6;
+  var slideIndex = 7;
   showSlides(slideIndex);
 
   function plusSlides(n) {

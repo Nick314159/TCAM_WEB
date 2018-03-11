@@ -134,7 +134,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Increasing/Decreasing Functions.<br><strong>Read Section 5.1</strong></td><td>Relative Extrema.<br><strong>Read Section 5.2</strong></td><td>Higher Derivatives.<br><strong>Read Section 5.3</strong><br><strong><a href="homework/homework5.pdf" target="_blank">Homework 5: Due 3/2</a></strong></td>
+        <td>Increasing/Decreasing Functions.<br><strong>Read Section 5.1</strong></td><td>Relative Extrema.<br><strong>Read Section 5.2</strong></td><td>Higher Derivatives.<br><strong>Read Section 5.3</strong><br><strong><a href="homework/homework5.pdf" target="_blank">Homework 5: Due 3/2</a></strong><br><strong><a href="homework/solution5_other.pdf" target="_blank">Solution 5: Other</a></strong><br><strong><a href="homework/solution5_book.pdf" target="_blank">Solution 5: Book</a></strong></td>
       </tr>
       </table>
     </div>
@@ -262,7 +262,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 7;
+  var slideIndex = 9;
   showSlides(slideIndex);
 
   function plusSlides(n) {

@@ -30,7 +30,7 @@
       <hr class="hrstyle-two" style="width: 25%">
         <ul>
           <li><strong>Review 1: </strong>February 5 - 9</li>
-          <li><strong>Review 2: </strong>March 12 - 16</li>
+          <li><strong>Review 2: </strong>March 14 - 19</li>
           <li><strong>Review 3: </strong>April 9 - 13</li>
 		  <li><strong>Final Presentations: </strong>April 30 - May 4</li>
 		  <li><strong>Alenda Lux symposium: </strong>May 9</li>

@@ -170,7 +170,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Implicit Differentiation.<br><strong>Read Section 6.3</strong></td><td>Related Rates.<br><strong>Read Section 6.4</strong></td><td>Differentials.<br><strong>Read Section 6.5</strong><br><strong>Homework 6: Due 3/23</strong></td>
+        <td>Implicit Differentiation.<br><strong>Read Section 6.3</strong></td><td>Related Rates.<br><strong>Read Section 6.4</strong></td><td>Differentials.<br><strong>Read Section 6.5</strong><br><strong><a href="homework/homework6.pdf" target="_blank">Homework 6: Due 3/23</a></strong></td>
       </tr>
       </table>
     </div>

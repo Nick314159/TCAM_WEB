@@ -171,7 +171,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>The Adjoint<br><strong>Read Section 6.3</strong></td><td>Self-Adjoint and Normal Operators<br><strong>Read Secondary Book 7.A</strong><br><strong>Homework 4: Due 3/23</strong></td>
+        <td>The Adjoint<br><strong>Read Section 6.3</strong></td><td>Self-Adjoint and Normal Operators<br><strong>Read Section 6.4</strong><br><strong><a href="homework/homework4.pdf" target="_blank">Homework 4: Due 3/23</a></strong></td>
       </tr>
       </table>
     </div>
@@ -183,7 +183,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>The Spectral Theorem<br><strong>Read Secondary Book 7.B</strong></td><td>Positive Operators and Isometries<br><strong>Read Secondary Book 7.C</strong></td>
+        <td>Unitary and Orthogonal Operators<br><strong>Read Section 6.5</strong></td><td>The Spectral Theorem<br><strong>Read Section 6.6</strong></td>
       </tr>
       </table>
     </div>
@@ -195,7 +195,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Easter Break</td><td>Polar Decomposition and SVD<br><strong>Read Secondary Book 7.D</strong><br><strong>Homework 5: Due 4/6</strong></td>
+        <td>Easter Break</td><td>Singular Value Decomposition<br><strong>Read Section 6.7</strong><br><strong>Homework 5: Due 4/6</strong></td>
       </tr>
       </table>
     </div>

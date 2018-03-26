@@ -170,7 +170,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Implicit Differentiation.<br><strong>Read Section 6.3</strong></td><td>Related Rates.<br><strong>Read Section 6.4</strong></td><td>Differentials.<br><strong>Read Section 6.5</strong><br><strong><a href="homework/homework6.pdf" target="_blank">Homework 6: Due 3/23</a></strong></td>
+        <td>Implicit Differentiation.<br><strong>Read Section 6.3</strong></td><td>Related Rates.<br><strong>Read Section 6.4</strong></td><td>Differentials.<br><strong>Read Section 6.5</strong><br><strong><a href="homework/homework6.pdf" target="_blank">Homework 6: Due 3/23</a></strong><br><strong><a href="homework/solution6_other.pdf" target="_blank">Solution 6: Other</a></strong><br><strong><a href="homework/solution6_book.pdf" target="_blank">Solution 6: Book</a></strong></td>
       </tr>
       </table>
     </div>
@@ -182,7 +182,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Antiderivatives.<br><strong>Read Section 7.1</strong></td><td>Substitution.<br><strong>Read Section 7.2</strong></td><td>Area and the Definite Integral.<br><strong>Read Section 7.3</strong><br><strong>Homework 7: Due 3/30</strong></td>
+        <td>Antiderivatives.<br><strong>Read Section 7.1</strong></td><td>Substitution.<br><strong>Read Section 7.2</strong></td><td>Area and the Definite Integral.<br><strong>Read Section 7.3</strong><br><strong><a href="homework/homework7.pdf" target="_blank">Homework 7: Due 3/30</a></strong></td>
       </tr>
       </table>
     </div>
@@ -262,7 +262,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 10;
+  var slideIndex = 11;
   showSlides(slideIndex);
 
   function plusSlides(n) {

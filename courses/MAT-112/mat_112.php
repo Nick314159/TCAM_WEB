@@ -31,7 +31,7 @@
         <ul>
           <li><strong>Review 1: </strong>February 5 - 9</li>
           <li><strong>Review 2: </strong>March 14 - 19</li>
-          <li><strong>Review 3: </strong>April 9 - 13</li>
+          <li><strong>Review 3: </strong>April 18 - 23</li>
 		  <li><strong>Final Presentations: </strong>April 30 - May 4</li>
 		  <li><strong>Alenda Lux symposium: </strong>May 9</li>
         </ul>
@@ -194,7 +194,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Easter Break.</td><td>The Fundamental Theorem of Calculus I.<br><strong>Read Section 7.4</strong></td><td>The Fundamental Theorem of Calculus II.<br><strong>Read <a href="" target="_blank">Handout </a><br><strong>Homework 8: Due 4/6</strong></td>
+        <td>Easter Break.</td><td>The Fundamental Theorem of Calculus I.<br><strong>Read Section 7.4</strong></td><td>The Fundamental Theorem of Calculus II.<br><strong>Read <a href="" target="_blank">Handout </a></td>
       </tr>
       </table>
     </div>
@@ -206,7 +206,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Integration by Parts.<br><strong>Read Section 8.2</strong></td><td>Improper Integrals.<br><strong>Read Section 8.4</strong></td><td>Volume and Average Value.<br><strong>Read Section 8.3</strong></td>
+        <td>Integration by Parts.<br><strong>Read Section 8.2</strong></td><td>Improper Integrals.<br><strong>Read Section 8.4</strong></td><td>Volume and Average Value.<br><strong>Read Section 8.3</strong><br><strong>Homework 8: Due 4/6</strong></td>
       </tr>
       </table>
     </div>
@@ -218,7 +218,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Numerical Integration.<br><strong>Read Section 8.1</strong></td><td>Modeling with<br>Differential Equations I.<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>Modeling with<br>Differential Equations II.<br><strong>Read <a href="" target="_blank">Handout</a></strong><br><strong>Homework 9: Due 4/20</strong></td>
+        <td>Numerical Integration.<br><strong>Read Section 8.1</strong></td><td>Modeling with<br>Differential Equations I.<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>Modeling with<br>Differential Equations II.<br><strong>Read <a href="" target="_blank">Handout</a></strong></td>
       </tr>
       </table>
     </div>
@@ -230,7 +230,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Research Day.</td><td>Research Day.</td><td>Research Day.</td>
+        <td>Research Day.</td><td>Research Day.</td><td>Research Day.<br><strong>Homework 9: Due 4/20</strong></td>
       </tr>
       </table>
     </div>

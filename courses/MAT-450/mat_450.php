@@ -195,7 +195,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Easter Break</td><td>Singular Value Decomposition<br><strong>Read Section 6.7</strong><br><strong>Homework 5: Due 4/6</strong></td>
+        <td>Easter Break</td><td>Singular Value Decomposition<br><strong>Read Section 6.7</strong><br><strong><a href="homework/homework5.pdf" target="_blank">Homework 5: Due 4/6</a></strong></td>
       </tr>
       </table>
     </div>
@@ -263,7 +263,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 11;
+  var slideIndex = 12;
   showSlides(slideIndex);
 
   function plusSlides(n) {

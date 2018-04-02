@@ -182,7 +182,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Antiderivatives.<br><strong>Read Section 7.1</strong></td><td>Substitution.<br><strong>Read Section 7.2</strong></td><td>Area and the Definite Integral.<br><strong>Read Section 7.3</strong><br><strong><a href="homework/homework7.pdf" target="_blank">Homework 7: Due 3/30</a></strong><br><strong><a href="homework/solution7_other.pdf" target="_blank">Solution 7: Other</a></strong><br><strong><a href="homework/solution7_book.pdf" target="_blank">Solution 7: Book</a></strong></td>
+        <td>Antiderivatives.<br><strong>Read Section 7.1</strong></td><td>Substitution.<br><strong>Read Section 7.2</strong></td><td>Area and the Definite Integral.<br><strong>Read Section 7.3</strong><br><strong><a href="homework/homework7.pdf" target="_blank">Homework 7: Due 3/30</a></strong><br><strong><a href="homework/solution7_other.pdf" target="_blank">Solution 7: Other</a></strong><br><strong><a href="homework/solution7_book.pdf" target="_blank">Solution 7: Book</a></strong><br><strong><a href="efy/efy7.pdf" target="_blank">EFY 7</a></strong></td>
       </tr>
       </table>
     </div>

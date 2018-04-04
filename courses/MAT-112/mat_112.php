@@ -206,7 +206,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Integration by Parts.<br><strong>Read Section 8.2</strong></td><td>Improper Integrals.<br><strong>Read Section 8.4</strong></td><td>Volume and Average Value.<br><strong>Read Section 8.3</strong><br><strong><a href="homework/homework8.pdf" target="_blank">Homework 8: Due 4/6</a></strong></td>
+        <td>Integration by Parts.<br><strong>Read Section 8.2</strong></td><td>Improper Integrals.<br><strong>Read Section 8.4</strong></td><td>Volume and Average Value.<br><strong>Read Section 8.3</strong><br><strong><a href="homework/homework8.pdf" target="_blank">Homework 8: Due 4/13</a></strong></td>
       </tr>
       </table>
     </div>

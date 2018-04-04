@@ -7,3 +7,4 @@ ldap.php
 *.aux*
 *.out*
 *.gz*
+*.DS_Store*

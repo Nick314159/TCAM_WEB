@@ -194,7 +194,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Easter Break.</td><td>The Fundamental Theorem of Calculus.<br><strong>Read Section 7.4</strong></td><td>The Fundamental Theorem of Calculus.<br><strong>Read <a href="https://magoosh.com/hs/ap-calculus/2017/ap-calculus-exam-review-fundamental-theorem-calculus/" target="_blank">Article </a></td>
+        <td>Easter Break.</td><td>The Fundamental Theorem of Calculus.<br><strong>Read Section 7.4</strong></td><td>The Fundamental Theorem of Calculus.<br><strong>Read <a href="https://magoosh.com/hs/ap-calculus/2017/ap-calculus-exam-review-fundamental-theorem-calculus/" target="_blank">Article </a><br><strong><a href="efy/efy8.pdf" target="_blank">EFY 8</a></strong></td>
       </tr>
       </table>
     </div>

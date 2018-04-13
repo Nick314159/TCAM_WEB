@@ -242,7 +242,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Katie, Maria, Claire, and Olivia<br><strong>C'mon, we know you've got it in you</strong></td><td>Final Presentations.</td><td>Final Presentations.</td>
+        <td>Katie, Maria, Claire, and Olivia:<br><strong>C'mon, we know you've got it in you</strong></td><td>Final Presentations.</td><td>Final Presentations.</td>
       </tr>
       </table>
     </div>

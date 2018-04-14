@@ -219,7 +219,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Special Topics</td><td>Research Day<br><strong>Homework 6: Due 4/20</td>
+        <td>Special Topics</td><td>Research Day<br><strong><a href="homework/homework6.pdf" target="_blank">Homework 6: Due 4/20</a></strong></td>
       </tr>
       </table>
     </div>

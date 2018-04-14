@@ -218,7 +218,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Numerical Integration.<br><strong>Read Section 8.1</strong></td><td>Modeling with<br>Differential Equations I.<br><strong>Read <a href="" target="_blank">Handout</a></strong></td><td>Modeling with<br>Differential Equations II.<br><strong>Read <a href="" target="_blank">Handout</a></strong></td>
+        <td>Numerical Integration.<br><strong>Read Section 8.1</strong></td><td>Modeling with<br>Differential Equations I.<br><strong>Read Section 11.1</strong></td><td>Modeling with<br>Differential Equations II.<br><strong>Read Section 11.3</strong></td>
       </tr>
       </table>
     </div>
@@ -230,7 +230,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Research Day.</td><td>Research Day.</td><td>Research Day.<br><strong>Homework 9: Due 4/20</strong></td>
+        <td>Research Day.</td><td>Research Day.</td><td>Research Day.<br><strong>Homework 9: Due 4/27</strong></td>
       </tr>
       </table>
     </div>
@@ -262,7 +262,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 13;
+  var slideIndex = 14;
   showSlides(slideIndex);
 
   function plusSlides(n) {

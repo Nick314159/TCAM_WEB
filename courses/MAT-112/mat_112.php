@@ -242,7 +242,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Katie, Maria, Claire, and Olivia: Blood Flow<br><strong>C'mon, we know you've got it in you</strong></td><td>Kerry, Mitchell, and Sam<br><strong>Poppin' Pills: Finding Drug Concentrations and Therapeutic Windows</strong><br>Olivia, Ian, Abel, and Brian: Davidson College Acceptance<br><strong>Get'cha Head in the Game</strong></td><br>Caroline W., Caroline M., and Carson: Fibonacci<br><strong>A Sequence of Unfortunate Events</strong><td>Final Presentations.</td>
+        <td>Katie, Maria, Claire, and Olivia: Blood Flow<br><strong>C'mon, we know you've got it in you</strong></td><td>Kerry, Mitchell, and Sam<br><strong>Poppin' Pills: Finding Drug Concentrations and Therapeutic Windows</strong><br>Olivia, Ian, Abel, and Brian: Davidson College Acceptance<br><strong>Get'cha Head in the Game</strong><br>Caroline W., Caroline M., and Carson: Fibonacci<br><strong>A Sequence of Unfortunate Events</strong></td><td>Final Presentations.</td>
       </tr>
       </table>
     </div>

@@ -1,0 +1,667 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     24590,        659]
+NotebookOptionsPosition[     22130,        607]
+NotebookOutlinePosition[     22569,        626]
+CellTagsIndexPosition[     22526,        623]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "The Dihedral Group ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["D", "3"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "f8f5511b-1fc4-49e7-b13c-b66a2913bb0e"]
+}], "Section",
+ CellChangeTimes->{{3.719103867190433*^9, 
+  3.719103887465519*^9}},ExpressionUUID->"861e6a11-877f-47d0-bf12-\
+f8c6a1df917a"],
+
+Cell[CellGroupData[{
+
+Cell["Helper Functions", "Subsection",
+ CellChangeTimes->{{3.71910424412659*^9, 
+  3.719104246622406*^9}},ExpressionUUID->"591e8acb-5242-44f0-bb70-\
+6ff2f752f1ea"],
+
+Cell["\<\
+In order to display our vector graphics appropriately and to perform \
+operations on these graphics, we need to work in a homogenous coordinate \
+system. We will store our triangles as a 3x3 matrix, where the first two rows \
+denote the points of the triangle and the third row is all ones. Thus, we \
+will need a helper function in order to extract the points of the triangle we \
+are actually interested in. \
+\>", "Text",
+ CellChangeTimes->{{3.719104256941986*^9, 
+  3.719104390986065*^9}},ExpressionUUID->"1dde1f2e-2005-4660-8d8d-\
+d61155b932fc"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"help", "[", "T_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"T", "[", 
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{"1", ";;", "2"}], ",", "1"}], "]"}], "]"}], ",", 
+     RowBox[{"T", "[", 
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{"1", ";;", "2"}], ",", "2"}], "]"}], "]"}], ",", 
+     RowBox[{"T", "[", 
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{"1", ";;", "2"}], ",", "3"}], "]"}], "]"}]}], "}"}]}], 
+  ";"}]], "Code",
+ CellChangeTimes->{{3.719104396009943*^9, 
+  3.719104510988669*^9}},ExpressionUUID->"1fb48cbb-c303-465c-8405-\
+142455067587"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Identity Triangle", "Subsection",
+ CellChangeTimes->{{3.7191039039075317`*^9, 
+  3.719103911019113*^9}},ExpressionUUID->"ecd27421-daa3-4d2e-acb8-\
+90546481151f"],
+
+Cell["\<\
+The code below identifies our identity triangle, in homogenous coordinate \
+systems, and then displays it using the Graphics and Triangle functions. In \
+addition, we add labeling of our points for clarity. \
+\>", "Text",
+ CellChangeTimes->{{3.719104557259695*^9, 3.719104607376754*^9}, {
+  3.719104644383716*^9, 
+  3.7191046464956427`*^9}},ExpressionUUID->"b5344b10-ee1f-49e0-b7f9-\
+5265b93483cd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"T", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "2", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", 
+       RowBox[{"N", "[", 
+        RowBox[{"Sqrt", "[", "3", "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"LightGray", ",", 
+      RowBox[{"Triangle", "[", 
+       RowBox[{"help", "[", "T", "]"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"help", "[", "T", "]"}], " ", "/.", " ", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"x_", ",", "y_"}], "}"}], " ", "\[RuleDelayed]", " ", 
+       RowBox[{"Text", "[", 
+        RowBox[{
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Position", "[", 
+            RowBox[{
+             RowBox[{"help", "[", "T", "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"x", ",", "y"}], "}"}]}], "]"}], ",", "Red"}], "]"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], "}"}]}], "}"}], 
+  "]"}]}], "Code",
+ CellChangeTimes->{{3.719102944347105*^9, 3.719102999335397*^9}, {
+   3.719103074003497*^9, 3.7191030926905937`*^9}, {3.719103145739067*^9, 
+   3.719103179385713*^9}, {3.719103372917459*^9, 3.719103477462598*^9}, 
+   3.7191035177981787`*^9, {3.719103679804384*^9, 3.719103764088119*^9}, 
+   3.719104569147636*^9, {3.719104654168645*^9, 3.719104669581133*^9}, {
+   3.719105280970366*^9, 3.719105283921423*^9}, {3.719105331317672*^9, 
+   3.719105334038001*^9}, {3.7191056928048286`*^9, 3.719105710297958*^9}, {
+   3.719106014493615*^9, 3.719106016796966*^9}, {3.719106091498629*^9, 
+   3.719106109775675*^9}},ExpressionUUID->"23251845-3bad-4c22-a3e4-\
+52070373a58e"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {GrayLevel[0.85], 
+    TagBox[PolygonBox[{{0, 0}, {2, 0}, {1, 1.7320508075688772`}}],
+     "Triangle"]}, {InsetBox[
+     StyleBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+         {"1"}
+        },
+        GridBoxAlignment->{
+         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.7]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+      StripOnInput->False,
+      LineColor->RGBColor[1, 0, 0],
+      FrontFaceColor->RGBColor[1, 0, 0],
+      BackFaceColor->RGBColor[1, 0, 0],
+      GraphicsColor->RGBColor[1, 0, 0],
+      FontColor->RGBColor[1, 0, 0]], {0, 0}], InsetBox[
+     StyleBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+         {"2"}
+        },
+        GridBoxAlignment->{
+         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.7]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+      StripOnInput->False,
+      LineColor->RGBColor[1, 0, 0],
+      FrontFaceColor->RGBColor[1, 0, 0],
+      BackFaceColor->RGBColor[1, 0, 0],
+      GraphicsColor->RGBColor[1, 0, 0],
+      FontColor->RGBColor[1, 0, 0]], {2, 0}], InsetBox[
+     StyleBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+         {"3"}
+        },
+        GridBoxAlignment->{
+         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.7]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+      StripOnInput->False,
+      LineColor->RGBColor[1, 0, 0],
+      FrontFaceColor->RGBColor[1, 0, 0],
+      BackFaceColor->RGBColor[1, 0, 0],
+      GraphicsColor->RGBColor[1, 0, 0],
+      FontColor->RGBColor[1, 0, 0]], {1, 1.7320508075688772}]}}]], "Output",
+ CellChangeTimes->{
+  3.719103765499433*^9, 3.7191039298572073`*^9, 3.719104677830154*^9, 
+   3.719105056855475*^9, {3.7191053348525677`*^9, 3.719105339793005*^9}, {
+   3.719105697805048*^9, 3.71910571426151*^9}, 3.719106017517377*^9, 
+   3.719106134482127*^9, {3.719147463618408*^9, 3.719147464795517*^9}, 
+   3.719151482543399*^9},ExpressionUUID->"5604a871-4fac-44c9-aa42-\
+5bfbd7864562"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rotations", "Subsection",
+ CellChangeTimes->{{3.7191039433965693`*^9, 3.719103945332056*^9}, {
+  3.719104118256114*^9, 
+  3.7191041195917377`*^9}},ExpressionUUID->"af95dcc5-9026-4922-8ce1-\
+65f5a13faa96"],
+
+Cell["\<\
+In order to rotate our triangle, we must first translate the triangle so that \
+its midpoint is at the origin. Then, we apply a rotation matrix to our \
+triangle and translate back. This is all done in homogenous coordinates. The \
+code below defines the trans (translation), mid (midpoint), and rot \
+(rotation) functions. \
+\>", "Text",
+ CellChangeTimes->{{3.719104687052504*^9, 3.719104753626893*^9}, {
+  3.719104826238389*^9, 
+  3.719104860395533*^9}},ExpressionUUID->"9afcd17a-e6bc-486a-85f6-\
+6dee53c543f4"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"trans", "[", 
+    RowBox[{"T_", ",", "r_", ",", "s_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0", ",", "r"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1", ",", "s"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}], ".", "T"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"mid", "[", "T_", "]"}], ":=", 
+   RowBox[{"RegionCentroid", "[", 
+    RowBox[{"Triangle", "[", 
+     RowBox[{"help", "[", "T", "]"}], "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"rot", "[", 
+    RowBox[{"T_", ",", "rad_"}], "]"}], ":=", "\n", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", "s", ",", "Q"}], "}"}], ",", "\n", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"r", ",", "s"}], "}"}], "=", 
+       RowBox[{"mid", "[", "T", "]"}]}], ";", "\n", 
+      RowBox[{"Q", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Cos", "[", "rad", "]"}], ",", 
+           RowBox[{"-", 
+            RowBox[{"Sin", "[", "rad", "]"}]}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Sin", "[", "rad", "]"}], ",", 
+           RowBox[{"Cos", "[", "rad", "]"}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}]}], ";", "\n", 
+      RowBox[{"trans", "[", 
+       RowBox[{
+        RowBox[{"Q", ".", 
+         RowBox[{"trans", "[", 
+          RowBox[{"T", ",", 
+           RowBox[{"-", "r"}], ",", 
+           RowBox[{"-", "s"}]}], "]"}]}], ",", "r", ",", "s"}], "]"}]}]}], 
+    "]"}]}], ";"}]}], "Code",
+ CellChangeTimes->{{3.7191041759522343`*^9, 3.7191042123710423`*^9}, {
+  3.719104789675508*^9, 3.719104809717458*^9}, {3.719104863115663*^9, 
+  3.719104869523378*^9}, {3.7191049285584106`*^9, 3.719105043626472*^9}, {
+  3.7191054250512238`*^9, 3.719105429618617*^9}, {3.719151291695218*^9, 
+  3.7191513123099127`*^9}},ExpressionUUID->"9b54b41c-20a6-4f09-b34a-\
+e5da0d2009db"],
+
+Cell["\<\
+Next, we show that what this rotation does to our triangle T using the \
+Manipulate and Graphics function.\
+\>", "Text",
+ CellChangeTimes->{{3.719105076094315*^9, 
+  3.7191051017482*^9}},ExpressionUUID->"d238841a-75a0-40e8-8598-c575bf26d2b4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"LightGray", ",", 
+        RowBox[{"Triangle", "[", 
+         RowBox[{"help", "[", 
+          RowBox[{"rot", "[", 
+           RowBox[{"T", ",", 
+            RowBox[{"deg", "*", 
+             RowBox[{"Pi", "/", "180"}]}]}], "]"}], "]"}], "]"}]}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"help", "[", 
+         RowBox[{"rot", "[", 
+          RowBox[{"T", ",", 
+           RowBox[{"deg", "*", 
+            RowBox[{"Pi", "/", "180"}]}]}], "]"}], "]"}], " ", "/.", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"x_", ",", "y_"}], "}"}], " ", "\[RuleDelayed]", " ", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Position", "[", 
+              RowBox[{
+               RowBox[{"help", "[", 
+                RowBox[{"rot", "[", 
+                 RowBox[{"T", ",", 
+                  RowBox[{"deg", "*", 
+                   RowBox[{"Pi", "/", "180"}]}]}], "]"}], "]"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"x", ",", "y"}], "}"}]}], "]"}], ",", "Red"}], "]"}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], "}"}]}], "}"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"deg", ",", "0", ",", "360", ",", "10"}], "}"}]}], "]"}]], "Code",\
+
+ CellChangeTimes->{{3.719105110485674*^9, 3.71910517361866*^9}, {
+  3.71910520880186*^9, 3.719105250259033*^9}, {3.7191052915855227`*^9, 
+  3.719105294146673*^9}, {3.719105357246853*^9, 3.719105398418351*^9}, {
+  3.719105441423559*^9, 3.719105549086968*^9}, {3.719105607495503*^9, 
+  3.7191056345802813`*^9}, {3.719105783616893*^9, 3.719105794631727*^9}, {
+  3.71910616026019*^9, 
+  3.719106211572935*^9}},ExpressionUUID->"aed73d13-7e63-4dea-89ba-\
+93a9e637a6a8"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`deg$$ = 240, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`deg$$], 0, 360, 10}}, Typeset`size$$ = {
+    360., {154., 158.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`deg$4511$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`deg$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`deg$$, $CellContext`deg$4511$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{{LightGray, 
+          Triangle[
+           $CellContext`help[
+            $CellContext`rot[$CellContext`T, $CellContext`deg$$ (Pi/180)]]]}, {
+          ReplaceAll[
+           $CellContext`help[
+            $CellContext`rot[$CellContext`T, $CellContext`deg$$ (Pi/180)]], {
+             Pattern[$CellContext`x$, 
+              Blank[]], 
+             Pattern[$CellContext`y$, 
+              Blank[]]} :> Text[
+             Style[
+              Position[
+               $CellContext`help[
+                $CellContext`rot[$CellContext`T, $CellContext`deg$$ (Pi/
+                  180)]], {$CellContext`x$, $CellContext`y$}], 
+              Red], {$CellContext`x$, $CellContext`y$}]]}}], 
+      "Specifications" :> {{$CellContext`deg$$, 0, 360, 10}}, "Options" :> {},
+       "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {212., 218.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.719106227701542*^9, {3.7191474644105997`*^9, 3.719147464909095*^9}, 
+   3.719151482649282*^9},ExpressionUUID->"8c98cbdd-35dd-4aa7-96df-\
+f5874da0bf07"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Reflection", "Subsection",
+ CellChangeTimes->{{3.719151088084231*^9, 
+  3.7191510897543364`*^9}},ExpressionUUID->"d9a63ad3-7d57-41f6-9f82-\
+6f05be5648ee"],
+
+Cell["\<\
+The function below performs a reflection of our object through the line L \
+that makes an angle deg with the origin. Just as with the rotation, we must \
+first translate, then reflect, and then translate back\
+\>", "Text",
+ CellChangeTimes->{{3.719151095266444*^9, 
+  3.719151147756481*^9}},ExpressionUUID->"95f1a86d-3d4c-49e0-9ac1-\
+b780dcde1b45"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ref", "[", 
+    RowBox[{"T_", ",", "rad_"}], "]"}], ":=", "\n", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", "s", ",", "Q"}], "}"}], ",", "\n", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"r", ",", "s"}], "}"}], "=", 
+       RowBox[{"mid", "[", "T", "]"}]}], ";", "\n", 
+      RowBox[{"Q", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Cos", "[", 
+            RowBox[{"2", "*", "rad"}], "]"}], ",", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"2", "*", "rad"}], "]"}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Sin", "[", 
+            RowBox[{"2", "*", "rad"}], "]"}], ",", 
+           RowBox[{"-", 
+            RowBox[{"Cos", "[", 
+             RowBox[{"2", "*", "rad"}], "]"}]}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}]}], ";", "\n", 
+      RowBox[{"trans", "[", 
+       RowBox[{
+        RowBox[{"Q", ".", 
+         RowBox[{"trans", "[", 
+          RowBox[{"T", ",", 
+           RowBox[{"-", "r"}], ",", 
+           RowBox[{"-", "s"}]}], "]"}]}], ",", "r", ",", "s"}], "]"}]}]}], 
+    "]"}]}], ";"}]], "Code",
+ CellChangeTimes->{{3.719151154772274*^9, 3.719151161780036*^9}, {
+  3.7191512180684757`*^9, 3.719151283846446*^9}, {3.719151412276923*^9, 
+  3.71915147594445*^9}},ExpressionUUID->"b28ce366-0359-4be7-96a0-\
+91d7befeb843"],
+
+Cell["\<\
+Next, we show that what this reflection does to our triangle T using the \
+Manipulate and Graphics function.\
+\>", "Text",
+ CellChangeTimes->{{3.719105076094315*^9, 3.7191051017482*^9}, {
+  3.7191515570957336`*^9, 
+  3.719151559837883*^9}},ExpressionUUID->"1964ff01-845e-4fdd-8e42-\
+1a6356579ceb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"LightGray", ",", 
+        RowBox[{"Triangle", "[", 
+         RowBox[{"help", "[", 
+          RowBox[{"ref", "[", 
+           RowBox[{"T", ",", 
+            RowBox[{"deg", "*", 
+             RowBox[{"Pi", "/", "180"}]}]}], "]"}], "]"}], "]"}]}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"help", "[", 
+         RowBox[{"ref", "[", 
+          RowBox[{"T", ",", 
+           RowBox[{"deg", "*", 
+            RowBox[{"Pi", "/", "180"}]}]}], "]"}], "]"}], " ", "/.", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"x_", ",", "y_"}], "}"}], " ", "\[RuleDelayed]", " ", 
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Position", "[", 
+              RowBox[{
+               RowBox[{"help", "[", 
+                RowBox[{"ref", "[", 
+                 RowBox[{"T", ",", 
+                  RowBox[{"deg", "*", 
+                   RowBox[{"Pi", "/", "180"}]}]}], "]"}], "]"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"x", ",", "y"}], "}"}]}], "]"}], ",", "Red"}], "]"}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], "}"}]}], "}"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"deg", ",", "0", ",", "360", ",", "10"}], "}"}]}], "]"}]], "Code",\
+
+ CellChangeTimes->{{3.719105110485674*^9, 3.71910517361866*^9}, {
+  3.71910520880186*^9, 3.719105250259033*^9}, {3.7191052915855227`*^9, 
+  3.719105294146673*^9}, {3.719105357246853*^9, 3.719105398418351*^9}, {
+  3.719105441423559*^9, 3.719105549086968*^9}, {3.719105607495503*^9, 
+  3.7191056345802813`*^9}, {3.719105783616893*^9, 3.719105794631727*^9}, {
+  3.71910616026019*^9, 3.719106211572935*^9}, {3.719151563287066*^9, 
+  3.7191515879184437`*^9}},ExpressionUUID->"b1d6e36a-6ecc-48a1-b945-\
+badb7abe4ee2"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`deg$$ = 30, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`deg$$], 0, 360, 10}}, Typeset`size$$ = {
+    360., {154., 158.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`deg$5719$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`deg$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`deg$$, $CellContext`deg$5719$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{{LightGray, 
+          Triangle[
+           $CellContext`help[
+            $CellContext`ref[$CellContext`T, $CellContext`deg$$ (Pi/180)]]]}, {
+          ReplaceAll[
+           $CellContext`help[
+            $CellContext`ref[$CellContext`T, $CellContext`deg$$ (Pi/180)]], {
+             Pattern[$CellContext`x$, 
+              Blank[]], 
+             Pattern[$CellContext`y$, 
+              Blank[]]} :> Text[
+             Style[
+              Position[
+               $CellContext`help[
+                $CellContext`ref[$CellContext`T, $CellContext`deg$$ (Pi/
+                  180)]], {$CellContext`x$, $CellContext`y$}], 
+              Red], {$CellContext`x$, $CellContext`y$}]]}}], 
+      "Specifications" :> {{$CellContext`deg$$, 0, 360, 10}}, "Options" :> {},
+       "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {212., 218.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.719151594619899*^9},ExpressionUUID->"de8d9afe-e84f-4bdf-9723-\
+d4f3d31e6735"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{1421, 761},
+WindowMargins->{{6, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 343, 10, 68, "Section",ExpressionUUID->"861e6a11-877f-47d0-bf12-f8c6a1df917a"],
+Cell[CellGroupData[{
+Cell[948, 36, 163, 3, 54, "Subsection",ExpressionUUID->"591e8acb-5242-44f0-bb70-6ff2f752f1ea"],
+Cell[1114, 41, 560, 10, 58, "Text",ExpressionUUID->"1dde1f2e-2005-4660-8d8d-d61155b932fc"],
+Cell[1677, 53, 636, 21, 52, "Code",ExpressionUUID->"1fb48cbb-c303-465c-8405-142455067587"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2350, 79, 167, 3, 54, "Subsection",ExpressionUUID->"ecd27421-daa3-4d2e-acb8-90546481151f"],
+Cell[2520, 84, 408, 8, 35, "Text",ExpressionUUID->"b5344b10-ee1f-49e0-b7f9-5265b93483cd"],
+Cell[CellGroupData[{
+Cell[2953, 96, 1902, 49, 72, "Code",ExpressionUUID->"23251845-3bad-4c22-a3e4-52070373a58e"],
+Cell[4858, 147, 2944, 74, 329, "Output",ExpressionUUID->"5604a871-4fac-44c9-aa42-5bfbd7864562"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7851, 227, 210, 4, 54, "Subsection",ExpressionUUID->"af95dcc5-9026-4922-8ce1-65f5a13faa96"],
+Cell[8064, 233, 523, 10, 58, "Text",ExpressionUUID->"9afcd17a-e6bc-486a-85f6-6dee53c543f4"],
+Cell[8590, 245, 2149, 61, 167, "Code",ExpressionUUID->"9b54b41c-20a6-4f09-b34a-e5da0d2009db"],
+Cell[10742, 308, 252, 5, 35, "Text",ExpressionUUID->"d238841a-75a0-40e8-8598-c575bf26d2b4"],
+Cell[CellGroupData[{
+Cell[11019, 317, 1950, 52, 52, "Code",ExpressionUUID->"aed73d13-7e63-4dea-89ba-93a9e637a6a8"],
+Cell[12972, 371, 2380, 51, 449, "Output",ExpressionUUID->"8c98cbdd-35dd-4aa7-96df-f5874da0bf07"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15401, 428, 160, 3, 54, "Subsection",ExpressionUUID->"d9a63ad3-7d57-41f6-9f82-6f05be5648ee"],
+Cell[15564, 433, 358, 7, 35, "Text",ExpressionUUID->"95f1a86d-3d4c-49e0-9ac1-b780dcde1b45"],
+Cell[15925, 442, 1524, 43, 129, "Code",ExpressionUUID->"b28ce366-0359-4be7-96a0-91d7befeb843"],
+Cell[17452, 487, 307, 7, 35, "Text",ExpressionUUID->"1964ff01-845e-4fdd-8e42-1a6356579ceb"],
+Cell[CellGroupData[{
+Cell[17784, 498, 1998, 52, 52, "Code",ExpressionUUID->"b1d6e36a-6ecc-48a1-b945-badb7abe4ee2"],
+Cell[19785, 552, 2305, 50, 449, "Output",ExpressionUUID->"de8d9afe-e84f-4bdf-9723-d4f3d31e6735"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

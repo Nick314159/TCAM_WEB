@@ -1,0 +1,244 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10256,        234]
+NotebookOptionsPosition[      9946,        220]
+NotebookOutlinePosition[     10303,        236]
+CellTagsIndexPosition[     10260,        233]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Francis", "[", "A_", "]"}], ":=", "\n", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "n", ",", "c", ",", "start", ",", "stop", ",", "eps", ",", "E"}], "}"}],
+      ",", "\n", 
+     RowBox[{
+      RowBox[{"n", "=", 
+       RowBox[{
+        RowBox[{"Dimensions", "[", "A", "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\n", 
+      RowBox[{"E", "=", 
+       RowBox[{"ConstantArray", "[", 
+        RowBox[{"0", ",", "n"}], "]"}]}], ";", "\n", 
+      RowBox[{"c", "=", "0"}], ";", " ", 
+      RowBox[{"start", "=", "1"}], ";", " ", 
+      RowBox[{"stop", "=", "n"}], ";", "\n", 
+      RowBox[{"eps", "=", 
+       RowBox[{"$MachineEpsilon", "*", 
+        RowBox[{"Norm", "[", "A", "]"}]}]}], ";", "\n", 
+      RowBox[{"While", "[", 
+       RowBox[{
+        RowBox[{"c", "<", "n"}], ",", "\n", "\t", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"stop", ">", 
+           RowBox[{"start", "+", "1"}]}], ",", "\n", "\t\t", 
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"k", "=", "stop"}], ",", 
+            RowBox[{"k", "\[GreaterEqual]", 
+             RowBox[{"start", "+", "1"}]}], ",", 
+            RowBox[{"k", "--"}], ",", "\n", "\t\t\t", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Abs", "[", 
+                RowBox[{"A", "[", 
+                 RowBox[{"k", ",", 
+                  RowBox[{"k", "-", "1"}]}], "]"}], "]"}], "<", "eps"}], ",", 
+              "\n", "\t\t\t\t", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"A", "[", 
+                 RowBox[{"k", ",", 
+                  RowBox[{"k", "-", "1"}]}], "]"}], "=", "0"}], ";", "\n", 
+               "\t\t\t\t", 
+               RowBox[{"If", "[", 
+                RowBox[{
+                 RowBox[{"k", "\[Equal]", "stop"}], ",", "\n", "\t\t\t\t\t", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"E", "[", "stop", "]"}], "=", 
+                   RowBox[{"A", "[", 
+                    RowBox[{"stop", ",", "stop"}], "]"}]}], ";", " ", "\n", 
+                  "\t\t\t\t\t", 
+                  RowBox[{"stop", "=", 
+                   RowBox[{"stop", "-", "1"}]}], ";", " ", "\n", "\t\t\t\t\t", 
+                  RowBox[{"c", "=", 
+                   RowBox[{"c", "+", "1"}]}], ";", " ", "\n", "\t\t\t\t\t", 
+                  RowBox[{"Break", "[", "]"}]}], ",", "\n", "\t\t\t\t\t", 
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{"k", "\[Equal]", 
+                    RowBox[{"stop", "-", "1"}]}], ",", "\n", "\t\t\t\t\t\t", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"E", "[", 
+                    RowBox[{
+                    RowBox[{"stop", "-", "1"}], ";;", "stop"}], "]"}], "=", 
+                    RowBox[{"Eigenvalues", "[", 
+                    RowBox[{"A", "[", 
+                    RowBox[{"[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"stop", "-", "1"}], ";;", "stop"}], ",", 
+                    RowBox[{
+                    RowBox[{"stop", "-", "1"}], ";;", "stop"}]}], "]"}], 
+                    "]"}], "]"}]}], ";", " ", "\n", "\t\t\t\t\t\t", 
+                    RowBox[{"stop", "=", 
+                    RowBox[{"stop", "-", "2"}]}], ";", " ", "\n", 
+                    "\t\t\t\t\t\t", 
+                    RowBox[{"c", "=", 
+                    RowBox[{"c", "+", "2"}]}], ";", " ", "\n", "\t\t\t\t\t\t", 
+                    RowBox[{"Break", "[", "]"}]}], ",", " ", "\n", 
+                   "\t\t\t\t\t\t", 
+                   RowBox[{
+                    RowBox[{"start", "=", "k"}], ";", " ", "\n", 
+                    "\t\t\t\t\t\t", 
+                    RowBox[{"Break", "[", "]"}]}]}], "\n", "\t\t\t\t\t", 
+                  "]"}]}], "\n", "\t\t\t\t", "]"}]}], ",", "\n", "\t\t\t\t", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{"k", "\[Equal]", 
+                 RowBox[{"start", "+", "1"}]}], ",", "\n", "\t\t\t\t\t", 
+                RowBox[{
+                 RowBox[{"A", "[", 
+                  RowBox[{"[", 
+                   RowBox[{
+                    RowBox[{"start", ";;", "stop"}], ",", 
+                    RowBox[{"start", ";;", "stop"}]}], "]"}], "]"}], "=", 
+                 RowBox[{"FI", "[", 
+                  RowBox[{"A", "[", 
+                   RowBox[{"[", 
+                    RowBox[{
+                    RowBox[{"start", ";;", "stop"}], ",", 
+                    RowBox[{"start", ";;", "stop"}]}], "]"}], "]"}], 
+                  "]"}]}]}], "\n", "\t\t\t\t", "]"}]}], "\n", "\t\t\t", 
+             "]"}]}], "\n", "\t\t", "]"}], ",", "\n", "\t\t", 
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"stop", "\[Equal]", 
+              RowBox[{"start", "+", "1"}]}], ",", "\n", "\t\t\t", 
+             RowBox[{
+              RowBox[{"E", "[", 
+               RowBox[{"start", ";;", "stop"}], "]"}], "=", 
+              RowBox[{"Eigenvalues", "[", 
+               RowBox[{"A", "[", 
+                RowBox[{"[", 
+                 RowBox[{
+                  RowBox[{"start", ";;", "stop"}], ",", 
+                  RowBox[{"start", ";;", "stop"}]}], "]"}], "]"}], "]"}]}], 
+             ",", "\n", "\t\t\t", 
+             RowBox[{
+              RowBox[{"E", "[", "start", "]"}], "=", 
+              RowBox[{"A", "[", 
+               RowBox[{"[", 
+                RowBox[{"start", ",", "start"}], "]"}], "]"}]}]}], "\n", 
+            "\t\t", "]"}], ";", "\n", "\t\t", 
+           RowBox[{"c", "=", 
+            RowBox[{"c", "+", 
+             RowBox[{"(", 
+              RowBox[{"stop", "-", "start", "+", "1"}], ")"}]}]}], ";", "\n", 
+           "\t\t", 
+           RowBox[{"stop", "=", 
+            RowBox[{"start", "-", "1"}]}], ";", "\n", "\t\t", 
+           RowBox[{"For", "[", 
+            RowBox[{
+             RowBox[{"k", "=", 
+              RowBox[{"start", "-", "1"}]}], ",", 
+             RowBox[{"k", "\[GreaterEqual]", "2"}], ",", 
+             RowBox[{"k", "--"}], ",", "\n", "\t\t\t", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"A", "[", 
+                 RowBox[{"k", ",", 
+                  RowBox[{"k", "-", "1"}]}], "]"}], "\[Equal]", "0"}], ",", 
+               "\n", "\t\t\t\t", 
+               RowBox[{
+                RowBox[{"start", "=", "k"}], ";", "\n", "\t\t\t\t", 
+                RowBox[{"Break", "[", "]"}]}]}], "\n", "\t\t\t", "]"}]}], 
+            "\n", "\t\t", "]"}], ";", "\n", "\t\t", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"stop", "<", "start"}], ",", "\n", "\t\t\t", 
+             RowBox[{
+              RowBox[{"start", "=", "1"}], ";"}]}], "\n", "\t\t", "]"}], 
+           ";"}]}], "\n", "\t", "]"}]}], "\n", "]"}], ";", "\n", "E"}]}], 
+    "]"}]}], ";"}]], "Code",
+ CellChangeTimes->{{3.718271127882091*^9, 3.718271159172385*^9}, {
+   3.718271195994152*^9, 3.718271210897464*^9}, {3.7182713183373823`*^9, 
+   3.718271747069952*^9}, {3.71827202101882*^9, 3.718272051368202*^9}, {
+   3.718272162263393*^9, 3.718272284940688*^9}, {3.718272345008937*^9, 
+   3.7182723455611486`*^9}, {3.7182723802120733`*^9, 3.71827242059408*^9}, {
+   3.71827246596714*^9, 3.7182724722700233`*^9}, {3.718272610697401*^9, 
+   3.718272688358863*^9}, {3.718273217168182*^9, 3.718273228766472*^9}, {
+   3.7182733853772783`*^9, 3.718273412352655*^9}, {3.71827358250616*^9, 
+   3.7182735834658012`*^9}, {3.718273619577003*^9, 3.718273632784162*^9}, {
+   3.718273751607966*^9, 3.7182737524205217`*^9}, {3.718273804811933*^9, 
+   3.718273875982511*^9}, {3.718273943534729*^9, 3.718273944196164*^9}, {
+   3.718274179824439*^9, 3.718274242477696*^9}, {3.718274274211967*^9, 
+   3.718274277394361*^9}, {3.718274383188941*^9, 3.718274461324655*^9}, {
+   3.718274531723138*^9, 3.7182745353151217`*^9}, {3.718274584561615*^9, 
+   3.7182745858652554`*^9}, {3.7182746700686197`*^9, 3.718274679063468*^9}, {
+   3.7182748480196037`*^9, 3.718274861164942*^9}, {3.7182748937099752`*^9, 
+   3.7182750216981688`*^9}, {3.7182751182983637`*^9, 3.718275160855777*^9}, {
+   3.718275305823966*^9, 3.718275319994934*^9}, {3.718275351382661*^9, 
+   3.718275362139647*^9}, {3.718275550998204*^9, 3.7182755678536158`*^9}, {
+   3.7182759720476103`*^9, 3.718276061006575*^9}, {3.718276192679397*^9, 
+   3.718276255944687*^9}, {3.718281547370175*^9, 3.718281600568179*^9}, {
+   3.718281684560897*^9, 3.7182817332376223`*^9}, {3.718281811736823*^9, 
+   3.71828184011246*^9}, {3.718282127742445*^9, 3.71828219697725*^9}, {
+   3.71828260483626*^9, 3.718282625585786*^9}, {3.718282675128051*^9, 
+   3.7182827212131853`*^9}, {3.718283624993239*^9, 3.718283674638946*^9}, {
+   3.718283745012322*^9, 3.71828374743469*^9}, {3.7182838645475616`*^9, 
+   3.718283931769669*^9}, {3.718283981705276*^9, 3.718283988991992*^9}, {
+   3.718284068088182*^9, 3.718284112750671*^9}, 3.718284198490841*^9, 
+   3.718284329865177*^9, {3.718284924434546*^9, 3.718284933081435*^9}, {
+   3.718285084310708*^9, 3.718285107361961*^9}, {3.718295458152955*^9, 
+   3.7182954762003803`*^9}, {3.718295601497073*^9, 3.718295602319254*^9}, {
+   3.718295719525494*^9, 
+   3.718295743258947*^9}},ExpressionUUID->"0cac390b-f794-494f-836f-\
+a6bf3a12957e"]
+},
+WindowSize->{808, 619},
+WindowMargins->{{Automatic, 6}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 9384, 198, 946, "Code",ExpressionUUID->"0cac390b-f794-494f-836f-a6bf3a12957e"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

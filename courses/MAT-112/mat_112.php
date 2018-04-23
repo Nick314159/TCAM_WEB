@@ -230,7 +230,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Research Day.</td><td>Research Day.</td><td>Research Day.<br><strong>Homework 9: Due 4/27</strong></td>
+        <td>Research Day.</td><td>Research Day.</td><td>Research Day.<br><strong><a href="homework/homework9.pdf" target="_blank">Homework 9: Due 4/27</a></strong></td>
       </tr>
       </table>
     </div>
@@ -262,7 +262,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 14;
+  var slideIndex = 15;
   showSlides(slideIndex);
 
   function plusSlides(n) {

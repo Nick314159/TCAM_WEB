@@ -243,7 +243,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Research Day</td><td>Final Presentations</td>
+        <td>Research Day</td><td>Thomas R. Cameron<br><strong>Something to do about matrix polynomials</strong><br>Michael Robertson<br><strong>Orthogonal Matrix Polynomials</strong></td>
       </tr>
       </table>
     </div>
@@ -255,7 +255,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Final Presentations</td><td>Have a Great Summer</td>
+        <td>Nathan Tenpas<br><strong>Infinite dimensional vector spaces</strong><br>Hermon Mulat<br><strong>The eigenvalue problem</strong></td><td>Have a Great Summer</td>
       </tr>
       </table>
     </div>
@@ -263,7 +263,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 14;
+  var slideIndex = 15;
   showSlides(slideIndex);
 
   function plusSlides(n) {

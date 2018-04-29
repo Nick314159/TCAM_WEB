@@ -230,7 +230,7 @@
         <th>Monday</th><th>Wednesday</th><th>Friday</th>
       </tr>
       <tr>
-        <td>Research Day.</td><td>Research Day.</td><td>Research Day.<br><strong><a href="homework/homework9.pdf" target="_blank">Homework 9: Due 4/27</a></strong></td>
+        <td>Research Day.</td><td>Research Day.<br><strong><a href="handouts/extra_credit.pdf" target="_blank">Extra Credit</a></strong></td><td>Research Day.<br><strong><a href="homework/homework9.pdf" target="_blank">Homework 9: Due 4/27</a></strong><br><strong><a href="homework/solution9_other.pdf" target="_blank">Solution 9: Other</a></strong><br><strong><a href="homework/solution9_book.pdf" target="_blank">Solution 9: Book</a></strong></td>
       </tr>
       </table>
     </div>
@@ -262,7 +262,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 15;
+  var slideIndex = 16;
   showSlides(slideIndex);
 
   function plusSlides(n) {

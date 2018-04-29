@@ -243,7 +243,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Research Day</td><td>Thomas R. Cameron<br><strong>Something to do about matrix polynomials</strong><br>Michael Robertson<br><strong>Orthogonal Matrix Polynomials</strong></td>
+        <td>Research Day</td><td>Thomas R. Cameron<br><strong>Something to do about matrix polynomials</strong></td>
       </tr>
       </table>
     </div>
@@ -255,7 +255,7 @@
         <th>Tuesday</th><th>Thursday</th>
       </tr>
       <tr>
-        <td>Nathan Tenpas<br><strong>Infinite dimensional vector spaces</strong><br>Hermon Mulat<br><strong>The eigenvalue problem</strong></td><td>Have a Great Summer</td>
+        <td>Nathan Tenpas<br><strong>Infinite dimensional vector spaces</strong><br>Hermon Mulat<br><strong>The eigenvalue problem</strong><br>Michael Robertson<br><strong>Orthogonal Matrix Polynomials</strong></td><td>Have a Great Summer</td>
       </tr>
       </table>
     </div>
@@ -263,7 +263,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <script>
-  var slideIndex = 15;
+  var slideIndex = 16;
   showSlides(slideIndex);
 
   function plusSlides(n) {

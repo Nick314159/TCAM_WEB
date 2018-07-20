@@ -87,7 +87,7 @@
 				<p>
 				In~\cite{Cameron2016}, we use a pseudo inner product to provide a constructive proof that every matrix polynomial can be reduced to a matrix rational in Hessenberg form.
 				In general, an apriori reduction of a matrix polynomial to a simpler form can be used to reduce the cost of numerical computation of its eigenvalues.
-				For additional methods to reduce to simpler forms see~\cite{Nakatsukasa2018}.
+				For additional methods capable of reducing a matrix polynomial to a simpler form see~\cite{Nakatsukasa2018}.
 				</p>
 				<p>
 				In~\cite{Cameron2018_DRSMP}, we present a generalization of Descartes' rule of signs for matrix polynomials. 
@@ -107,7 +107,7 @@
 					</p>
 					<p>
 						Previous work includes a project with College of Idaho student Leo Trujilo on the numerical range of a matrix polynomial. 
-						Our work consisted of writing Python code to compute plots of the numerical range and test a conjecture on Descartes' rule of signs for matrix polynomials.
+						Our work consisted of writing Python code to create plots of the numerical range and test a conjecture on Descartes' rule of signs for matrix polynomials.
 					</p>
 				</section>
             </article>
@@ -119,23 +119,22 @@
 	            </header>
 				<p>
 				Modern-day polynomial root problems, such as those that stem from computer algebra applications or digital signal processing, require software that can solve for the roots of a polynomial of degree well above $100$ and sometimes on the order of several thousand or higher~\cite{Pan1997,Sitton2003}.
-				For this reason, the methods \emph{zroots}~\cite{Press} from Numerical Recipes and \emph{C02AFF}~\cite{NAG} from the NAG library that uses forward deflation and Laguerre's method are not applicable for solving today's polynomial equations.
+				For this reason, root-solvers that use forward deflation and Laguerre's method, such as \emph{zroots}~\cite{Press} from Numerical Recipes and \emph{C02AFF}~\cite{NAG} from the NAG library, are not applicable for solving today's large degree polynomial equations.
 				</p>
 				<p>
-				Therefore, we present a modification of Laguerre's method that uses an implicit deflation strategy to compute all roots of a polynomial in~\cite{Cameron2018_PML}.
-				Our modification has strong virtues including local fourth-order convergence that can be observed in practice.
-				Furthermore, our method has a workload that is well-suited for data-parallelism. 
-				We use this method to drive an algorithm for the computation of all roots of a polynomial. 
+				In~\cite{Cameron2018_PML}, we present a modification of Laguerre's method that uses an implicit deflation strategy similar to the modification proposed by Ehrlich and Aberth~\cite{Aberth1973,Ehrlich1967}.
+				Our method has strong virtues including the ability to compute all roots of a large degree polynomial, local fourth-order convergence that can be observed in practice, and a workload that is well-suited for data-parallelism.
+				We use this method to form an algorithm for the computation of all roots of a polynomial. 
 				Our algorithm is implemented in Fortran 90 using a double-precision floating-point format and is available at~\url{https://github.com/trcameron/FPML}.
 				</p>
 				<p>
 				In~\cite{Cameron2017}, we discuss the application of Laguerre's method to the polynomial eigenvalue problem.
-				Topics include backward error analysis, stopping criterion, initial estimates, and efficient computation of corresponding eigenvectors.
-				Ultimately, it is noted that Laguerre's method does not provide an advantage over the Ehrlich-Aberth method, which is implemented in~\cite{Bini2013}.
+				Topics include backward error analysis, stopping criterion, initial estimates, and the efficient computation of eigenvectors.
+				Ultimately, it is noted that Laguerre's method does not provide an advantage over the Ehrlich-Aberth method, which is applied in~\cite{Bini2013}.
 				However, our modification of Laguerre's method~\cite{Cameron2018_PML} does provide an advantage over the Ehrlich-Aberth method; currently, we are revamping our work around this recent advancement.
 				</p>
 				<p>
-				In~\cite{Cameron2018_FPT}, we provide a lively development of the floating-point format, the IEEE standard, and compensated arithmetic techniques.
+				In~\cite{Cameron2018_FPT}, we provide a lively development of the floating-point format, the IEEE 754 standard, and compensated arithmetic techniques.
 				This work was motivated by a current student project where we are looking to improve our root solver software~\cite{Cameron2018_PML} by using compensated arithmetic techniques and multithreading.
 				</p>
 				<section>
@@ -146,11 +145,11 @@
 					</header>
 					<p>
 						Currently, I am working with Davidson College student Aidan O'Neill on ways to improve the speed and accuracy of our root-solver software~\cite{Cameron2018_PML}.
-						We are studying compensated floating-point routines discussed in~\cite{Graillat2005,Graillat2008} to sharpen our stopping criterion and thereby improve the accuracy 						of our algorithm. 
+						We are studying compensated floating-point routines discussed in~\cite{Graillat2008,Graillat2005} to sharpen our stopping criterion and thereby improve the accuracy of our algorithm. 
 						Furthermore, we are interested in implementing our method so that it takes on the parallel capabilities of the user's computing system.
 					</p>
 					<p>
-						Previous work includes a group project with College of Idaho students Will Callahan, Sam Chandler, Johanna Mori, and Leo Trujilo on numerical solutions to a 						differential equation.
+						Previous work includes a group project with College of Idaho students Will Callahan, Sam Chandler, Johanna Mori, and Leo Trujilo on numerical solutions to a differential equation.
 						Our work consisted of using Chebyshev polynomials to approximate a solution of the differential equation. 
 						In addition, I did work with Washington State University student Nikolas Steckley on the application of Laguerre's method to the polynomial eigenvalue problem.
 					</p>
@@ -163,23 +162,59 @@
 		        </div>
 	            </header>
 				<p>
-				Recently, I have had the opportunity to expand my research portfolio to include the rankability of data, inhomogeneous Markov chains, and Householder sets for matrix 				polynomials. 
+				Recently, I have had the opportunity to expand my research portfolio to include the rankability of data, inhomogeneous Markov chains, and Householder sets for matrix polynomials. 
 				The rankability of data is joint work with Paul Anderson, Tim Chartier, and Amy Langville; inhomogeneous Markov chains is joint work with Michael J. Tsatsomeros; Householder sets for matrix polynomials is joint work with Panayiotis J. Psarrakos.
 				</p>
+				<section>
+					<header>
+						<div class="title">
+							<h3>Rankability of Data</h3>
+						</div>
+					</header>
+					<p>
+						The objective of ranking is to sort objects in a dataset according to some criteria.
+						As a graph problem, we are finding the order or rank of vertices in a (weighted) directed graph. 
+						We are interested in defining a measure for the rankability of a data set, that is, the dataset's inherent ability to produce a meaningful ranking of its items.
+					</p>
+					<p>
+						In essence, the ranking of a data set is a one-dimensional compression of the data.
+						Therefore, it is reasonable to suspect that the SVD of the adjacency matrix, or the corresponding centered matrix, will provide a useful measure of rankability.
+						My work is focused on studying this connection and forming a cost effective measure of rankability of a dataset.
+					</p>
+				</section>
+				<section>
+					<header>
+						<div class="title">
+							<h3>Inhomogeneous Markov Chains</h3>
+						</div>
+					</header>
+					<p>
+						Traditional homogeneous Markov chain models are broadly applied in different areas of ecology, such as behavioral sciences, conservation, and evolutionary and population dynamics. 
+						However, they are almost always based on a stationary assumption in the model. 
+						This stationary assumption has obvious limitations since ecological systems rarely remain stable under dynamic environmental conditions.
+					</p>
+					<p>
+						In our work, we consider time-inhomogeneous transition matrices $M(t)$ that are row stochastic as a function fo time $t\geq 0$.
+						Under the additional assumption that the entries of $M(t)$ are polynomials in $t$, we can apply matrix polynomial theory to $(I-M(t))$ in order to study the left eigenvectors (the stationary distribution of the Markov chain as a function of time). 
+						Specifically, we can apply Perron-Frobenius theory and linearization techniques~\cite{Mackey2006,Psarrakos2004}.
+					</p>
+				</section>
+				<section>
+					<header>
+						<div class="title">
+							<h3>Householder Sets for Matrix Polynomials</h3>
+						</div>
+					</header>
+					<p>
+						In 1964, Alston S. Householder presented an elegant derivation of the Gershgorin set of a matrix~\cite{Householder1964}. 
+						Since then, Richard S. Varga has dubbed the normed defined sets used by Householder as Householder sets~\cite{Varga2004}.
+					</p>
+					<p>
+						Currently, we are working on the generalization of the Householder set for matrix polynomials. 
+						We are interested in applying this generalization to derive the Gershgorin set~\cite{Psarrakos2018}, the pseudo-spectra~\cite{Lancaster2005}, and other inclusion sets for the eigenvalues of a matrix polynomial.
+					</p>
+				</section>
 			</article>
-            <article class="post" id="bib">
-	            <header>
-		        <div class="title">
-			        <h2>Bibliography</h2>
-		        </div>
-	            </header>
-                <ol>
-                    <li>Cassius Dio, 50:5; quoted from Cassius Dio: The Roman History:
-                    The Age of Augustus, (trans.) (1987) Scott-Kilvert I.; reprinted in 
-                    AA100 Assignment Booklet (October 2010), Milton Keynes, The Open 
-                    University, p.18.</li>
-                </ol>
-            </article>
         </div>
         <!-- Sidebar -->
 	<section id="sidebar">

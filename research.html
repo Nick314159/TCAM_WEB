@@ -72,11 +72,32 @@
 			        <h2>Matrix Polynomials</h2>
 		        </div>
 	            </header>
-	            <center>
-	                <img class="image featured" src="images/wavepropagation.png" style="width:75%" alt="Wave Propagation" /></a>
-	            </center>
-	            <p>Calcium is a major second messenger molecule in cells, with roles in processes from fertilization to apoptotic cell death. In neurons, calcium enters the cell with each action potential and is then quickly pumped out or sequestered into intracellular stores. The store in the endoplasmic reticulum is particularly interesting, as it can be involved with calcium waves -- a slow, long-lasting regenerative phenomena -- that modulate neuronal excitability. I am interested in the role of these dynamics and the effect of geometry on wave propagation in general.</p>
-	            <p>This research topic was explored in <a href="dissertation.pdf">my dissertation</a>, <a href="http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00712">Neymotin, McDougal et al (2015)</a>, and <a href="http://www.sciencedirect.com/science/article/pii/S0306452215011367">Neymotin et al (2016)</a>.</p>
+				<p>
+					<q cite='#bib01'>who would not groan at hearing that Roman knights and senators grovel 
+				before her (Cleopatra) like eunuchs?</q>
+				</p>
+				<p>
+				Since its inception, the theory of matrix polynomials has been strongly motivated through its applications to differential equations and vibrating systems. 
+				Vibrating systems strongly motivated the first works devoted primarily to matrix polynomials: one by Frazer, Duncan, and Collar in 1938~\cite{Frazer1955} and the other by Lancaster in 1966~\cite{Lancaster1966}. 
+				In addition, the theory of matrix polynomials has been strongly influenced by results from matrix theory and complex analysis. 
+				For instance, the canonical set of Jordan chains defined in~\cite{Gohberg2009} are a natural generalization of a cycle of generalized eigenvectors, which are often introduced in an upper level undergraduate linear algebra course~\cite{Friedberg2003}.
+				A generalized Rouch\'e's theorem is presented in~\cite{Gohberg1990} and this result is used to prove a generalized Pellet's theorem for matrix polynomials~\cite{Melman2013}.
+				These generalizations have benefited our study of matrix polynomials and their spectrum, and it is in this spirit that we have focused on similar generalizations from matrix and polynomial theory.
+				</p>
+				<p>
+				In~\cite{Cameron2015}, we use the generalized Rouch\'e theorem to provide spectral bounds for unitary matrix polynomials.
+				This result can be viewed as a generalization of the fact that the eigenvalues of a unitary matrix lie on the unit circle or the fact that a scalar polynomial with unimodular coefficients has roots that lie in the annulus $\mathcal{A}(1/2,2)=\{z\in\mathbb{C}\colon~\frac{1}{2}<|z|<2\}$.
+				</p>
+				<p>
+				In~\cite{Cameron2016}, we use a pseudo inner product to provide a constructive proof that every matrix polynomial can be reduced to a matrix rational in Hessenberg form.
+				In general, an apriori reduction of a matrix polynomial to a simpler form can be used to reduce the cost of numerical computation of its eigenvalues.
+				For additional methods to reduce to simpler forms see~\cite{Nakatsukasa2018}.
+				</p>
+				<p>
+				In~\cite{Cameron2018_DRSMP}, we present a generalization of Descartes' rule of signs for matrix polynomials. 
+				This result provides an upper bound on the number of real positive eigenvalues of a self-adjoint matrix polynomial whose coefficients are positive/negative definite, or otherwise null.
+				Furthermore, this result has applications to overdamped vibration systems~\cite{Duffin1955,Gohberg2009,Lancaster1966,Tisseur2001}.
+				</p>
             </article>
             <article class="post" id="num_anal">
 	            <header>
@@ -96,6 +117,20 @@
 	            <p>I am a developer for the <a href="http://neuron.yale.edu">NEURON simulator</a>. Historically, NEURON focused primarily on neuron and network dynamics, but I work on adding support for intra- and extracellular reaction-diffusion dynamics (<a href="http://www.sciencedirect.com/science/article/pii/S0165027013003221">McDougal et al 2013a</a>; <a href="http://journal.frontiersin.org/article/10.3389/fninf.2013.00028/abstract">McDougal et al 2013b</a>). In addition to the implementation, I developed the specification format which was designed to be independent of dimension (1D vs 3D) or stochastic vs deterministic. As needed, I have improved other aspects of NEURON, including: expanding Python support, converting the help documentation to restructured text, and translating the help documentation into Python (in progress; a partial version is <a href="http://neurosimlab.org/ramcd/pyhelp/">here</a>).</p>
 	            <p>As part of <a href="dissertation.pdf">my dissertation</a> work, I developed a simulator called <a href="/snnet/">snnet</a> which attempted to combine the mathematical accuracy and clarity of XPPAUT (which it used as a back-end) with neuroscience domain-specific constructs (e.g. neurons and synapses) to facilitate the study of random-networks of Hodgkin-Huxley style neurons. Snnet is no longer under active development, but the <a href="/snnet/snnet-0-1-1.zip">code</a> and <a href="/snnet/snnet-guide-0-1-0.pdf">documentation</a> remain available for download.</p>
             </article>
+            <article class="post" id="bib">
+	            <header>
+		        <div class="title">
+			        <h2>Bibliography</h2>
+		        </div>
+	            </header>
+				<ol>
+				   <li id='#bib01'>Cassius Dio, 50:5; quoted from Cassius Dio: The 
+				Roman History: The Age of Augustus, (trans.) (<time datetime='1987'>
+				1987</time>) Scott-Kilvert I.; reprinted in <cite>AA100 Assignment 
+				Booklet</cite> (<time datetime='2010-10'>October 2010</time>), 
+				Milton Keynes, The Open University, p.18.</li>
+				</ol>
+			</article>
         </div>
         <!-- Sidebar -->
 	<section id="sidebar">
@@ -136,5 +171,13 @@
 	<script src="/assets/js/skel.min.js"></script>
 	<script src="/assets/js/util.js"></script>
 	<script src="/assets/js/main.js"></script>
+	<script>
+	   var quotes = document.getElementsByTagName('q');
+	   for (var i in quotes) {
+	      quotes[i].addEventListener('click', function() { 
+	         window.location = this.getAttribute('cite'); },
+	      false);
+	   }
+	</script>
     </body>
 </html>

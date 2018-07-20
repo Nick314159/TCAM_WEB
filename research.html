@@ -94,6 +94,22 @@
 				This result provides an upper bound on the number of real positive eigenvalues of a self-adjoint matrix polynomial whose coefficients are positive/negative definite, or otherwise null.
 				Furthermore, this result has applications to overdamped vibration systems~\cite{Duffin1955,Gohberg2009,Lancaster1966,Tisseur2001}.
 				</p>
+				<section>
+					<header>
+						<div class="title">
+							<h3>Student Research</h3>
+						</div>
+					</header>
+					<p>
+						Currently, I am working with Davidson College student Michael Robertson on inclusion sets for the eigenvalues of a matrix polynomial. 
+						We are studying which inclusion sets give more information about the spectral set of a matrix polynomial.
+						Applications for this work include initial estimates for iterative methods that compute the eigenvalues of a matrix polynomial.
+					</p>
+					<p>
+						Previous work includes a project with College of Idaho student Leo Trujilo on the numerical range of a matrix polynomial. 
+						Our work consisted of writing Python code to compute plots of the numerical range and test a conjecture on Descartes' rule of signs for matrix polynomials.
+					</p>
+				</section>
             </article>
             <article class="post" id="num_anal">
 	            <header>
@@ -101,18 +117,56 @@
 			        <h2>Numerical Analysis</h2>
 		        </div>
 	            </header>
-	            <p>I am a developer for the <a href="http://neuron.yale.edu">NEURON simulator</a>. Historically, NEURON focused primarily on neuron and network dynamics, but I work on adding support for intra- and extracellular reaction-diffusion dynamics (<a href="http://www.sciencedirect.com/science/article/pii/S0165027013003221">McDougal et al 2013a</a>; <a href="http://journal.frontiersin.org/article/10.3389/fninf.2013.00028/abstract">McDougal et al 2013b</a>). In addition to the implementation, I developed the specification format which was designed to be independent of dimension (1D vs 3D) or stochastic vs deterministic. As needed, I have improved other aspects of NEURON, including: expanding Python support, converting the help documentation to restructured text, and translating the help documentation into Python (in progress; a partial version is <a href="http://neurosimlab.org/ramcd/pyhelp/">here</a>).</p>
-	            <p>As part of <a href="dissertation.pdf">my dissertation</a> work, I developed a simulator called <a href="/snnet/">snnet</a> which attempted to combine the mathematical accuracy and clarity of XPPAUT (which it used as a back-end) with neuroscience domain-specific constructs (e.g. neurons and synapses) to facilitate the study of random-networks of Hodgkin-Huxley style neurons. Snnet is no longer under active development, but the <a href="/snnet/snnet-0-1-1.zip">code</a> and <a href="/snnet/snnet-guide-0-1-0.pdf">documentation</a> remain available for download.</p>
+				<p>
+				Modern-day polynomial root problems, such as those that stem from computer algebra applications or digital signal processing, require software that can solve for the roots of a polynomial of degree well above $100$ and sometimes on the order of several thousand or higher~\cite{Pan1997,Sitton2003}.
+				For this reason, the methods \emph{zroots}~\cite{Press} from Numerical Recipes and \emph{C02AFF}~\cite{NAG} from the NAG library that uses forward deflation and Laguerre's method are not applicable for solving today's polynomial equations.
+				</p>
+				<p>
+				Therefore, we present a modification of Laguerre's method that uses an implicit deflation strategy to compute all roots of a polynomial in~\cite{Cameron2018_PML}.
+				Our modification has strong virtues including local fourth-order convergence that can be observed in practice.
+				Furthermore, our method has a workload that is well-suited for data-parallelism. 
+				We use this method to drive an algorithm for the computation of all roots of a polynomial. 
+				Our algorithm is implemented in Fortran 90 using a double-precision floating-point format and is available at~\url{https://github.com/trcameron/FPML}.
+				</p>
+				<p>
+				In~\cite{Cameron2017}, we discuss the application of Laguerre's method to the polynomial eigenvalue problem.
+				Topics include backward error analysis, stopping criterion, initial estimates, and efficient computation of corresponding eigenvectors.
+				Ultimately, it is noted that Laguerre's method does not provide an advantage over the Ehrlich-Aberth method, which is implemented in~\cite{Bini2013}.
+				However, our modification of Laguerre's method~\cite{Cameron2018_PML} does provide an advantage over the Ehrlich-Aberth method; currently, we are revamping our work around this recent advancement.
+				</p>
+				<p>
+				In~\cite{Cameron2018_FPT}, we provide a lively development of the floating-point format, the IEEE standard, and compensated arithmetic techniques.
+				This work was motivated by a current student project where we are looking to improve our root solver software~\cite{Cameron2018_PML} by using compensated arithmetic techniques and multithreading.
+				</p>
+				<section>
+					<header>
+						<div class="title">
+							<h3>Student Research</h3>
+						</div>
+					</header>
+					<p>
+						Currently, I am working with Davidson College student Aidan O'Neill on ways to improve the speed and accuracy of our root-solver software~\cite{Cameron2018_PML}.
+						We are studying compensated floating-point routines discussed in~\cite{Graillat2005,Graillat2008} to sharpen our stopping criterion and thereby improve the accuracy 						of our algorithm. 
+						Furthermore, we are interested in implementing our method so that it takes on the parallel capabilities of the user's computing system.
+					</p>
+					<p>
+						Previous work includes a group project with College of Idaho students Will Callahan, Sam Chandler, Johanna Mori, and Leo Trujilo on numerical solutions to a 						differential equation.
+						Our work consisted of using Chebyshev polynomials to approximate a solution of the differential equation. 
+						In addition, I did work with Washington State University student Nikolas Steckley on the application of Laguerre's method to the polynomial eigenvalue problem.
+					</p>
+				</section>
             </article>
-            <article class="post" id="stud_research">
+            <article class="post" id="num_anal">
 	            <header>
 		        <div class="title">
-			        <h2>Student Research</h2>
+			        <h2>Current Research</h2>
 		        </div>
 	            </header>
-	            <p>I am a developer for the <a href="http://neuron.yale.edu">NEURON simulator</a>. Historically, NEURON focused primarily on neuron and network dynamics, but I work on adding support for intra- and extracellular reaction-diffusion dynamics (<a href="http://www.sciencedirect.com/science/article/pii/S0165027013003221">McDougal et al 2013a</a>; <a href="http://journal.frontiersin.org/article/10.3389/fninf.2013.00028/abstract">McDougal et al 2013b</a>). In addition to the implementation, I developed the specification format which was designed to be independent of dimension (1D vs 3D) or stochastic vs deterministic. As needed, I have improved other aspects of NEURON, including: expanding Python support, converting the help documentation to restructured text, and translating the help documentation into Python (in progress; a partial version is <a href="http://neurosimlab.org/ramcd/pyhelp/">here</a>).</p>
-	            <p>As part of <a href="dissertation.pdf">my dissertation</a> work, I developed a simulator called <a href="/snnet/">snnet</a> which attempted to combine the mathematical accuracy and clarity of XPPAUT (which it used as a back-end) with neuroscience domain-specific constructs (e.g. neurons and synapses) to facilitate the study of random-networks of Hodgkin-Huxley style neurons. Snnet is no longer under active development, but the <a href="/snnet/snnet-0-1-1.zip">code</a> and <a href="/snnet/snnet-guide-0-1-0.pdf">documentation</a> remain available for download.</p>
-            </article>
+				<p>
+				Recently, I have had the opportunity to expand my research portfolio to include the rankability of data, inhomogeneous Markov chains, and Householder sets for matrix 				polynomials. 
+				The rankability of data is joint work with Paul Anderson, Tim Chartier, and Amy Langville; inhomogeneous Markov chains is joint work with Michael J. Tsatsomeros; Householder sets for matrix polynomials is joint work with Panayiotis J. Psarrakos.
+				</p>
+			</article>
             <article class="post" id="bib">
 	            <header>
 		        <div class="title">

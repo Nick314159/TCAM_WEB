@@ -1,5 +1,3 @@
-AWS_Key.pem
-*.tex*
 *.log*
 *.aux*
 *.out*

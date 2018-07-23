@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Discrete Structures</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body>
+    <!-- Wrapper -->
+	<div id="wrapper">
+	    <!-- Header -->
+		<header id="header">
+		    <h1><a href="/courses/MAT-220/mat_220.html">Discrete Structures</a></h1>
+			<nav class="links">
+				<ul>
+				    <li><a href="/courses/MAT-220/homework/homework.html">Homework</a></li>
+					<li><a href="/courses/MAT-220/labs/labs.html">Labs</a></li>
+					<li><a href="/courses/MAT-220/reviews/reviews.html">Reviews</a></li>
+				</ul>
+			</nav>
+			<nav class="main">
+				<ul>
+					<li class="menu">
+					    <a class="fa-bars" href="#menu">Menu</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+        <!-- Menu -->
+		<section id="menu">
+		    <!-- Links -->
+			<section>
+			    <ul class="links">
+				    <li>
+					    <a href="/courses/MAT-220/homework/homework.html">
+						    <h3>Homework</h3>
+							<p>List of homework assignments.</p>
+						</a>
+					</li>
+					<li>
+						<a href="/courses/MAT-220/labs/labs.html">
+							<h3>Labs</h3>
+							<p>List of lab assignments.</p>
+						</a>
+					</li>
+					<li>
+						<a href="/courses/MAT-220/reviews/reviews.html">
+							<h3>Reviews</h3>
+							<p>Review solutions.</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+        </section>
+        <!-- Main -->
+		<div id="main">
+		    <center>
+	            <ul class="actions">
+		            <li><a href="/courses/MAT-220/syllabus/syllabus.pdf" class="button big">Syllabus</a></li>
+	            </ul>
+            </center>
+            <article class="post" id="calendar">
+	            <header>
+		            <div class="title">
+			            <h2>Calendar</h2>
+		            </div>
+	            </header>
+                <!-- Week 1 -->
+                <div class="mySlides fade">
+                    <h3>Week 1 (8/21 - 8/25)</h3>
+                    <table width="100%" align="center" class="schedule">
+                        <tr>
+                            <th>Monday</th><th>Wednesday</th><th>Friday</th>
+                        </tr>
+                        <tr>
+                           <td>Introduction<br><strong><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a></strong><br><strong>Read: Section 1-2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 3-4</td><td>The proof of a statement<br><strong><a href="homework/homework1.pdf">Homework 1 Due Today</a></strong><br><strong>Read: Section 5</strong><br><strong><a href="homework/solution1.pdf">Homework 1 Solution</a></strong><br><strong><a href="efy/efy1.pdf">EFY 1 Solution</a></strong></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Week 2 -->
+                <div class="mySlides fade">
+                    <h3>Week 2 (8/21 - 8/25)</h3>
+                    <table width="100%" align="center">
+                        <tr>
+                            <th>Monday</th><th>Wednesday</th><th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td>Introduction<br><strong><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a></strong><br><strong>Read: Section 1-2</strong></td><td>Making a lot<br>out of a definition<br><strong>Read: Section 3-4</td><td>The proof of a statement<br><strong><a href="homework/homework1.pdf">Homework 1 Due Today</a></strong><br><strong>Read: Section 5</strong><br><strong><a href="homework/solution1.pdf">Homework 1 Solution</a></strong><br><strong><a href="efy/efy1.pdf">EFY 1 Solution</a></strong></td>
+                        </tr>
+                    </table>
+                </div>
+                <a class="button" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="button" onclick="plusSlides(1)">&#10095;</a>
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+                </script>
+            </article>
+        </div>
+        <!-- Sidebar -->
+	    <section id="sidebar">
+            <!-- Intro -->
+	        <section id="intro">
+		        <a href="#" class="logo"><img src="/courses/MAT-220/logo.png" alt="" /></a>
+				    <header>
+				        <h2>Discrete Structures</h2>
+				    </header>	
+		    </section>
+            <!-- About -->
+		    <section class="blurb">
+                <h2>About</h2>
+                <p>
+                    An introduction to proof techniques, with a focus on topics relevant to computer science. Topics include: fundamental proof techniques, boolean logic, sequences and summations, set theory, algorithm analysis, recursion, mathematical induction, recurrence relations, an introduction to number theory, combinatorics, discrete probability, and graph theory. The class will be adequate preparation for students choosing to continue on the pure math track (Real Analysis, Abstract Algebra, etc.) or the theoretical computer science track (Analysis of Algorithms, Theory of Computation, etc.).
+                </p>
+		    </section>
+            <!-- Footer -->
+		    <section id="footer">
+		        <div style="line-height:100%; font-size: 75%">
+                <h2>Professor Information</h2>
+                Thomas R. Cameron<br/>
+                Visiting Assistant Professor<br/>
+			    Department of Mathematics and Computer Science<br/>
+                Davidson College<br/>
+                Box 7129<br/>
+                Davidson, NC 28035<br/><br/>
+                +1 704-894-2241</div><br/>
+			    <ul class="icons">
+			        <li><a href="mailto:thcameron@davidson.edu" class="fa-envelope"><span class="label">Email</span></a></li>
+				    <li><a href="https://www.linkedin.com/in/thomas-r-cameron"><img src="/images/In-2C-14px.png"/></a>
+			    </ul>
+		    </section>
+        </section>
+    </div>
+    </body>
+</html>

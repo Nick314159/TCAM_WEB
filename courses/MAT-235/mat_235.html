@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Differential Equations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body>
+    <!-- Wrapper -->
+	<div id="wrapper">
+	    <!-- Header -->
+		<header id="header">
+		    <h1><a href="/courses/MAT-235/mat_235.html">Differential Equations</a></h1>
+			<nav class="links">
+				<ul>
+				    <li><a href="/courses/MAT-235/homework/homework.html">Homework</a></li>
+					<li><a href="/courses/MAT-235/labs/labs.html">Labs</a></li>
+					<li><a href="/courses/MAT-235/reviews/reviews.html">Reviews</a></li>
+				</ul>
+			</nav>
+			<nav class="main">
+				<ul>
+					<li class="menu">
+					    <a class="fa-bars" href="#menu">Menu</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+        <!-- Menu -->
+		<section id="menu">
+		    <!-- Links -->
+			<section>
+			    <ul class="links">
+				    <li>
+					    <a href="/courses/MAT-235/homework/homework.html">
+						    <h3>Homework</h3>
+							<p>List of homework assignments.</p>
+						</a>
+					</li>
+					<li>
+						<a href="/courses/MAT-235/labs/labs.html">
+							<h3>Labs</h3>
+							<p>List of lab assignments.</p>
+						</a>
+					</li>
+					<li>
+						<a href="/courses/MAT-235/reviews/reviews.html">
+							<h3>Reviews</h3>
+							<p>Review solutions.</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+        </section>
+        <!-- Main -->
+		<div id="main">
+		    <center>
+	            <ul class="actions">
+		            <li><a href="/courses/MAT-235/syllabus/syllabus.pdf" class="button big">Syllabus</a></li>
+	            </ul>
+            </center>
+            <article class="post" id="calendar">
+	            <header>
+		            <div class="title">
+			            <h2>Calendar</h2>
+		            </div>
+	            </header>
+                <!-- Week 1 -->
+                <div class="mySlides fade">
+                    <h3>Week 1 (8/20 - 8/24)</h3>
+                    <div class="table-wrapper">
+                    <table width="100%" align="center" class="schedule">
+                        <tr>
+                            <th>Monday</th><th>Wednesday</th><th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td>Read Section 1-2<br/>
+                                <ul class="actions">
+                                    <li><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a></li>
+                                </ul>
+                            </td>
+                            <td>Read Section 3-4<br/>
+                            </td>
+                            <td>Read Section 5<br/>
+                                <ul class="actions">
+                                    <li><a href="homework/homework1.pdf">Homework 1 Due Today</a></li><br/>
+                                    <li><a href="efy/efy1.pdf">EFY 1 Solution</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <!-- Week 2 -->
+                <div class="mySlides fade">
+                    <h3>Week 2 (8/27 - 8/24)</h3>
+                    <div class="table-wrapper">
+                    <table width="100%" align="center" class="schedule">
+                        <tr>
+                            <th>Monday</th><th>Wednesday</th><th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td>Read Section 1-2<br/>
+                                <ul class="actions">
+                                    <li><a href="handouts/proof_writing_howto.pdf">Mathematical Writing</a></li>
+                                </ul>
+                            </td>
+                            <td>Read Section 3-4<br/>
+                            </td>
+                            <td>Read Section 5<br/>
+                                <ul class="actions">
+                                    <li><a href="homework/homework1.pdf">Homework 1 Due Today</a></li><br/>
+                                    <li><a href="efy/efy1.pdf">EFY 1 Solution</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <a class="button" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="button" onclick="plusSlides(1)">&#10095;</a>
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+                </script>
+            </article>
+        </div>
+        <!-- Sidebar -->
+	    <section id="sidebar">
+            <!-- Intro -->
+	        <section id="intro">
+		        <a href="#" class="logo"><img src="/courses/MAT-235/logo.png" alt="" /></a>
+				    <header>
+				        <h2>Differential Equations</h2>
+				    </header>	
+		    </section>
+            <!-- About -->
+		    <section class="blurb">
+                <h2>About</h2>
+                <p>
+                    A study of solution techniques and models in ordinary differential equations including first order equations, linear differential equations, series solutions, Laplace transform methods, and concepts of numerical and graphical techniques applied to equations and systems.
+                </p>
+		    </section>
+            <!-- Footer -->
+		    <section id="footer">
+		        <div style="line-height:100%; font-size: 75%">
+                <h2>Professor Information</h2>
+                Thomas R. Cameron<br/>
+                Visiting Assistant Professor<br/>
+			    Department of Mathematics and Computer Science<br/>
+                Davidson College<br/>
+                Box 7129<br/>
+                Davidson, NC 28035<br/><br/>
+                +1 704-894-2241</div><br/>
+			    <ul class="icons">
+			        <li><a href="mailto:thcameron@davidson.edu" class="fa-envelope"><span class="label">Email</span></a></li>
+				    <li><a href="https://www.linkedin.com/in/thomas-r-cameron"><img src="/images/In-2C-14px.png"/></a>
+			    </ul>
+		    </section>
+        </section>
+    </div>
+    <!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/skel.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+    </body>
+</html>

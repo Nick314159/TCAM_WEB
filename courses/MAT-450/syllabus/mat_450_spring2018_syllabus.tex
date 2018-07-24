@@ -1,0 +1,226 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\usepackage{epigraph}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Advanced Linear Algebra} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Spring 2018} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                         % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{minipage}{0.5\textwidth}
+\vspace*{-5em}
+{\large \textsc{MAT-450: Advanced Linear Algebra}}\\
+\hspace*{5em}{\normalsize \emph{Spring 2018}}\\
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\epigraph{We share a philosophy about linear algebra: we think basis-free, we write basis-free, but when the chips are down we close the office door and compute with matrices like fury.}{\textit{Irving Kaplansky}}
+\end{minipage}
+
+\begin{center}
+\rule{7in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Instructor:} & Thomas R. Cameron & & &  & \textbf{Time:} & T,R 12:15 -- 1:30 pm\\
+\textbf{Email:} &  \href{mailto:thcameron@davidson.edu}{thcameron@davidson.edu} & & & & \textbf{Place:} &  CHAM 2234
+\end{tabular}
+\end{minipage}
+\rule{7in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Course Page:} \url{https://www.thomasrcameron.com/courses/MAT-450/mat_450.php}\\
+\noindent\textbf{Office Hours:} T, R 1:45 -- 3:30 and W, F 10:15 -- 12:00, or via appointment in CHAM 3044.
+
+\vspace*{.15in}
+\noindent\textbf{Textbook:} S.H. Friedberg, A.H. Insel, and L.E. Spence. \textit{Linear Algebra}. Pearson Education, Upper Saddle River, NJ, 4th edition, 2003.\\
+\noindent\textbf{Secondary Text:} S. Axler. \textit{Linear Algebra Done Right}. Springer, New York, NY, 3rd edition, 2015.\\
+\noindent\textbf{Prerequisite:} MAT 150 and proof writing exposure from either MAT 220, MAT 230, MAT 330, or a similar course. 
+
+\vspace*{.15in}
+\noindent\textbf{Course Description:}
+A further study of linear algebra that focuses on abstract vector spaces, linear operators, the spectral theorem, canonical forms, orthogonalization, and the adjoint. 
+
+\vspace*{.15in}
+\noindent\textbf{Learning Outcomes:} Students will be able to
+\begin{itemize}
+\item Vector Spaces
+    \begin{itemize}
+    \item	State the definition of a vector space and prove if a set is or is not a vector space.
+    \item	State the definition of a subspace and prove if a set is or is not a subspace.
+    \item	State the definition of linear dependence/independence and prove if a set is linearly dependent/independent.
+    \item	State the definition of a basis and dimension and apply these definitions to other mathematical problems.
+    \item	Prove the fundamental theorem of linear algebra. 
+    \end{itemize}
+    
+\item Linear Operators
+    \begin{itemize}
+    \item	State the definition of a linear operator and prove if an operator is or is not linear.
+    \item	Compute the four fundamental subsets associated with a linear operator.
+    \item	Compute matrix representations of a linear operator.
+    \item	Compute the inverse of an operator.
+    \item	Prove that two spaces are isomorphic.
+    \item	Perform a change of coordinates. 
+    \item	State the definition of a dual space and prove that the dimension of the dual space is equal to the dimension of the underlying vector space. 
+    \end{itemize}
+    
+\item Eigenvalues
+    \begin{itemize}
+    \item	State the definition of an invariant subspace.
+    \item	Derive the existence of eigenvalues using Krylov sequences.
+    \item	Prove Schur's theorem.
+    \item	Prove necessary and sufficient conditions for diagonalizability. 
+    \end{itemize}  
+    
+\item Determinant
+    \begin{itemize}
+    \item	Develop the determinant over the real numbers using signed volume.
+    \item	Use the aforementioned development to prove many properties of the determinant and derive the Laplace expansion formula.
+    \item	Prove the Cayley-Hamilton Theorem and results surrounding the minimal polynomial. 
+    \end{itemize}  
+    
+\item Inner Product Spaces
+    \begin{itemize}
+    \item	State the definition of an inner product space.
+    \item	Compute inner products and norms.
+    \item	Compute orthogonal basis, complements, and projections. 
+    \item	Prove the finite-dimensional version of the Riesz Representation Theorem. 
+    \end{itemize}  
+    
+\item Spectral Theorem
+    \begin{itemize}
+    \item	State the definition of self-adjoint and normal operators.
+    \item	Prove the spectral theorem for self-adjoint and normal operators.
+    \item	State the definition of positive operators and isometries.
+    \item	Compute the Polar Decomposition and Singular Value Decomposition. 
+    \end{itemize}
+
+\item Jordan Canonical Form
+    \begin{itemize}
+    \item	State the definition of generalized eigenvectors.
+    \item	Prove that every finite-dimensional vector space has a generalized eigenvector basis.
+    \item	Prove that every linear operator has a Jordan canonical form.
+    \item	Compute the Jordan canonical form of a linear operator. 
+    \end{itemize}
+\end{itemize}
+
+\noindent\textbf{Grading Policy:}~\\
+Your final grade is broken up as follows. 
+\begin{center}
+\begin{tabular}{|cc|}
+  \hline
+  Category & Percentage\\
+  \hline
+  EFY & $10\%$\\
+  Homework & $25\%$\\
+  Reviews (15\% each) & $45\%$\\
+  Final Presentation & $20\%$\\
+  \hline
+\end{tabular}
+\end{center}
+
+\newpage
+Your final letter grade is based on the following scale.
+\begin{center}
+\begin{tabular}{|cc | cc | cc|}
+  \hline
+  Grade & Percentage Interval & Grade & Percentage Interval\\
+  \hline
+  A & $[93,100]$ & C+ & $[76,80)$\\
+  A- & $[90,93)$ & C & $[73,76)$ \\
+  B+ & $[86,90)$ & C- & $[70,73)$\\
+  B & $[83,86)$ & D+ & $[66,70)$\\
+  B- & $[80,83)$ & D & $[63,66)$\\
+     &           & F & $[0,63)$\\
+  \hline
+\end{tabular}
+\end{center}
+
+\vspace*{0.5em}
+\noindent\textbf{EFY:}
+Exercises For You will be given throughout the semester. Some of these will be done in class and others outside of class. They are intended to test the student's understanding of the course topics, and to provide additional challenging exercises that highlight advanced features of these topics. Because several EFYs will be done in class, I will drop the 3 lowest scores for each student in order to accommodate with a reasonable number of absences. 
+
+\vspace*{0.5em}
+\noindent\textbf{Homework:}
+Nearly every other week, homework assignments will be due that include a large range of problems that will test the students ability to prove theorems, solve problems, and think abstractly. These assignments are posted online two weeks in advance, should be typed in LaTeX, and are due the Friday of that week by midnight in my office.  Students are expected to engage in conversational collaboration, discuss any questions they have with me, but should turn in their own work so that I may interpret their understanding while grading. 
+
+\vspace*{0.5em}
+\noindent\textbf{Reviews:}
+There are three reviews given throughout the semester that are intended to test the students understanding of the course concepts. Each review may be completed within the given week, dates are posted on the course website. There will be a suggested time limit for each student, but it is loosely enforced. 
+
+\vspace*{0.5em}
+\noindent\textbf{Final Presentation:}
+In the last month of the semester, we will discuss special topics in linear algebra that are rarely covered in a course. Each student will have the choice of a specific topic and will be expected to research the topic and present their findings in a final presentation. Each student will be given 20 - 30 minutes to present their findings in the last week of class, dates are posted on the course website. 
+
+\vspace*{0.5em}
+\noindent\textbf{Academic Honesty:} 
+Students are expected to complete all graded work in accordance
+with the \href{http://www.davidson.edu/about/distinctly-davidson/honor-code}{Davidson College Honor Code}, as it applied to each assignment in this class. 
+
+\vspace*{.15in}
+\noindent\textbf{Special Accommodations:}
+Davidson College values the diversity of its community and is an equal access institution that admits otherwise qualified applicants without regard to disability.  The college seeks to accommodate requests for accommodations related to disability that are determined to be reasonable and do not compromise the integrity of a program or curriculum. To make such a request or to begin a conversation about a possible request, please contact Beth Bleil, Director of Academic Access and Disability Resources, in the Center for Teaching and Learning by visiting her office in the E.H. Little Library, by emailing her at bebleil@davidson.edu, or by calling 704-894-2129.  It is best to submit accommodation requests within the drop/add period; however, requests can be made at any time in the semester.  Please keep in mind that accommodations are not retroactive.
+
+\vspace*{.15in}
+\noindent\textbf{Disclaimer:}
+I reserve the right to diverge from this syllabus in the best interest of the course. Any changes made will be announced. 
+
+\end{document}

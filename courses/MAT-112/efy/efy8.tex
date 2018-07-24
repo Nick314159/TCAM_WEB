@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{pgfplots}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\pgfplotsset{holdot/.style={color=blue,fill=white,only marks,mark=*}}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{EFY 8}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: April 6, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Please complete each of the following problems. You should work in groups of three, or at most four, and hand in only one submission per group. Be sure that your arguments are well justified and presented clearly.
+\end{abstract}
+
+\paragraph*{Problem 1.} Use the Fundamental Theorem of Calculus (on p. 398 of your book) to justify the following properties of the definite integral, where all indicated integrals are assumed to exist.
+\begin{enumerate}
+\item	$\int_{a}^{a}f(x)dx=0$,
+\item $\int_{a}^{b}kf(x)dx=k\int_{a}^{b}f(x)dx$,
+\item	$\int_{a}^{b}[f(x)+g(x)]dx=\int_{a}^{b}f(x)dx+\int_{a}^{b}g(x)dx$,
+\item	$\int_{a}^{b}f(x)dx=\int_{a}^{c}f(x)dx+\int_{c}^{b}f(x)dx$ for any $c$ in the interval $[a,b]$,
+\item	$\int_{a}^{b}f(x)dx=-\int_{b}^{a}f(x)dx$.
+\end{enumerate}
+~\\
+\textbf{Solution:} Let $F(x)$ and $G(x)$ be antiderivatives of $f(x)$ and $(g)$, respectively. Then, we have the following justification for each of the above properties. 
+\begin{enumerate}
+\item	$\int_{a}^{a}=F(a)-F(a)=0$, by the fundamental theorem of calculus. 
+\item	$kF(x)$ is an antiderivative of $kf(x)$, therefore
+\begin{align*}
+\int_{a}^{b}kf(x)dx&=kF(b)-kF(a)~\text{(by the F.T.C.)} \\
+&=k\left(F(b)-F(a)\right) \\
+&=k\int_{a}^{b}f(x)dx~\text{(by the F.T.C.)}
+\end{align*}
+\item	$F(x)+G(x)$ is an antiderivative of $f(x)+g(x)$, therefore
+\begin{align*}
+\int_{a}^{b}[f(x)+g(x)]dx&=\left(F(b)+G(b)\right)-\left(F(a)+G(a)\right)~\text{(by the F.T.C.)}\\
+&=\left(F(b)-F(a)\right)+\left(G(b)-G(a)\right) \\
+&=\int_{a}^{b}f(x)dx+\int_{a}^{b}g(x)dx~\text{(by the F.T.C.)}
+\end{align*}
+\item	Let $c$ be in the interval $[a,b]$, then by the fundamental theorem of calculus we have
+\[
+\int_{a}^{c}f(x)dx=F(c)-F(a)
+\]
+and
+\[
+\int_{c}^{b}f(x)dx=F(b)-F(c).
+\]
+Adding these equations together gives the desired result. 
+\item	By the fundamental theorem of calculus we have
+\begin{align*}
+\int_{a}^{b}f(x)dx&=F(b)-F(a) \\
+&=-\left(F(a)-F(b)\right) \\
+&=\int_{b}^{a}f(x)dx.
+\end{align*}
+\end{enumerate}
+
+\paragraph*{Problem 2.} Suppose that $y=f(x)$ where $f^{'}(x)$ is well-defined on the interval $[a,b]$, and let $y_{1}=f(a)$ and $y_{2}=f(b)$. What is the relation between the area of the rectangle with dimensions $(y_{2}-y_{1})\times 1$ and the area bound by the curve $f^{'}(x)$, the $x$-axis, $x=a$, and $x=b$. 
+~\\
+\textbf{Solution:} Given the set up of the problem we have the following
+\begin{align*}
+\int_{a}^{b}f^{'}(x)dx&=f(b)-f(a)~\text{(by the F.T.C.)} \\
+&=y_{2}-y_{1} \\
+&=\int_{y_{1}}^{y_{2}}dy~\text{(by the F.T.C.)}.
+\end{align*}
+
+Note that this shows both areas are equal. Moreover, since the above holds for arbitrary $a$ and $b$ this result implies that
+\[
+dy=f^{'}(x)dx.
+\]
+
+\end{document}

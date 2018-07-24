@@ -1,0 +1,141 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\newcommand{\class}{MAT -- 112}
+\newcommand{\term}{Spring 2018}
+\newcommand{\examnum}{Review 2}
+\newcommand{\examdate}{Dates: 3/14 -- 3/19}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Start Time:}}{\textbf{End Time:}}{}
+\runningheadrule
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} & \textbf{Pledge:}	& \makebox[2in]{\hrulefill}\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+Each question topic and the point value is recorded in the tables below. You may review these topics from any resource at your leisure. Once you decide to start a review problem, you are on the clock and you must work without any external resources, including no calculator. Each problem can be done one at a time but must be finished in a single sitting. Answer each question in the space provided; if you run out of space, then you may continue on the back of the page. It is your responsibility to plan out your time to ensure that you can finish all problems within the $4.0$ hours allotted. By writing your name and signing the pledge you are stating that your work adheres to these terms and the Davidson honor code. }}}
+\end{center}
+
+\vspace*{1em}
+
+\begin{multicols}{2}
+%% Scoring Table
+\centering
+\textbf{Scoring Table}\\
+\addpoints
+\gradetable[v][questions]
+
+\columnbreak
+%% Topics Table
+\centering
+\textbf{Topics Table}\\
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{| c | c |}
+\hline
+Question & Topic\\
+\hline
+1 & Continuity\\
+\hline
+2 &The Derivative\\
+\hline
+3 &  Derivative Rules\\
+\hline
+4 & Applications \\
+\hline
+&\\
+\hline
+\end{tabular}
+\end{multicols}
+
+\vspace*{2em}
+%%Time Table
+\begin{center}
+\textbf{Time Table}\\
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | }
+\hline
+Question & ~~~~1~~~~ & ~~~~2~~~~ & ~~~~3~~~~ & ~~~~4~~~~ \\
+\hline
+Time & & & &  \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+\question Let $f$ be a function defined over the real numbers. 
+\begin{parts}
+\part[2] State the limit definition of $f$ being continuous at a real number $c$.
+\vspace{\stretch{1}}
+\part[2] Use the definition in (a) to find and justify where the function below is discontinuous.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{review2_fig2}
+\end{figure}
+
+\vspace{\stretch{1}}
+
+\part[6] Suppose that $f$ is a polynomial. Then, use limit rules and the definition in (a) to show that $f$ is continuous at every real number $c$. 
+\vspace{\stretch{2}}
+\end{parts}
+
+\newpage
+
+\question Let $f$ be a function defined over the real numbers.
+\begin{parts}
+\part[2] State the limit definition of the derivative, if it exists, of $f$ at a real number $x$. 
+\vspace{\stretch{1}}
+\part[4] Let $f(x)=\sqrt{x}$. Then, use the definition in (a) to find the derivative of $f$.
+\vspace{\stretch{2}}
+\part[4] Let $f(x)=|x|$. Then, use the definition in (a) to show that $f^{'}(0)$ does not exist.
+\vspace{\stretch{2}}
+\end{parts}
+
+\newpage
+
+\question
+\begin{parts}
+\part[6] Find the derivative of 
+\[
+f(x)=(x^{2}-1)^{3}\frac{\sqrt{-2x^{2}+1}}{3x^{4}-2}.
+\]
+Identify at least one place where you use the sum, constant multiple, product, power, quotient, and chain rule. 
+\vspace{\stretch{1}}
+\part[4] Find the derivative of
+\[
+f(x)=\log_{4}\left(\frac{e^{\sin(x)}}{3^{\cos{x}}}\right).
+\]
+Identify at least one place where you use the chain rule and the logarithmic, exponential, and trigonometric derivative rules.
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question An athletic field is to be built in the shape of a rectangle $x$ units long capped by semicircle regions of radius $r$ at the two ends (e.g. see Richardson Stadium). This field is to be bounded by a $400$ meter track.
+\begin{parts}
+\part[4] Express the area of the rectangular portion of the field as a function of $x$ alone or $r$ alone (your choice). 
+\vspace{\stretch{1}}
+\part[6] What values of $x$ and $r$ give the rectangular portion the largest possible area?
+\vspace{\stretch{2}}
+\end{parts}
+\end{questions}
+
+\end{document}

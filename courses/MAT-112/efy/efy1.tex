@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\newtheorem*{theorem}{Theorem}
+
+\title{MAT/CSC -- 220: Discrete Structures\\
+\large{EFY}}
+\author{Thomas R. Cameron}
+\date{March 23, 2018}
+
+\begin{document}
+\maketitle
+
+\paragraph*{Problem 1.} Use structural induction to verify the correctness of the following function:
+\begin{align*}
+&val~rec~height\colon~tree\rightarrow~int~=\\
+&fn~Leaf~n~=>~0 \\
+&|~Internal(n,x,y)~=>~1+Int.max(height(x),height(y))
+\end{align*}
+Note that max is a member function of the integer signature of SML. 
+
+\paragraph*{Problem 2.} Use structural induction to prove the following result.
+
+\begin{theorem}
+For any full binary tree $T$, the number of nodes in $T$ is odd. 
+\end{theorem}
+
+\paragraph*{Discussion Points.} Below is a list of interesting topics that relate to trees and structural induction. 
+\begin{itemize}
+\item	Structural Induction makes it easy to verify the correctness of operations on recursively defined data structures. Therefore, making recursive functions elegant solutions to problems. 
+\item	Recursion is done ``properly'' in a functional programming paradigm. That is, by treating computation as the evaluation of mathematical functions and avoiding changing state and mutable data we are able to run recursive functions without hitting a recursion depth limit and avoiding stack overflow. 
+\item	In order to fully optimize recursion, any two term recurrence relations should be modified to a one term relation. This is what is meant by tail recursion. 
+
+For instance, consider the example below.
+\begin{align*}
+&val~rec~fib1~:~int\rightarrow int~=\\
+&\hspace*{2em} fn~0~=>~1\\
+&\hspace*{2em} |~1~=>~1\\
+&\hspace*{2em} |~n:int~=>~fib1(n-1)+fib1(n-2)
+\end{align*}
+Fib1 is a recursive function that evaluates Fibonacci numbers in perhaps the most natural way. However, this natural definition has an exponential cost complexity. Whereas, the Fib2 implementation of the Fibonacci numbers has a linear cost complexity. 
+\begin{align*}
+&local\\
+&\hspace*{2em}val~rec~helper~:~int\rightarrow int*int~=\\
+&\hspace*{2em}fn~0~=>~(1,0)\\
+&\hspace*{2em}|~1~=>~(1,1)\\
+&\hspace*{2em}|~n:int~=>\\
+&\hspace*{4em}let\\
+&\hspace*{6em}val~(a:int,b:int)~=~helper(n-1)\\
+&\hspace*{4em}in\\
+&\hspace*{6em}(a+b,a)\\
+&\hspace*{4em}end\\
+&in\\
+&\hspace*{2em}val~fib2~:~int\rightarrow int~=\\
+&\hspace*{2em}fn~n:int~=>\\
+&\hspace*{4em}let\\
+&\hspace*{6em}val (a:int,\_) = helper(n)\\
+&\hspace*{4em}in\\
+&\hspace*{6em}a\\
+&\hspace*{4em}end\\
+&end\\
+\end{align*}
+\end{itemize}
+
+
+ 
+\end{document}

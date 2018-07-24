@@ -1,0 +1,238 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\newcommand{\class}{MAT -- 112}
+\newcommand{\term}{Spring 2018}
+\newcommand{\examnum}{Review 3 Solution}
+\newcommand{\examdate}{Dates: 4/18 -- 4/23}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Start Time:}}{\textbf{End Time:}}{}
+\runningheadrule
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} & \textbf{Pledge:}	& \makebox[2in]{\hrulefill}\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+Each question topic and the point value is recorded in the tables below. You may review these topics from any resource at your leisure. Once you decide to start a review problem, you are on the clock and you must work without any external resources, including no calculator. Each problem can be done one at a time but must be finished in a single sitting. Answer each question in the space provided; if you run out of space, then you may continue on the back of the page. It is your responsibility to plan out your time to ensure that you can finish all problems within the $4.0$ hours allotted. By writing your name and signing the pledge you are stating that your work adheres to these terms and the Davidson honor code. }}}
+\end{center}
+
+\vspace*{1em}
+
+\begin{multicols}{2}
+%% Scoring Table
+\centering
+\textbf{Scoring Table}\\
+\addpoints
+\gradetable[v][questions]
+
+\columnbreak
+%% Topics Table
+\centering
+\textbf{Topics Table}\\
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{| c | c |}
+\hline
+Question & Topic\\
+\hline
+1 & Implicit Differentiation\\
+\hline
+2 &The Antiderivative\\
+\hline
+3 &  The Fundamental Theorem of Calculus\\
+\hline
+4 & Volume of Solids of Revolution \\
+\hline
+&\\
+\hline
+\end{tabular}
+\end{multicols}
+
+\vspace*{2em}
+%%Time Table
+\begin{center}
+\textbf{Time Table}\\
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | }
+\hline
+Question & ~~~~1~~~~ & ~~~~2~~~~ & ~~~~3~~~~ & ~~~~4~~~~ \\
+\hline
+Time & & & &  \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+\question 
+\begin{parts}
+\part [4] Use implicit differentiation to find $\frac{d^{2}y}{dx^{2}}$ in terms of $x$ and $y$, where 
+\[
+4y^{2}+2=3x^{2}.
+\]
+~\\
+\textbf{Solution:} Using implicit differentiation we can take the derivative of both sides of the equation with respect to $x$:
+\[
+8y\frac{dy}{dx}=6x.
+\]
+Taking the derivative again with respect to $x$ we find:
+\[
+8\left(\frac{dy}{dx}\right)^{2}+8y\frac{d^{2}y}{dx^{2}}=6.
+\]
+Therefore,
+\begin{align*}
+\frac{d^{2}y}{dx^{2}} &= \frac{3}{4y}-\frac{1}{y}\left(\frac{dy}{dx}\right)^{2} \\
+&= \frac{3}{4y}-\frac{1}{y}\left(\frac{3x}{4y}\right)^{2} \\
+&= \frac{3}{4y}\left(1-\frac{3}{4}\frac{x^{2}}{y^{2}}\right)
+\end{align*}
+\vspace{\stretch{1}}
+\part [6] The radius and height of a right circular cone are both changing with respect to time. The radius is changing at the constant rate of $2~cm/sec$; in addition, the radius and height satisfy the implicit equation:
+\[
+r^{2}+h^{2}=25.
+\]
+Find the rate at which of the volume of the cone ($\pi r^{2}\frac{h}{3}$) is changing with respect to time when $r=3~cm$.
+~\\
+\textbf{Solution:} Applying implicit differentiation with respect to $t$ we find:
+\[
+2r\frac{dr}{dt}+2h\frac{dh}{dt}=0.
+\]
+Therefore, $\frac{dh}{dt}=-\frac{r}{h}\frac{dr}{dt}=-\frac{3}{4}(2)=-\frac{3}{2}$. Furthermore, the rate at which the volume is changing is given by
+\[
+\frac{dV}{dt}=\frac{\pi}{3}\left(2rh\frac{dr}{dt}+r^{2}\frac{dh}{dt}\right). 
+\]
+Plugging in what we know, we find that
+\begin{align*}
+\frac{dV}{dt} &= \frac{\pi}{3}\left(2(3)(4)(2)+9(-\frac{3}{2})\right) \\
+&= \pi\left(16-\frac{9}{2}\right) \\
+&= \pi\frac{23}{2}. 
+\end{align*}
+\vspace{\stretch{2}}
+\end{parts}
+
+\newpage
+
+\question Evaluate each indefinite integral.
+\begin{parts}
+\part [3] $\int\frac{20e^{5x}}{e^{5x}+3}dx$
+~\\
+\textbf{Solution:} Let $u=e^{5x}+3$, then $du=5e^{5x}dx$. Therefore, 
+\begin{align*}
+\int\frac{20e^{5x}}{e^{5x}+3}dx &= \int\frac{4du}{u} \\
+&= 4\ln|u|+C \\
+&= 4\ln(e^{5x}+3)+C.
+\end{align*}
+\vspace{\stretch{1}}
+\part [3] $\int 5x e^{2x+3}dx$
+~\\
+\textbf{Solution:} Let $u=5x$ and $v=\frac{1}{2}e^{2x+3}$. Then
+\[
+\int 5xe^{2x+3}dx=\int udv.
+\]
+Applying the integration by parts formula gives
+\begin{align*}
+\int 5xe^{2x+3}dx &= \frac{5}{2}xe^{2x+3}-\frac{5}{2}\int e^{2x+3}dx \\\
+&= \frac{5}{2}xe^{2x+3}-\frac{5}{4}e^{2x+3}+C.
+\end{align*}
+\vspace{\stretch{1}}
+\part [4] $\int\ln(x+7)dx$
+~\\
+\textbf{Solution:} Let $u=\ln(x+7)$ and $v=x+c$, where $c$ can be any constant. Then
+\[
+\int\ln(x+7)dx=\int udv.
+\]
+Applying the integration by parts formula gives
+\begin{align*}
+\int\ln(x+7)dx &= (x+c)\ln(x+7)-\int\frac{x+c}{x+7}dx \\
+&= (x+7)\ln(x+7)-\int dx~\quad~\text{(if $c=7$)} \\
+&= (x+7)\ln(x+7)-x+C.
+\end{align*}
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+\begin{parts}
+\part [4] State both parts of the Fundamental Theorem of Calculus.
+~\\
+\textbf{Solution:} Suppose that $f(x)$ in continuous and let $F(x)$ be any antiderivative of $f(x)$ (assuming it exists). Then
+\[
+\int_{a}^{b}f(x)dx=F(b)-F(a).
+\]
+Now, suppose that $f(x)$ is continuous and define the accumulator function $F(x)=\int_{a}^{x}f(t)dt$, where $a$ is any real number. Then
+\[
+F^{'}(x)=f(x). 
+\]
+\vspace{\stretch{1}}
+\part [3] Evaluate $\int_{0}^{\frac{\pi}{4}}2\cos x dx$
+~\\
+\textbf{Solution:} Let $F(x)=2\sin(x)$, then $F^{'}(x)=2\cos(x)$. It follows from the first part of the Fundamental Theorem of Calculus that
+\[
+\int_{0}^{\frac{\pi}{4}}2\cos(x)dx=2\left(\sin(\pi/4)-\sin(0)\right)=\sqrt{2}.
+\]
+\vspace{\stretch{1}}
+\part [3] Find $F^{'}(x)$, where $F(x)=\int_{-1}^{x^{2}}(-2t+2)dt$. 
+~\\
+\textbf{Solution:} Let $u(x)=x^{2}$ and $G(x)=\int_{-1}^{x}(-2t+2)dt$. Then $F(x)=G(u(x))$ and it follows from the chain rule and the second part of the Fundamental Theorem of Calculus that
+\begin{align*}
+F^{'}(x) &= G^{'}(u(x))u^{'}(x) \\
+&= (-2x^{2}+2)(2x)=-4x^{3}+4x.
+\end{align*}
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question A $4$ cm diameter drill bit is used to drill a cylindrical hole through the middle of a right circular cone, starting at its circular bottom moving up. The hole is drilled until the cone is split into two pieces. 
+\begin{parts}
+\part [4] If the right circular cone has a radius of $5$ cm and a height of $10$ cm, how long is the drilled hole?
+~\\
+\textbf{Solution:} The right circular cone is formed by revolving the line $y=\frac{1}{2}x$ about the $x$-axis. Similarly, the cylindrical hole is formed by revolving the line $y=2$ about the $x$-axis. The hole will be drilled along the $x$-axis (from right to left) starting at $x=10$ and going to $x=4$ (where the lines $y=\frac{1}{2}x$ and $y=2$ intersect). Therefore, the drilled hole has a length of $6$~cm. 
+\vspace{\stretch{1}}
+\part [6] What is the total volume of the two remaining pieces after the hole is drilled?
+~\\
+\textbf{Solution:} After the cone is split into two pieces, we have a top and bottom whose volume satisfies the following:
+\begin{itemize}
+\item	Volume of Top: 
+\begin{align*}
+\int_{0}^{4}\pi\left(\frac{x}{2}\right)^{2}dx &= \frac{\pi}{4}\left(\frac{x^{3}}{3}|_{0}^{4}\right) \\
+&= \frac{16\pi}{3}~cm^{3}.
+\end{align*}
+\item	Volume of Bottom:
+\begin{align*}
+\int_{4}^{10}\pi\left(\frac{x^{2}}{4}-4\right)dx &= \pi\left(\frac{x^{3}}{12}-4x|_{4}^{10}\right) \\
+&=\pi\left(\left(\frac{10^{3}}{12}-40\right)-\left(\frac{4^{3}}{12}-16\right)\right) \\
+&= 54\pi~cm^{3}.
+\end{align*}
+\end{itemize}
+Therefore, the total volume of the two remaining pieces is
+\[
+\frac{16\pi}{3}+54\pi = \frac{178\pi}{3}~cm^{3}.
+\]
+Note that this problem could also be solved by taking the total volume of the right circular cone and subtracting off the volume of the drilled hole:
+\[
+\frac{250\pi}{3}-24\pi = \frac{178\pi}{3}. 
+\]
+However, this is missing the point of volumes of revolution. 
+\vspace{\stretch{2}}
+\end{parts}
+
+\end{questions}
+
+\end{document}

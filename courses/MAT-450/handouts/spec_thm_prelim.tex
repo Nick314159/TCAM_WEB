@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}
+
+\title{Spectral Theorem Preliminaries}
+\author{Instructor: Thomas R. Cameron}
+\date{}
+\begin{document}
+\maketitle
+
+Let $V$ be an inner product space over the field $\mathbb{F}$. We will make use of the following results.
+
+\begin{theorem}
+Let $W$ be a finite-dimensional subspace of $V$ and let $y\in V$. Then there exists a unique $u\in W$ and $z\in W^{\perp}$ such that $y=u+z$. Furthermore, if $\{v_{1},\ldots,v_{k}\}$ is a basis for $W$, then 
+\[
+u=\sum_{i=1}^{k}\langle y,v_{i}\rangle v_{i}
+\]
+\end{theorem}
+\begin{proof}
+See~\cite[Theorem 6.6]{Friedberg}. 
+\end{proof}
+This in fact holds for any closed subspace $W$. Hence, we can write $V=W\oplus W^{\perp}$ for any closed subspace $W$ of $V$. 
+
+\begin{theorem}
+If $V$ is finite-dimensional and $\mathbb{F}=\mathbb{C}$. Then $T\in\mathcal{L}(V)$ is normal if and only if there exists an orthonormal basis for $V$ consisting of eigenvectors of $T$. 
+\end{theorem}
+\begin{proof}
+See~\cite[Theorem 6.16]{Friedberg}.
+\end{proof}
+
+\begin{theorem}
+If $V$ is finite-dimensional and $\mathbb{F}=\mathbb{R}$. Then $T\in\mathcal{L}(V)$ is self-adjoint if and only if there exists an orthonormal basis for $V$ consisting of eigenvectors of $T$. 
+\end{theorem}
+\begin{proof}
+See~\cite[Theorem 6.17]{Friedberg}.
+\end{proof}
+
+\begin{thebibliography}{1}
+\bibitem{Friedberg}
+S.H. Friedberg, A.H. Insel, and L.E. Spence.
+\textit{Linear Algebra}.
+Pearson Education, Upper Saddle River, NJ, 4th edition, 2003.
+\end{thebibliography}
+
+\end{document}

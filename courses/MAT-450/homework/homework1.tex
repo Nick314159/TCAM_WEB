@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{Homework 1}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: 1/26/2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+You must complete all other problems and type your solutions in \LaTeX. The book problems are listed for your edification and I \emph{strongly} encourage you to work through them. You will find that some of the book problems will be helpful in completing the other problems. In addition, the book problems may show up on a EFY or Review. Note that the other problems are graded rigorously with high expectations on clear and concise mathematical writing as outlined in~\href{https://www.thomasrcameron.com/courses/MAT-450/handouts/math_writing.pdf}{the mathematical writing handout}. Lastly, you may work with other students and ask me any questions, but you must write your solutions independently so I may interpret your understanding while grading. Any sources you use, including internet sources must be cited using {\verb+\thebibliography+} environment. 
+\end{abstract}
+
+\subsection*{Book Problems}
+\begin{itemize}
+\item   [\S 1.2:] 1, 20, 22
+\item   [\S 1.3:] 1, 20, 31
+\item   [\S 1.4:] 1, 3, 11, 13
+\item   [\S 1.5:] 1, 9, 12
+\item   [\S 1.6:] 1, 2, 20, 35
+\end{itemize}
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.}	Let $V$ be a vector space over a field $F$. Show that
+\begin{itemize}
+\item	The zero vector and additive inverse are unique.
+\item	For $0\in F$, we have $0x=0$~(zero vector) for all $x\in V$. 
+\item	For $(-1)\in F$, we have $(-1)x=-x$~(additive inverse) for all $x\in V$.
+\end{itemize}
+
+\paragraph*{Problem 2.}	Let $P_{n}(\mathbb{R})$ denote the vector space of polynomials of degree $n$ over the field $\mathbb{R}$. Let $S$ denote the set of polynomials that are zero at $t_{1},\ldots,t_{j}\in \mathbb{R}$, where $j\leq n$.
+\begin{itemize}
+\item	Show that $S$ is a subspace of $P_{n}(\mathbb{R})$. 
+\item	Determine $\dim S$.
+\item	Determine $\dim P_{n}(\mathbb{R})/S$.
+\end{itemize}
+
+\paragraph*{Problem 3.}	Suppose that $X$ is a finite-dimensional vector space, and $U$ and $V$ are two subspaces of $X$ such that $X=U+V$. Denote by $W$ the intersection of $U$ and $V$ and show that $\dim X = \dim U + \dim V - \dim W$. 
+
+\paragraph*{Problem 4.}	Any subset of a vector space $V$ which is equal to $\{v\}+U$ for some vector $v\in V$ and some subspace $U$ of $V$ is called an \emph{affine space} associated with the subspace $U$ in $V$.
+
+Let $S$ be a nonempty subset of a vector space $V$. Prove that the following are equivalent:
+\begin{enumerate}[(i)]
+\item	$S$ is an affine space in $V$.
+\item	If $x,y\in S$, then $\alpha x+(1-\alpha)y\in S$ for all $\alpha\in F$. 
+\item	For any $n\in\mathbb{N}$, if $v_{1},\ldots,v_{n}\in S$ and $\alpha_{1},\ldots,\alpha_{n}\in F$ with $\sum_{j=1}^{n}\alpha_{j}=1$, then $\sum_{j=1}^{n}\alpha_{j}v_{j}\in S$. 
+\end{enumerate}
+\emph{Hint: Prove that $(i)\implies(iii)\implies(ii)\implies(i)$}
+
+
+
+\end{document}

@@ -1,0 +1,132 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\newtheorem{theorem}{Theorem}
+\newcommand{\spn}{{span\mkern1mu}}
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{Solution 2}}
+\author{Thomas R. Cameron}
+\date{2/9/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.}	Let $V$ be a vector space of dimension $n$, and let $T\colon~V\rightarrow~V$ be linear. Suppose that $W$ is a subspace of $V$ with ordered basis $\gamma=\{x_{1},\ldots,x_{k}\}$.
+\begin{theorem}
+If $W$ is $T$-invariant, then the ordered basis 
+\[
+\beta=\{x_{1},\ldots,x_{k},x_{k+1},\ldots,x_{n}\}
+\] 
+for $V$ satisfies $[T]_{\beta}=\begin{bmatrix}B_{11} & B_{12}\\ 0 & B_{22}\end{bmatrix}$, where $B_{11}=[T_{W}]_{\gamma}$. 
+\end{theorem}
+\begin{proof}
+Note that $[T]_{\beta}=[a_{ij}]$ is a $n\times n$ matrix such that
+\[
+T(x_{j})=\sum_{i=1}^{n}a_{ij}x_{i},\quad~j=1,\ldots,n.
+\]
+Since $W$ is $T$-invariant, it follows that $a_{ij}=0$ for all $i>k$ and $j=1,\ldots,k$. Thus,
+\[
+[T]_{\beta}=\begin{bmatrix}B_{11} & B_{12}\\ 0 & B_{22}\end{bmatrix},
+\]
+where $B_{11}$ is a $k\times k$ matrix. For $j=1,\ldots,k$ let
+\[
+T_{W}(x_{j})=\sum_{i=1}^{k}\hat{a}_{ij}x_{i}.
+\]
+Then, since $T_{W}(x)=T(x)$ for all $x\in W$, we have
+\[
+\sum_{i=1}^{k}\hat{a}_{ij}x_{i}=\sum_{i=1}^{k}a_{ij}x_{i}.
+\]
+Furthermore, since the the $x_{i}$'s are linearly independent, it follows that $\hat{a}_{ij}=a_{ij}$ for $i,j=1,\ldots,k$. Therefore, $[T_{W}]_{\gamma}=B_{11}$. 
+\end{proof}
+\begin{theorem}
+If the ordered basis $\gamma$ satisfies 
+\[
+\spn(x_{1},\ldots,x_{j})
+\]
+being T-invariant for $j=1,\ldots,k$, then $[T_{W}]_{\gamma}$ is a $k\times k$ upper triangular matrix. 
+\end{theorem}
+\begin{proof}
+Suppose that $\gamma$ satisfies $\spn(x_{1},\ldots,x_{j})$ being T-invariant for $j=1,\ldots,k$. Then, it is clear that $W=\spn(x_{1},\ldots,x_{k})$ is $T$-invariant and it follows that $T_{W}$ is linear. Therefore, $[T_{W}]_{\gamma}=[a_{ij}]$ is a $k\times k$ matrix, where
+\[
+T(x_{j})=\sum_{i=1}^{k}a_{ij}x_{i},\quad~j=1,\ldots,k.
+\]
+Since $T(x_{j})\in\spn(x_{1},\ldots,x_{j})$, it follows that $a_{ij}=0$ for all $i>j$. Therefore, $[T_{W}]_{\gamma}$ is upper-triangular. 
+\end{proof}
+
+\paragraph*{Problem 2.}	Let $l^{2}$ denote the sequence space of all real or complex value sequences $x=(x_{1},x_{2},\ldots)$ such that
+\[
+\left(\sum_{i=1}^{\infty}|x_{i}|^{2}\right)^{\frac{1}{2}}<\infty.
+\]
+Further define $T\colon~l^{2}\rightarrow~l^{2}$ by $T(x)=(0,x_{1},x_{2},\ldots)$ and $U\colon~l^{2}\rightarrow~l^{2}$ by $U(x)=(x_{2},x_{3},\ldots)$. 
+\begin{theorem}
+$T$ is linear, one-to-one, but not onto. 
+\end{theorem}
+\begin{proof}
+Let $x,y\in l^{2}$ and $\alpha\in\mathbb{F}$, where $\mathbb{F}$ is the real or complex numbers. Then
+\begin{align*}
+T(x+\alpha y)&=(0,x_{1}+\alpha y_{1},x_{2}+\alpha y_{2},\ldots) \\
+&=(0,x_{1},x_{2},\ldots)+\alpha(0,y_{1},y_{2},\ldots) \\
+&=T(x)+\alpha T(y).
+\end{align*}
+It is clear from the above equations that $T$ is linear. Furthermore, if $T(x)=T(y)$, then it is clear that $x=y$. Thus, $T$ is one-to-one. However, $T$ cannot map to any sequences whose first component is not zero, so $T$ is not onto. 
+\end{proof}
+\begin{theorem}
+$U$ is linear, onto, but not one-to-one.
+\end{theorem}
+\begin{proof}
+Let $x,y\in l^{2}$ and $\alpha\in\mathbb{F}$, where $\mathbb{F}$ is the real or complex numbers. Then
+\begin{align*}
+U(x+\alpha y)&=(x_{2}+\alpha y_{2},x_{3}+\alpha y_{3},\ldots) \\
+&=(x_{2},x_{3},\ldots)+\alpha (y_{2},y_{3},\ldots) \\
+&=U(x)+\alpha U(y).
+\end{align*}
+It is clear from the above equations that $U$ is linear. Furthermore, for any $y=(y_{1},y_{2},\ldots)$ define $x=(0,y_{1},y_{2},\ldots)$. Then, $U(x)=y$ and it follows that $U$ is onto. However, since we could replace the first entry of $x$ with any nonzero element, it follows that $U$ is not one-to-one. 
+\end{proof}
+\begin{theorem}
+$T$ is isometric, but $U$ is not.
+\end{theorem}
+\begin{proof}
+To show that $T$ is isometric, note that
+\begin{align*}
+d(T(x),T(y))&=\left(\sum_{i=1}^{\infty}|T(x)_{i}-T(y)_{i}|^{2}\right)^{\frac{1}{2}} \\
+&=\left(\sum_{i=2}^{\infty}|x_{i-1}-y_{i-1}|^{2}\right)^{\frac{1}{2}} \\
+&=\left(\sum_{i=1}^{\infty}|x_{i}-y_{i}|^{2}\right)^{\frac{1}{2}} \\
+&=d(x,y).
+\end{align*}
+Since $T$ preserves distances it is isometric. 
+
+Conversely, let $x=(1,0,\ldots)$ and $y=(2,0,\ldots)$. Then $d(x,y)=1$ and $d(U(x),U(y))=0$. Therefore, $U$ is not isometric. 
+\end{proof}
+
+\paragraph*{Problem 3.} Let $P_{n}(\mathbb{F})$ denote the set of all polynomials over $\mathbb{F}$ of degree $n$ or less, and let $\mathbb{F}^{n+1}$ denote the set of all $(n+1)$-tuples made up of elements from $\mathbb{F}$. 
+\begin{theorem}
+$P_{n}(\mathbb{F}$ is isomorphic to $\mathbb{F}^{n+1}$ for all $n\in\mathbb{N}$.
+\end{theorem}
+\begin{proof}
+Define $\phi\colon~P_{n}(\mathbb{F})\rightarrow\mathbb{F}^{n+1}$ by
+\[
+\phi(p)=\begin{bmatrix}a_{0}\\a_{1}\\\vdots\\a_{n}\end{bmatrix},
+\]
+where $p(\lambda)=a_{0}+a_{1}\lambda+\cdots+a_{n}\lambda^{n}$. It is easy to show that $\phi$ is linear and bijective and therefore an isomorphism. 
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%						The Bibliography						%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{9}
+\bibitem{Friedberg}
+S.H. Friedberg, A.H. Insel, and L.E. Spence.
+\textit{Linear Algebra}.
+Pearson Education, Upper Saddle River, NJ, 4th edition, 2003.
+\end{thebibliography}
+
+\end{document}

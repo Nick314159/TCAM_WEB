@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{siunitx}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Solution 7}}
+\author{Thomas R. Cameron}
+\date{3/23/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.} We will use the following linear approximation formula
+\[
+f(x+\Delta x)\approx f(x)+\Delta x f^{'}(x).
+\]
+\begin{itemize}
+\item	Let $f(x)=\sin(x)$, $x=\ang{120}=\frac{2\pi}{3}$, and $\Delta x=\ang{2}=\frac{\pi}{90}$. Then
+\begin{align*}
+\sin\ang{122}&\approx \sin(2\pi/3)+\frac{\pi}{90}\cos(2\pi/3) \\
+&=\frac{\sqrt{3}}{2}-\frac{\pi}{180} \\
+&\approx 0.848572.
+\end{align*}
+The error in this approximation is $0.00052$. 
+\item	Let $f(x)=\cos(x)$, $x=\ang{135}=\frac{3\pi}{4}$, and $\Delta x=\ang{2}=\frac{\pi}{90}$. Then
+\begin{align*}
+\cos\ang{137}&\approx\cos(3\pi/4)-\frac{\pi}{90}\sin(3\pi/4) \\
+&=-\frac{\sqrt{2}}{2}-\frac{\pi\sqrt{2}}{180} \\
+&\approx -0.731789.
+\end{align*}
+The error in this approximation is $0.00044$. 
+\end{itemize}
+
+\end{document}

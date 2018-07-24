@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{EFY 1}}
+\author{Thomas R. Cameron}
+\date{January 16, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Please complete each of the following problems. You should work in groups of two and hand in only one submission per group. Be sure that your arguments are well justified and presented clearly. 
+\end{abstract}
+
+\paragraph*{Problem 1.}	Show that the set $Z_{2}=\{0,1\}$ is a field under addition and multiplication modulo $2$. It is clear that the commutative, associative, and distributive properties hold. Therefore, all that remains is for you to show that the identity and inverse properties hold. 
+
+\begin{proof}
+Note that $(0+0)\mod 2=0$ and $(1+0)\mod 2=1$, therefore, $0$ is the additive identity. Similarly, $(0\cdot 1)\mod 2=0$ and $(1\cdot 1)\mod 2=1$, so it follows that $1$ is the multiplicative identity. Furthermore, since $(0+0)\mod 2=0$, $(1+1)\mod 2=0$, and $(1\cdot 1)\mod 2=1$, we know that $0$ and $1$ are their own additive inverses, and $1$ is its own multiplicative inverse.
+\end{proof}
+
+\paragraph*{Problem 2.}	Let $S$ be a nonempty set and $\mathbb{F}$ be a field. Show that the set of all functions from $S$ to $\mathbb{F}$, denoted by $\mathcal{F}(S,\mathbb{F})$, is a vector space over $\mathbb{F}$.
+
+\begin{proof}
+We begin by noting that the set $\mathcal{F}(S,\mathbb{F})$ is closed under addition and scalar multiplication defined by
+\[
+(f+g)(s)=f(s)+g(s)~\text{ and }~(cf)(s)=c[f(s)],
+\]
+since the addition of two functions and the scalar multiple of a function is still a function. In addition, the following properties hold for all $f,g,h\in\mathcal{F}(S,\mathbb{F})$ and $a,b\in\mathbb{F}$:
+\begin{itemize}
+\item	$f(s)+g(s)=g(s)+f(s)~\implies~f+g=g+f$
+\item	$(f(s)+g(s))+h(s)=f(s)+(g(s)+h(s))~\implies~(f+g)+h=f+(g+h)$
+\item	the $0$ function is in $\mathcal{F}(S,\mathbb{F})$ and satisfies $f+0=f$,
+\item	for $1\in\mathbb{F}$ we have $1f=f$,
+\item	$(ab)[f(s)]=a[bf(s)]~\implies~(ab)f=a(bf)$,
+\item	$a(f(s)+g(s))=af(s)+ag(s)~\implies~a(f+g)=af+ag$,
+\item	$(a+b)f(s)=af(s)+bf(s)~\implies~(a+b)f=af+bf$.
+\end{itemize}
+It follows from the definition that $\mathcal{F}(S,\mathbb{F})$ is a vector space over $\mathbb{F}$. 
+\end{proof}
+
+\paragraph*{Problem 3.}	As we will discuss in later weeks, the field $\mathbb{C}$ over the real numbers is isomorphic to $\mathbb{R}^{2}$. Let 
+\[
+a+bi~\text{ and }~c+di
+\]
+be two complex numbers. Show that the complex multiplication $(a+bi)(c+di)$ can be represented by the following matrix multiplication
+\[
+\begin{bmatrix}a & -b\\b & a\end{bmatrix}\begin{bmatrix}c \\ d\end{bmatrix}.
+\]
+
+\begin{proof}
+Here we are associating the complex number $a+bi$ with the vector in $\mathbb{R}^{2}$ denoted by $\begin{bmatrix}a\\b\end{bmatrix}$ . Note that the given matrix multiplication is equal to 
+\[
+\begin{bmatrix}a & -b\\b & a\end{bmatrix}\begin{bmatrix}c\\d\end{bmatrix}=\begin{bmatrix}ac-bd\\ad+bc\end{bmatrix},
+\]
+which is equivalent to the complex number $(ac-bd)+i(ad+bc)$.
+\end{proof}
+
+
+\end{document}

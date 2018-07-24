@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Solution 2}}
+\author{Thomas R. Cameron}
+\date{2/2/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.}	Let $(x,y)$ be a point in the plane other than the origin. Let $r$ be the distance of the radii from the origin to $(x,y)$ and let $\theta$ be the angle measured counterclockwise from the positive $x$-axis to the radii. Then, we define
+\[
+\cos\theta=\frac{x}{r},~\quad\sin\theta=\frac{y}{r},~\quad\tan\theta=\frac{y}{x}.
+\]
+
+The reciprocal trigonometric functions are defined as follows:
+\begin{align*}
+\sec\theta&=\frac{r}{x}=\frac{1}{r/x}=\frac{1}{\cos\theta}~\quad(y\neq 0),\\
+\csc\theta&=\frac{r}{y}=\frac{1}{r/y}=\frac{1}{\sin\theta}~\quad(x\neq 0),\\
+\cot\theta&=\frac{x}{y}=\frac{1}{y/x}=\frac{1}{\tan\theta}~\quad(y\neq 0).
+\end{align*}
+
+Note further, since $\tan\theta=\frac{y}{x}$ and $\cot\theta=\frac{x}{y}$, we can substitute $x=r\cos\theta$ and $y=r\sin\theta$ to get
+\[
+\tan\theta=\frac{\sin\theta}{\cos\theta}~\text{ and }~\cot\theta=\frac{\cos\theta}{\sin\theta}.
+\]
+Lastly, it follows from Pythagorean's theorem that $r=\sqrt{x^{2}+y^{2}}$. Therefore,
+\begin{align*}
+\sin^{2}\theta+\cos^{2}\theta&=\left(\frac{y}{r}\right)^{2}+\left(\frac{x}{r}\right)^{2} \\
+&=\frac{y^{2}+x^{2}}{r^{2}} \\
+&=\frac{y^{2}+x^{2}}{y^{2}+x^{2}}=1.
+\end{align*}
+
+\end{document}

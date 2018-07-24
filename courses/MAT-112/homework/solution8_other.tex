@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{siunitx}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Solution 8}}
+\author{Thomas R. Cameron}
+\date{3/23/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.} Let $f(x)$ be continuous on the interval $[a,b]$ and let $F(x)$ be any antiderivative of $f(x)$. Then
+\[
+\int_{a}^{b}f(x)dx=F(b)-F(a).
+\]
+Recall that the indefinite integral
+\[
+\int f(x)dx=F(x)+C
+\]
+denotes the entire family of antiderivatives of $f(x)$. The Fundamental Theorem of Calculus (part 1) states that you can take any function from that family of antiderivatives and use it to compute the definite integral. 
+
+\paragraph*{Problem 2.} Let $y=f(x)$ and let $a$ and $b$ be any two real numbers such that $f(x)$ is continuous on the interval $[a,b]$. Furthermore, define $y_{1}=f(a)$ and $y_{2}=f(b)$. Then
+\begin{align*}
+\int_{a}^{b}f^{'}(x)dx&=f(b)-f(a)~\text{(by the F.T.C.)} \\
+&=y_{2}-y_{1} \\
+&=\int_{y_{1}}^{y_{2}}dy~\text{(by the F.T.C.)}
+\end{align*}
+It follows that we have further justification for the curious relationship among differentials; that is,
+\[
+dy = f^{'}(x)dx.
+\]
+
+\paragraph*{Problem 3.} Let $f(x)$ be a continuous function on an open interval $[a,b]$ and define
+\[
+F(x)=\int_{a}^{x}f(t)dt,
+\]
+then $F^{'}(x)=f(x)$. Recall that we call $F(x)$ an accumulator function and it measures the growth or decay in the area bounded by $f$, the $x$-axis, and the interval $[a,x]$. The Fundamental Theorem of Calculus (part 2) states that the rate of change of the accumulator function is equal to the integrand evaluated at $x$, i.e., $f(x)$. Another interpretation lies in noting that
+\[
+\frac{d}{dx}\left(\int_{a}^{x}f(t)dt\right)=f(x).
+\]
+Thus, the derivative and integral are pseudo-inverses. 
+
+\paragraph*{Problem 4.} Let $f(x)$ be a continuous function and let $c$ be any real number. If $u$ and $v$ are differential functions of $x$, then
+\begin{align*}
+\frac{d}{dx}\left(\int_{u}^{v}f(t)dt\right) &= \frac{d}{dx}\left(\int_{u}^{c}f(t)dt+\int_{c}^{v}f(t)dt\right)~\text{(by property 4 on p. 400)} \\
+&= \frac{d}{dx}\left(-\int_{c}^{u}f(t)dt+\int_{c}^{v}f(t)dt\right)~\text{(by property 5 on p. 400)}.
+\end{align*}
+Define $G(x)=\int_{c}^{x}f(t)dt$, then $G^{'}(x)=f(x)$ by the F.T.C. Furthermore, by the chain rule we have
+\[
+\frac{d}{dx}\int_{c}^{u}f(t)dt = G^{'}(u)\frac{du}{dx}
+\]
+and
+\[
+\frac{d}{dx}\int_{c}^{v}f(t)dt = G^{'}(v)\frac{dv}{dx}.
+\]
+Therefore,
+\[
+\frac{d}{dx}\left(\int_{u}^{v}f(t)dt\right) = f(v)\frac{dv}{dx}-f(u)\frac{du}{dx}.
+\]
+
+
+\end{document}

@@ -1,0 +1,156 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\newcommand{\class}{MAT -- 112}
+\newcommand{\term}{Spring 2018}
+\newcommand{\examnum}{Review 1}
+\newcommand{\examdate}{Dates: 2/5 -- 2/9}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Start Time:}}{\textbf{End Time:}}{}
+\runningheadrule
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} & \textbf{Pledge:}	& \makebox[2in]{\hrulefill}\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+Each question topic and the point value is recorded in the tables below. You may review these topics from any resource at your leisure. Once you decide to start a review problem, you are on the clock and you must work without any external resources, including no calculator. Each problem can be done one at a time but must be finished in a single sitting. Answer each question in the space provided, if you run out of space, then you may continue on the back of the page. It is your responsibility to plan out your time to ensure that you can finish all problems within the $2.0$ hours allotted. By writing your name and signing the pledge you are stating that your work adheres to these terms and the Davidson honor code. }}}
+\end{center}
+
+\vspace*{1em}
+
+\begin{multicols}{2}
+%% Scoring Table
+\centering
+\textbf{Scoring Table}\\
+\addpoints
+\gradetable[v][questions]
+
+\columnbreak
+%% Topics Table
+\centering
+\textbf{Topics Table}\\
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{| c | c |}
+\hline
+Question & Topic\\
+\hline
+1 & Polynomial and Rational Functions\\
+\hline
+2 & Exponential and Log Functions\\
+\hline
+3 &  Trigonometric Functions\\
+\hline
+4 & Applications \\
+\hline
+&\\
+\hline
+\end{tabular}
+\end{multicols}
+
+\vspace*{2em}
+%%Time Table
+\begin{center}
+\textbf{Time Table}\\
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | }
+\hline
+Question & ~~~~1~~~~ & ~~~~2~~~~ & ~~~~3~~~~ & ~~~~4~~~~ \\
+\hline
+Time & & & &  \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+\question Let
+\[
+f(x)=2x^{2}-12x+19~\text{ and }~g(x)=\frac{3x-2}{2x+1}.
+\]
+\begin{parts}
+\part[6]	On separate graphs, sketch a plot of the functions $f$ and $g$. 
+Clearly label any $x$-intercepts, $y$-intercepts, and vertical and horizontal asymptotes.
+\vspace{\stretch{3}}
+\part[4]	State the definition of the domain and range and find the domain and range of $f$ and $g$. 
+\vspace{\stretch{2}}
+\end{parts}
+
+\newpage
+
+\question	
+\begin{parts}
+\part[5]	Solve each of the following equations for $x$. Leave your answer in exact fully simplified form.
+\begin{itemize}
+\item	$-11+5e^{x-3}=17$
+\item	$\ln(x-2)+\ln(x-1)=2\ln(x+1)$
+\item	$\log_{4}(x)-\log_{5}(x-1)=\frac{1}{2}$ (Note the different log bases, this is not a typo.)
+\end{itemize}
+\vspace{\stretch{2}}
+\part[5]	Use the definition of exponential and logarithmic functions to show that $f(x)=a^{x}$ and $g(x)=\log_{a}(x)$, where $a>0$ and $a\neq 1$, are inverse functions.
+\vspace{\stretch{1}}
+\part[5]	Sketch a graph with a plot of $f(x)=2^{x}$ and $g(x)=\log_{2}(x)$. Be sure to label three points for both $f$ and $g$.
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+\begin{parts}
+\part[5]	State the definition of the trigonometric functions: cosine, sine, and tangent; include a clearly labeled diagram.
+\vspace{\stretch{1}}
+\part[5]	Draw the 30-60-90 and 45-45-90 right triangles and state the cosine, sine, and tangent of the 30, 45, and 60 degree angles. 
+\vspace{\stretch{1}}
+\part[5]	Sketch a graph with the plot of the cosine, sine, and tangent functions on the interval $[-\pi,\pi]$. 
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+\begin{parts}
+\part[5]	A simple pendulum, see figure below, 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{review1_fig1}
+\end{figure}
+consists of a mass $m$ hanging from a string of length $L$ from a fixed pivot point. When displaced to an initial angle $\theta_{0}$ and released, the pendulum will swing back and forth with periodic motion described by the equation
+\[
+\theta(t)=\theta_{0}\cos(\sqrt{\frac{g}{L}} t),
+\]
+where $g$ is the force of gravity and $t$ is the time elapsed since the mass was released.
+\begin{itemize}
+\item	Express the period of the pendulum's motion in terms of the variables described above. 
+\item	When is the displacement maximized and when is it zero?
+\end{itemize}
+\vspace{\stretch{1}}
+\part[5]	The half life of Carbon-14 is 5730 years. The amount left of an initial sample $y_{0}$ (measured in grams) can be modeled by
+\[
+y(t)=y_{0}e^{rt}.
+\]
+\begin{itemize}
+\item	Find the decay rate $r$. Leave your answer in exact fully simplified form. 
+\item	If $2$ grams remain after $1000$ years, find the initial sample $y_{0}$. Leave your answer in exact fully simplified form. 
+\end{itemize}
+\vspace{\stretch{1}}
+\end{parts}
+\end{questions}
+
+
+\end{document}

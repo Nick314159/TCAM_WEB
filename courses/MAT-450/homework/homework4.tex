@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\newcommand{\spn}{{span\mkern1mu}}
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{Homework 4}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: 3/23/2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+You must complete all other problems and type your solutions in \LaTeX. The book problems are listed for your edification and I \emph{strongly} encourage you to work through them. You will find that some of the book problems will be helpful in completing the other problems. In addition, the book problems may show up on a EFY or Review. Note that the other problems are graded rigorously with high expectations on clear and concise mathematical writing as outlined in~\href{https://www.thomasrcameron.com/courses/MAT-450/handouts/math_writing.pdf}{the mathematical writing handout}. Lastly, you may work with other students and ask me any questions, but you must write your solutions independently so I may interpret your understanding while grading. Any sources you use, including internet sources must be cited using {\verb+\thebibliography+} environment. 
+\end{abstract}
+
+\subsection*{Book Problems}
+\begin{itemize}
+\item   [\S 6.1:] 1, 10, 12
+\item   [\S 6.2:] 1, 15, 16
+\item   [\S 6.3:] 1, 18, 21
+\end{itemize}
+
+\subsection*{Other Problems}
+
+In this homework, the field $\mathbb{F}$ is either $\mathbb{R}$ or $\mathbb{C}$. 
+
+\paragraph*{Problem 1.} Let $V$ be a vector space over the field $\mathbb{F}$ endowed with 
+\[
+\langle\cdot,\cdot\rangle\colon~V\times V\rightarrow\mathbb{F}
+\]
+that satisfies the properties of an inner product. Then $\mathcal{H}=(V,\langle\cdot,\cdot\rangle)$ is an inner product space.
+\renewcommand{\theenumi}{\alph{enumi}}
+\begin{enumerate}
+\item	Show that for all $x,y\in\mathcal{H}$ the parallelogram equality holds:
+\[
+\left\Vert x+y\right\Vert^{2}+\left\Vert x-y\right\Vert^{2}=2\left(\left\Vert x\right\Vert^{2}+\left\Vert y\right\Vert^{2}\right)
+\]
+\item	Draw a parallelogram with sides $x$ and $y$ in the plane and use it to interpret the Parallelogram law geometrically.
+\end{enumerate}
+
+\paragraph*{Problem 2.} Let $V$ be a vector space over the field $\mathbb{F}$ endowed with 
+\[
+\left\Vert\cdot\right\Vert\colon~V\rightarrow\mathbb{F}
+\]
+that satisfies properties (a), (b), and (d) of Theorem 6.2 of Friedberg. Then $\mathcal{B}=(V,\left\Vert\cdot\right\Vert)$ is a normed space. 
+\begin{enumerate}
+\item	Show that the sequence space $l^{1}$ with norm $\left\Vert x\right\Vert=\sum_{i=0}^{\infty}|x_{i}|$ is not an inner product space.
+\item	Show that the sequence space $l^{2}$ with norm $\left\Vert x\right\Vert=\left(\sum_{i=0}^{\infty}|x_{i}|^{2}\right)^{1/2}$ is an inner product space. 
+\item	Suppose $\mathcal{B}$ is a normed space over the field $\mathbb{C}$, where the norm is induced by an inner product. Show that a formula for the inner product can be written in terms of the norm. 
+\end{enumerate}
+
+\paragraph*{Problem 3.} Let $(V,\langle\cdot,\cdot\rangle)$ be a finite-dimensional inner product space over the field $\mathbb{F}$. 
+\begin{enumerate}
+\item	State and prove Theorem 6.8 of Friedberg.
+\item	Define the norm of a linear functional $g\colon~V\rightarrow\mathbb{F}$ by
+\[
+\left\Vert g\right\Vert = \max_{x\neq 0}\frac{|g(x)|}{\left\Vert x\right\Vert}
+\]
+Prove that the unique element $y\in V$ from Theorem 6.8 satisfies 
+\[
+\left\Vert y\right\Vert = \left\Vert g\right\Vert.
+\]
+\end{enumerate}
+\end{document}

@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\newtheorem{theorem}{Theorem}
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{Solution 1}}
+\author{Thomas R. Cameron}
+\date{1/27/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.}	Let $V$ be a vector space over a field $F$. 
+\begin{theorem}
+The zero vector and additive inverse are unique.
+\end{theorem}
+\begin{proof}
+Suppose there exists two zero vectors $0$ and $0'$. Then, by~\cite[VS 3]{Friedberg}, for all $x\in V$ we have
+\[
+x+0 = x+0'.
+\]
+It follows from~\cite[VS 1]{Friedberg} that $0'=0'+0=0+0'=0$. Therefore, $0'=0$ and it follows that the zero vector is unique. Throughout this course we will denote the zero vector by $0$. 
+
+Similarly, let $x\in V$ and suppose there exists two additive inverses $y$ and $y'$. Then, by~\cite[VS 4]{Friedberg}, we have
+\[
+x+y=0~\text{ and }~x+y'=0.
+\]
+It follows from~\cite[VS 1 and VS 2]{Friedberg} that 
+\[
+y=y+0=y+(x+y')=(y+x)+y'=0+y'=y'+0=y'.
+\]
+Therefore, $y'=y$ and it follows that the additive inverse is unique. Throughout this course we will denote the additive inverse by $-x$. 
+\end{proof}
+
+\begin{theorem}
+For $0\in F$, we have $0x=0$~(zero vector) for all $x\in V$. 
+\end{theorem}
+\begin{proof}
+Let $x\in V$. It follows from~\cite[VS 8]{Friedberg} that $x+0x=(1+0)x=x$. So, by~\cite[VS 3]{Friedberg} and Theorem 1, it follows that $0x=0$~(zero vector). 
+\end{proof}
+
+\begin{theorem}
+For $(-1)\in F$, we have $(-1)x=-x$~(additive inverse) for all $x\in V$. 
+\end{theorem}
+\begin{proof}
+Let $x\in V$. It follows from~\cite[VS 8]{Friedberg} that $x+(-1)x=(1-1)x=0x$. Therefore, by~\cite[VS 4]{Friedberg} and Theorem 2, it follows that $(-1)x=-x$~(additive inverse). 
+\end{proof}
+
+\paragraph*{Problem 2.}	Let $P_{n}(\mathbb{R})$ denote the vector space of polynomials of degree $n$ over the field $\mathbb{R}$. Let $S$ denote the set of polynomials that are zero at $t_{1},\ldots,t_{j}\in \mathbb{R}$, where $j\leq n$.
+\begin{theorem}
+The set $S$ is a subspace of $P_{n}(\mathbb{R})$. 
+\end{theorem}
+\begin{proof}
+Let $x,y\in P_{n}(\mathbb{R})$ and $\alpha\in\mathbb{R}$. Then, $x(\lambda)=\hat{x}(\lambda)(\lambda-t_{1})\cdots(\lambda-t_{j})$ and $y(\lambda)=\hat{y}(\lambda)(\lambda-t_{1})\cdots(\lambda-t_{j})$, where $\hat{x},\hat{y}\in P_{(n-j)}(\mathbb{R})$ and $\lambda$ is a variable. Note that 
+\[
+x(\lambda)+y(\lambda)=(\hat{x}(\lambda)+\hat{y}(\lambda))(\lambda-t_{1})\cdots(\lambda-t_{j})\in S
+\]
+and
+\[
+\alpha x(\lambda)=\alpha\hat{x}(\lambda)(\lambda-t_{1})\cdots(\lambda-t_{j})\in S.
+\]
+It follows that $S$ is closed under addition of vectors and scalar multiplication, and is therefore a subspace of $P_{n}(\mathbb{R})$. 
+\end{proof}
+Since each element of $S$ can be represented by $\hat{x}(\lambda)(\lambda-t_{1})\cdots(\lambda-t_{j})$, where $\hat{x}\in P_{(n-j)}(\mathbb{R})$, it follows that $\dim S = \dim P_{(n-j)}(\mathbb{R}) = (n-j)+1$. Furthermore, as a corollary of~\cite[\S 1.6: Problem 35]{Friedberg}, we know that $\dim P_{n}(\mathbb{R})/S = \dim P_{n}(\mathbb{R}) - \dim S = j$. 
+
+\paragraph*{Problem 3.}	Let $X$ be a finite-dimensional vector space, and let $U$ and $V$ be two subspaces of $X$ such that $X=U+V$.
+\begin{theorem}
+Denote by $W$ the intersection of $U$ and $V$. Then
+\[
+\dim X = \dim U + \dim V - \dim W.
+\]
+\end{theorem}
+\begin{proof}
+Let $\{w_{1},\ldots,w_{k}\}$ denote a basis for the subspace $W$. Then the intersection of $U$ and $V$ forms a $k$-dimensional subspace of $X$. Furthermore, we can extend this basis to form a basis $\{w_{1},\ldots,w_{k},u_{k+1},\ldots,u_{m}\}$ for $U$ and a basis $\{w_{1},\ldots,w_{k},v_{k+1},\ldots,v_{n}\}$ for $V$. 
+
+By definition of the sum, $X=\{u+v\colon~u\in U~\text{ and }~v\in V\}$, it follows that the set
+\[
+S=\{w_{1},\ldots,w_{k},u_{k+1},\ldots,u_{m},w_{1},\ldots,w_{k},v_{k+1},\ldots,v_{n}\}
+\]
+spans $X$. Furthermore, if we remove the repeated vectors $w_{1},\ldots,w_{k}$ we can form a linearly independent set
+\[
+S'=\{w_{1},\ldots,w_{k},u_{k+1},\ldots,u_{m},v_{k+1},\ldots,v_{n}\}.
+\]
+Thus, $S'$ forms a basis for $X$ and it follows that
+\begin{align*}
+\dim X &= m + n - k\\
+&= \dim U + \dim V - \dim W.
+\end{align*}
+\end{proof}
+
+\paragraph*{Problem 4.}	Any subset of a vector space $V$ which is equal to $\{v\}+U$ for some vector $v\in V$ and some subspace $U$ of $V$ is called an \emph{affine space} associated with the subspace $U$ in $V$.
+\begin{theorem}
+Let $S$ be a nonempty subset of a vector space $V$ over a field $F$ of not characteristic $2$. Then, the following are equivalent:
+\begin{enumerate}[(i)]
+\item	$S$ is an affine space in $V$.
+\item	If $x,y\in S$, then $\alpha x+(1-\alpha)y\in S$ for all $\alpha\in F$. 
+\item	For any $n\in\mathbb{N}$, if $v_{1},\ldots,v_{n}\in S$ and $\alpha_{1},\ldots,\alpha_{n}\in F$ with $\sum_{j=1}^{n}\alpha_{j}=1$, then $\sum_{j=1}^{n}\alpha_{j}v_{j}\in S$. 
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Assume that $S$ is an affine space in $V$. Then $S=\{v\}+U$ for some $v\in V$ and for some subspace $U$ of $V$. Let $v_{1},\ldots,v_{n}\in S$ and $\alpha_{1},\ldots,a_{n}\in F$ with $\sum_{j=1}^{n}\alpha_{j}=1$. Then $v_{1}=v+u_{1},\ldots,v_{n}=v+u_{n}$ for some $u_{1},\ldots,u_{n}\in U$. Hence
+\[
+\sum_{j=1}^{n}\alpha_{j}v_{j}=\sum_{j=1}^{n}\alpha_{j}(v+u_{j})=v+\sum_{j=1}^{n}\alpha_{j}u_{j}.
+\]
+Since $U$ is a subspace of $V$, $u:=\sum_{j=1}^{n}\alpha_{j}u_{j}\in U$. Therefore, $\sum_{j=1}^{n}\alpha_{j}v_{j}=v+u\in S$, and it follows that $(i)\implies(iii)$. 
+
+If we let $n=2$, then it is clear that $(iii)\implies(ii)$. Now, suppose that $(ii)$ holds, fix $v\in S$ and define $U=\{x-v\colon~x\in S\}$. Then $S=\{v\}+U$, and to show that $(i)$ holds it is enough to show that $U$ is a subspace of $V$. To this end, let $u,u'\in U$ and $\alpha\in F$. Then, $u=x-v$ for some $x\in S$. Since $x,v\in S$, we have $\alpha x + (1-\alpha)v\in S$. Thus
+\[
+\alpha u = \alpha(x-v) = \alpha x +(1-\alpha)v -v\in U.
+\]
+Similarly, $u'=x'-v$ for some $x'\in S$. Thus
+\begin{align*}
+u+u'&=x+x'-2v \\
+&=2(\frac{x+x'}{2}-v)\in U.
+\end{align*}
+It follows that $S$ is an affine space associated with the subspace $U$ in $V$. 
+
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%						The Bibliography						%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{9}
+\bibitem{Friedberg}
+S.H. Friedberg, A.H. Insel, and L.E. Spence.
+\textit{Linear Algebra}.
+Pearson Education, Upper Saddle River, NJ, 4th edition, 2003.
+\end{thebibliography}
+
+\end{document}

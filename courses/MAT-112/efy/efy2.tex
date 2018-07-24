@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{pythontex}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{EFY 2}}
+\author{Thomas R. Cameron}
+\date{January 22, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Please complete each of the following problems. You should work in groups of three, or at most four, and hand in only one submission per group. Be sure that your arguments are well justified and presented clearly. 
+\end{abstract}
+
+\paragraph*{Problem 1.}	In 1683, Jacob Bernoulli considered the following questions regarding compound interest:
+\begin{center}
+\emph{An account starts with \$1.00 and pays 100 percent interest per year. If the interest is credited once, at the end of the year, the value of the account at year-end will be \$2.00. What happens if the interest is computed and credited more frequently during the year?}
+\end{center}
+Make a table of values for $m$ and $A$, where $m$ is the number of times interest is compounded during the year and $A$ is the value of the account at year-end. Let $m$ range from  $1$ to $100$ counting by $10$. Do you recognize the value that $A$ appears to be approaching? Try larger values of $m$ and see if you can guess.
+
+\paragraph*{Solution:}	As you can see from the table below, as $m$ grows $A$ approaches the number $e\approx 2.71...$.
+\begin{figure}[h]
+\centering
+\begin{pycode}
+print(r"\begin{tabular}{c | c | c | c}")
+print(r"$m$ & $(1+1/m)^{m}$ & $m$ & $(1+1/m)^{m}$ \\ \hline")
+for i in range(1,90,10):
+	j=i+90
+	print(r"%d & %e & %d & %e \\ \hline" % (i,(1+1/i)**i,j,(1+1/j)**j))
+print(r"\end{tabular}")
+\end{pycode}
+\end{figure}
+
+\paragraph*{Problem 2.}	Use the following exponential properties to show the corresponding log properties.
+\begin{enumerate}
+\item	Use $a^{m}a^{n}=a^{m+n}$ to show that $\log_{a}xy=\log_{a}x + \log_{a}y$.
+\item	Use $\frac{a^{m}}{a^{n}}=a^{m-n}$ to show that $\log_{a}\frac{x}{y}=\log_{a}x-\log_{a}y$.
+\item	Use $\left(a^{m}\right)^{r}=a^{mr}$ to show that $\log_{a}{x^{r}}=r\log_{a}x$.
+\end{enumerate}
+
+\paragraph*{Solution:}	Let $x=a^{m}$ and $y=a^{n}$.
+\begin{enumerate}
+\item	By the product rule, $xy=a^{m+n}$. Therefore, 
+\begin{align*}
+\log_{a}xy&=\log_{a}a^{m+n} \\
+&=m+n \\
+&=\log_{a}x+\log_{a}y.
+\end{align*}
+\item	By the quotient rule, $x/y=a^{m-n}$. Therefore,
+\begin{align*}
+\log_{a}x/y&=\log_{a}a^{m-n} \\
+&=m-n \\
+&=\log_{a}x-\log_{a}y.
+\end{align*}
+\item	By the power rule, $x^{r}=a^{mr}$ for any real number $r$. Therefore,
+\begin{align*}
+\log_{a}x^{r}&=\log_{a}a^{mr} \\
+&=mr \\
+&=r\log_{a}x.
+\end{align*}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Solution 6}}
+\author{Thomas R. Cameron}
+\date{3/23/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.} The Volume of a right circular cone is given by
+\[
+V=\frac{\pi}{3}r^{2}h,
+\]
+where $r$ is the radius of the circle and $h$ is the height of the cone. In our current scenario we have $r=x$ and $h=y+3$. Furthermore, since the cone is inscribed by a sphere of radius $3$ we have $x^{2}+y^{2}=3^{2}$. Therefore, we can write the volume as a function of $y$:
+\begin{align*}
+V(y)&=\frac{\pi}{3}(9-y^{2})(y+3)\\
+&=\frac{\pi}{3}(27+9y-3y^{2}-y^{3}),
+\end{align*}
+where $0\leq y\leq 3$. Therefore, we can find the absolute max volume of the cone by finding the critical points and comparing the volume at the critical points and end points. Note that
+\[
+V^{'}(y)=\frac{\pi}{3}(9-6y-3y^{2}),
+\]
+which is zero when $y=-3$ and $y=1$. Furthermore,
+\begin{align*}
+V(0)&=9\pi, \\
+V(1)&=\frac{32}{3}\pi, \\
+V(3)&=0.
+\end{align*}
+Therefore, the max volume of the cone is $\frac{32}{3}\pi$ and occurs when $y=1$ and $x=\sqrt{8}$. 
+
+\end{document}

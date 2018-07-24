@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\newcommand{\spn}{{span\mkern1mu}}
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{Homework 5}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: 4/6/2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+There has been some discussion in class regarding the direct sum, and the null space and range of a linear operator. This small homework assignment is intended to clarify our discussion and give you a stronger understanding of the details. 
+\end{abstract}
+
+\paragraph*{Problem 1.} Let $V$ be a finite-dimensional inner product space and $T\in\mathcal{L}(V)$.
+\renewcommand{\theenumi}{\alph{enumi}}
+\begin{enumerate}
+\item	Suppose that $T=T^{*}$ and show that $V=R(T)\oplus N(T)$.
+\item	Suppose that $R(T)$ and $N(T)$ are non-trivial sets. If $V=R(T)\oplus N(T)$ is it necessary that $T=T^{*}$. If not, then provide a counterexample.
+\item	Provide an example where $V=\mathbb{R}^{2}$ is the direct sum of $R(T)$ and $N(T)$, but $N(T)\neq R(T)^{\perp}$. As a connection to part b., note that in this case it is not possible for $T=T^{*}$. 
+\item	Prove that there exists a $k\in\mathbb{N}$ such that $V=R(T^{k})\oplus N(T^{k})$. 
+\end{enumerate}
+
+\end{document}

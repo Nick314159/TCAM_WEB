@@ -1,0 +1,135 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\newcommand{\class}{MAT -- 450}
+\newcommand{\term}{Spring 2018}
+\newcommand{\examnum}{Review 1}
+\newcommand{\examdate}{Dates: 2/12 -- 2/16}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Start Time:}}{\textbf{End Time:}}{}
+\runningheadrule
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} & \textbf{Pledge:}	& \makebox[2in]{\hrulefill}\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+Each question topic and the point value is recorded in the tables below. You may review these topics from any resource at your leisure. Once you decide to start a review problem, you are on the clock and you must work without any external resources. Each problem can be done one at a time but must be finished in a single sitting. Answer each question in the space provided, if you run out of space, then you may continue on the back of the page. It is your responsibility to plan out your time to ensure that you can finish all problems within the $4.0$ hours allotted. By writing your name and signing the pledge you are stating that your work adheres to these terms and the Davidson honor code. }}}
+\end{center}
+
+\vspace*{1em}
+
+\begin{multicols}{2}
+%% Scoring Table
+\centering
+\textbf{Scoring Table}\\
+\addpoints
+\gradetable[v][questions]
+
+\columnbreak
+%% Topics Table
+\centering
+\textbf{Topics Table}\\
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{| c | c |}
+\hline
+Question & Topic\\
+\hline
+1 & Vector Spaces (Direct Sum)\\
+\hline
+2 & Linear Transformation\\
+\hline
+3 &  Isomorphisms (Quotient Space)\\
+\hline
+4 & Change of Coordinates\\
+\hline
+&\\
+\hline
+\end{tabular}
+\end{multicols}
+
+\vspace*{2em}
+%%Time Table
+\begin{center}
+\textbf{Time Table}\\
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | }
+\hline
+Question & ~~~~1~~~~ & ~~~~2~~~~ & ~~~~3~~~~ & ~~~~4~~~~ \\
+\hline
+Time & & & &  \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+\question 
+\begin{parts}
+\part[5]	Let $V=\mathcal{F}(\mathbb{N},\mathbb{R})$ denote the set of all scalar sequences over $\mathbb{R}$. Let $l^{1}(\mathbb{N},\mathbb{R})$ be the set of all absolutely summable sequences, that is,
+\[
+l^{1}=\{x\in V\colon~\sum_{i=1}^{\infty}|x_{i}|<\infty\}
+\]
+Show that $l^{1}(\mathbb{N},\mathbb{R})$ is a subspace of $V$. 
+\vspace{\stretch{1}}
+\part[5]	Let $\mathcal{P}_{e}=\{p(t)\in\mathcal{P}(\mathbb{F})\colon~p(-t)=p(t)\}$ and $\mathcal{P}_{o}=\{p(t)\in\mathcal{P}(\mathbb{F})\colon~p(-t)=-p(t)\}$, where $\mathbb{F}$ is some field. Show that both $\mathcal{P}_{e}$ and $\mathcal{P}_{o}$ are subspaces of $\mathcal{P}(\mathbb{F})$ and $\mathcal{P}(\mathbb{F})=\mathcal{P}_{e}\oplus\mathcal{P}_{o}$. 
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+\begin{parts}
+\part[5]	Which of the following functions are linear transformations (functionals)? Provide brief explanation. 
+\begin{itemize}
+\item	$T\colon\mathbb{R}^{2}\rightarrow\mathbb{R}^{2}$ defined by $T(a,b)=(1,b)$.
+\vspace{\stretch{1}}
+\item	$T\colon\mathbb{R}^{2}\rightarrow\mathbb{R}^{3}$ defined by $T(a,b)=(2a+b,a-b,0)$.
+\vspace{\stretch{1}}
+\item	$f\colon\mathbb{C}\rightarrow\mathbb{R}$ defined by $f(a+ib)=a$. What happens if $f\colon\mathbb{C}\rightarrow\mathbb{C}$?
+\vspace{\stretch{1}}
+\end{itemize}
+\part[5]	Let $T\colon~V\rightarrow~V$ be linear, where $V$ is a vector space over some field $\mathbb{F}$. Suppose that $T$ is \emph{nilpotent}, that is, there exists a $k\in\mathbb{N}$ such that $T^{k}=0$ and $T^{n}\neq 0$ for all $n<k$. Show that for any $v\notin\ N(T^{k-1})$ the set of vectors $\{v,Tv,\ldots,T^{k-1}v\}$ is linearly independent.
+\vspace{\stretch{3}}
+\end{parts}
+
+\newpage
+
+\question	Let $T\colon~V\rightarrow~W$ be linear, where $V$ and $W$ are vector spaces over some field $\mathbb{F}$
+\begin{parts}
+\part[5]	Let $\{v_{1},\ldots,v_{n}\}$ be a basis for $V$. Show that $T$ is an isomorphism if and only if $\{T(v_{1}),\ldots,T(v_{n})\}$ is a basis for $W$. \\
+\emph{Use a matrix representation of $T$ in your answer}.
+\vspace{\stretch{1}}
+\part[5]	Suppose that $V$ is finite dimensional. Show that the quotient space $V/N(T)$ is isomorphic to $R(T)$. Then deduce the dimensionality theorem. 
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+\begin{parts}
+\part[5]	Let $\theta\in\mathbb{R}$. Show that the matrices $A=\begin{bmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ and $B=\begin{bmatrix}e^{i\theta} & 0 \\ 0 & e^{-i\theta} \end{bmatrix}$ are similar in $\mathbb{C}^{2\times 2}$. Represent the change of coordinate matrix you use
+as the matrix representation of the identity with respect to two basis. What are those basis?
+\vspace{\stretch{1}}
+\part[5]	Use pullback to evaluate $\int_{R}xydxdy$, where $R$ is the parallelogram with vertices at $(-1,-2)$, $(3,0)$, $(2,2)$, and $(-2,0)$.
+\vspace{\stretch{1}}
+\end{parts}
+\end{questions}
+
+\end{document}

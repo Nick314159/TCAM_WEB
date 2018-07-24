@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Solution 5}}
+\author{Thomas R. Cameron}
+\date{3/2/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.} 
+\begin{enumerate}
+\item	Using the chain and constant multiple rule we can take the derivative of $\theta(t)$ to find
+\[
+\theta^{'}(t)=-\theta_{0}\sqrt{\frac{g}{L}}\sin(\sqrt{\frac{g}{L}}t)
+\]
+\item	Recall from Review 1 that the pendulum has maximum displacement when $\sqrt{\frac{g}{L}}t=0,\pi,\ldots$ and has zero displacement when $\sqrt{\frac{g}{L}}t=\pi/2,3\pi/2,\ldots$. It follows that $\theta^{'}(t)$ is zero at maximum displacement and $\theta^{'}(t)$ is maximized when the displacement is zero. This makes sense since $\theta(t)$ is a cosine function and $\theta^{'}(t)$ is a sine function. Furthermore, from a physics standpoint we have a clear explanation for this phenomena: The velocity of the pendulum, $\theta^{'}(t)$, is zero at the peaks of its swing (maximum displacement), then as the pendulum falls down it picks up speed until it reaches its equilibrium point (zero displacement) at which point it starts to loose speed as it fights against gravity to move up to its peak. 
+\end{enumerate}
+\end{document}

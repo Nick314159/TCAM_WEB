@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{pgfplots}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\pgfplotsset{holdot/.style={color=blue,fill=white,only marks,mark=*}}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{EFY 7}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: March 30, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Please complete each of the following problems. You should work in groups of three, or at most four, and hand in only one submission per group. Be sure that your arguments are well justified and presented clearly.
+\end{abstract}
+
+\paragraph*{Problem 1.} Let $f(x)$ be any function with antiderivative $F(x)$. Show that all antiderivatives of $f(x)$ differ from $F(x)$ by a constant. 
+~\\~\\
+\textbf{Solution:} Suppose that $F(x)$ and $G(x)$ are both antiderivatives of $f(x)$. Then $F^{'}(x)=f(x)$ and $G^{'}(x)=f(x)$ and it follows that
+\begin{align*}
+0&=F^{'}(x)-G^{'}(x) \\
+&=\frac{d}{dx}\left(F(x)-G(x)\right).
+\end{align*}
+Therefore, $F(x)-G(x)$ must be constant. 
+
+\paragraph*{Problem 2.} Show that the indefinite integral $\int f(x)dx$ is essentially the inverse operation of $\frac{d}{dx}f(x)$, but explain why this is not exact.
+~\\~\\
+\textbf{Solution:} Let $F(x)$ be the antiderivative of $f(x)$. Then
+\[
+\frac{d}{dx}F(x)=f(x)~\rightarrow~\int f(x)dx=F(x)+C.
+\]
+Therefore, what was done by the derivative is undone by the integral. However, rather than coming back to $F(x)$ we have $F(x)+C$, so the integral and derivative are not exactly inverse operations. 
+
+\paragraph*{Problem 3.} Use the properties of the derivative to show that the indefinite integral is linear and satisfies the integral power rule:
+\[
+\int x^{n}dx=\frac{x^{n+1}}{n+1}+C,
+\]
+where $C$ is some constant and $n$ is any real number not equal to $-1$. What happens if $n=-1$.
+~\\~\\
+\textbf{Solution:} Let $f(x)$ and $g(x)$ be functions with antiderivatives $F(x)$ and $G(x)$, respectively, and let $k$ be any constant. Then
+\[
+\frac{d}{dx}\left(kF(x)\right)=kF^{'}(x)=kf(x),
+\]
+therefore $kF(x)$ is the antiderivative of $kf(x)$. It follows that
+\begin{align*}
+\int kf(x)dx &= kF(x)+C~\quad\text{(where $C$ is any constant)} \\
+&=k\int f(x)dx
+\end{align*}
+In a similar manner we have
+\[
+\frac{d}{dx}\left(F(x)+G(x)\right)=F^{'}(x)+F^{'}(x)
+\]
+and it follows that $F(x)+G(x)$ is the antiderivative of $f(x)+g(x)$. Therefore,
+\begin{align*}
+\int [f(x)+g(x)]dx &= F(x)+G(x)+C~\quad\text{(where $C$ is any constant)} \\
+&=\int f(x)dx + \int g(x)dx.
+\end{align*}
+It follows that the indefinite integral is a linear operator. To show that the integral power rule is satisfied let $F(x)=\frac{x^{n+1}}{n+1}$ where $n\neq -1$. Then by the derivative power rule we have
+\begin{align*}
+F^{'}(x)&=\frac{1}{n+1}\frac{d}{dx}x^{n+1} \\
+&=\frac{n+1}{n+1}x^{n}=x^{n}.
+\end{align*}
+If $n=-1$, then we have
+\[
+\int \frac{1}{x}dx=\ln|x|+C.
+\]
+
+\end{document}

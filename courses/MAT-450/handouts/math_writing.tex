@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{showexpl}
+\lstset
+{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\tt\small,
+    keywordstyle=\color{blue},
+    identifierstyle=\color{magenta},
+}
+
+\newtheorem{theorem}{Theorem}
+
+\title{Writing Mathematical Proofs in \LaTeX}
+\author{Thomas R. Cameron}
+\date{}
+\begin{document}
+\maketitle
+
+Mathematical writing is an art form that we will continue to learn and execute throughout this course. A part of writing in any subject area is producing high-quality documents, in mathematical writing this is almost exclusively done using \LaTeX. Below is a summary of the expectations that will be held in this course with examples written in \LaTeX.
+
+\begin{itemize}
+\item   [1.] \textbf{Write to your audience.} 
+It is important to keep your audience in mind when writing. A group of undergraduate students need far more detail to be included then a group of experts in a field. Also, recognize that there is always context that should be considered while writing. For example, if you are consistently working with real numbers, there is no reason to annoy your audience with constant reminders of this fact.
+
+\item   [2.] \textbf{Carefully word what is to be proven.}
+Begin with a simple declarative statement of what is to be proven. Do not copy the problem as it appears in the textbook or handout. In \LaTeX this statement should go within the theorem environment (or something similar), then give your formal argument for the truth of this statement in the proof environment. We will need these environments in almost every \LaTeX file we write, the example below shows a typical setup for a \LaTeX file. We use the document class ``article'', along with packages ``amsmath'' and ``amsthm''. Then \verb!\newtheorem! is used to create the theorem environment (do a Google search to learn more about this), and we define the title and author of the document and then use \verb!\maketitle!.
+
+\begin{lstlisting}
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}
+
+\title{My Title}
+\author{My Name}
+\begin{document}
+\maketitle
+
+\end{document}
+\end{lstlisting}
+
+\item   [3.] \textbf{Don't say ``I''.}
+In mathematical writing, if a pronoun is used it should be ``we.'' The idea is twofold: first, we stress to the reader that we are doing the mathematics together, second we recognize that math has been developed throughout history by the work of many.
+
+\item   [4.] \textbf{The Math Mode.} In \LaTeX, any characters bound between two \$ symbols are considered to be in math mode. Math mode is important because it italicizes variables and displays mathematical equations in an easy to read fashion. Consider the \LaTeX example below.
+
+\begin{LTXexample}[pos=b,preset=\centering,width=\linewidth]
+The roots, $r_{1}$ and $r_{2}$, of the quadratic polynomial $ax^{2}+bx+c$ are
+\[
+r_{1},~r_{2}=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}
+\]
+\end{LTXexample}
+
+\item   [5.] \textbf{Use proper grammar and punctuation.} In order to communicate mathematics with the clarity and precision it deserves, we must compose our thoughts into meaningful and grammatically correct sentences. 
+
+\item   [6.] \textbf{Prepare the reader.} Within a proof there are many options that you can take, be sure the reader is aware of the direction you will take. It can be as simple as saying: ``We proceed by induction...'' or ``We will prove this statement by contradiction.'' Along those lines, it is important to state any assumptions you are making, if it is not clear from context. For example, ``Let $n$ be an even integer.''
+
+\item   [7.] \textbf{Equation environment.} If it is necessary to refer to an equation later on in your text, then it should be numbered. This is handled automatically when using the equation environment provided with \LaTeX.
+\begin{LTXexample}[pos=b,preset=\centering,width=\linewidth]
+\begin{equation}
+p(x)=a_{0}+a_{1}x+\cdots+a_{n}x^{n}
+\end{equation}
+\end{LTXexample}
+
+\item   [8.] \textbf{Avoid cumbersome notation.} In class we will learn and emphasize logical operators such as $\forall$ and $\exists$; however, it is much easier to read English words. So, use logical operators to organize your thoughts while writing your scratch work, but for formal writing replace them with English words.
+
+\item   [9.] \textbf{Indicate when a proof is complete.} It is important to tell the reader when a logical argument is complete. This can be done by saying: ``and the result follows'', or using a sentence to state precisely what has been proven. In addition, \LaTeX will end the proof environment with an end of proof symbol.
+
+\begin{LTXexample}[pos=b,preset=\centering,width=\linewidth]
+\begin{theorem}
+The sum of any two even integers is even.
+\end{theorem}
+\begin{proof}
+Let $n_{1}$ and $n_{2}$ be any two even integers, then there exists two integers $k_{1}$ and $k_{2}$ such that
+\[
+n_{1}=2k_{1}~\text{ and }~n_{2}=2k_{2}.
+\]
+Therefore, $n_{1}+n_{2}=2\left(k_{1}+k_{2}\right)$, and it follows that the sum is even.
+\end{proof}
+\end{LTXexample}
+
+\item	[10.]	\textbf{Cite your sources.}	It is important to tell the reader where you are getting important information, for instance key results or definitions that you have not explicitly gone through in your writing. The example below shows how to add an item to the bibliography environment. You may cite references using the {\verb+\cite+} command. A more advanced features are available through BibTeX. See the documentation online or ask me any questions. 
+\begin{LTXexample}[pos=b,preset=\centering,width=\linewidth]
+\begin{thebibliography}{1}
+\bibitem{Friedberg}
+S.H. Friedberg, A.H. Insel, and L.E. Spence.
+\textit{Linear Algebra}.
+Pearson Education, Upper Saddle River, NJ, 4th edition, 2003.
+\end{thebibliography}
+\end{LTXexample}
+
+\end{itemize}
+\end{document}

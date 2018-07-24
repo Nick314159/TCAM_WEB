@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Quotient Rule}}
+\author{Thomas R. Cameron}
+\date{February 14, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Write out your own proof of the quotient rule using the outline below. Fill in the blanks and follow the prompts given. 
+\end{abstract}
+
+\paragraph*{Quotient Rule.} Let $f$ and $g$ be functions that are differentiable at $x$, where $g(x)\neq 0$, then
+\[
+\frac{d}{dx}\left(\frac{f}{g}\right)(x)=\frac{f^{'}(x)g(x)-f(x)g^{'}(x)}{[g(x)]^{2}}
+\]
+\begin{proof}
+Note that
+\begin{align*}
+\frac{d}{dx}\left(\frac{f}{g}\right)(x)&=\lim_{h\rightarrow 0}\frac{\left(\frac{f}{g}\right)(x+h)-\left(\frac{f}{g}\right)(x)}{h} \\
+&=\lim_{h\rightarrow 0}\frac{\left(\frac{f(x+h)}{g(x+h)}\right)-\left(\frac{f(x)}{g(x)}\right)}{h} \\
+&=\lim_{h\rightarrow 0}\frac{g(x)f(x+h)-f(x)g(x+h)}{h(g(x)g(x+h)}\quad\text{(Justify)} \\
+&=\lim_{h\rightarrow 0}\frac{g(x)f(x+h)-g(x)f(x)+g(x)f(x)-f(x)g(x+h)}{hg(x)g(x+h)}\quad\text{(Justify)} \\
+&=\rule{4cm}{0.15mm}\quad\text{(Use sum limit rule)}\\
+&=\lim_{h\rightarrow 0}g(x)\lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{hg(x)g(x+h)}-\lim_{h\rightarrow 0}f(x)\lim_{h\rightarrow 0}\frac{g(x+h)-g(x)}{hg(x)g(x+h)}\quad\text{(Justify)} \\
+&=\lim_{h\rightarrow 0}\frac{1}{g(x)g(x+h)}\left(g(x)\lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{h}-f(x)\lim_{h\rightarrow 0}\frac{g(x+h)-g(x)}{h}\right)\quad\text{(Justify)} \\
+&=\frac{1}{[g(x)]^{2}}\left(g(x)f^{'}(x)-f(x)g^{'}(x)\right) \\
+&=\frac{f^{'}(x)g(x)-f(x)g^{'}(x)}{[g(x)]^{2}}.
+\end{align*}
+\end{proof}
+
+\end{document}

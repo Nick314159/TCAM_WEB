@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\newcommand{\spn}{{span\mkern1mu}}
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{Homework 6}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: 4/20/2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+You must complete all other problems and type your solutions in \LaTeX. The book problems are listed for your edification and I \emph{strongly} encourage you to work through them. You will find that some of the book problems will be helpful in completing the other problems. In addition, the book problems may show up on a EFY or Review. Note that the other problems are graded rigorously with high expectations on clear and concise mathematical writing as outlined in~\href{https://www.thomasrcameron.com/courses/MAT-450/handouts/math_writing.pdf}{the mathematical writing handout}. Lastly, you may work with other students and ask me any questions, but you must write your solutions independently so I may interpret your understanding while grading. Any sources you use, including internet sources must be cited using {\verb+\thebibliography+} environment. 
+\end{abstract}
+
+\subsection*{Book Problems}
+\begin{itemize}
+\item   [\S 6.4:] 1, 17
+\item   [\S 6.5:] 1, 21
+\item   [\S 6.6:] 1, 10
+\item	  [\S 6.7:] 1, 13
+\item	  [\S 7.1:] 1, 4 
+\item	  [\S 7.2:] 1, 18
+\end{itemize}
+
+\subsection*{Other Problems} 
+
+\paragraph*{Problem 1.} Let $A\in\mathbb{C}^{n\times m}$ and recall the Frobenius matrix norm defined by
+\begin{align*}
+\left\Vert A\right\Vert_{F} &= \sqrt{\text{trace}\left(AA^{*}\right)} \\
+&= \left(\sum_{i=1}^{n}\sum_{j=1}^{m}|a_{ij}|^{2}\right)^{1/2}.
+\end{align*}
+Let $\sigma_{1}\geq\cdots\geq\sigma_{r}$ denote the singular values of $A$. Show that 
+\[
+\left\Vert A\right\Vert_{F}=\sqrt{\sigma_{1}^{2}+\cdots+\sigma_{r}^{2}}.
+\]
+
+\paragraph*{Problem 2.} Let $T\in\mathcal{L}(V)$, where $V$ is a $n$-dimensional vector space over $\mathbb{C}$. 
+\renewcommand{\theenumi}{\alph{enumi}}
+\begin{enumerate}
+\item	Suppose that $T^{3}$ is the identity operator. What are the possible Jordan forms of $T$?
+\item	Suppose that $n=6$ and the characteristic polynomial of $T$ is $f(t)=(t+3)^{4}(t-4)^{2}$. What are the possible Jordan forms of $T$?
+\end{enumerate}
+
+\paragraph*{Problem 3.} Let $T,U\in\mathcal{L}(V)$, where $V$ is a $n$-dimensional vector space over $\mathbb{C}$. 
+\begin{enumerate}
+\item	Suppose that $n=3$, and $T$ and $U$ are nilpotent operators. Show that $T$ and $U$ have equivalent Jordan forms if and only if they have the same minimal polynomial. Is this true when $n=4$?
+\item	Suppose $T$ has distinct eigenvalues $\lambda_{1},\ldots,\lambda_{k}$. Describe an algorithm for computing the minimal polynomial of $T$ that is similar to dot diagram and Theorem 7.10 of Friedberg. 
+\end{enumerate}
+
+\paragraph*{Problem 4.} Let $T\in\mathcal{L}(V)$, where $V$ is a $n$-dimensional vector space over $\mathbb{C}$. 
+\begin{enumerate}
+\item	Suppose that $T$ is a projection ($T^{2}=T$). Use the minimal polynomial of $T$ to show that $T$ must be diagonalizable. 
+\item	What can you say if $T^{3}=T$? What about if $T^{k}=T$ for some integer $k>3$?
+\end{enumerate}
+
+
+
+\end{document}

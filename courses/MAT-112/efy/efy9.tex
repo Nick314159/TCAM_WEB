@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{EFY 9}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: April 13, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Please complete each of the following problems. You should work in groups of three, or at most four, and hand in only one submission per group. Be sure that your arguments are well justified and presented clearly.
+\end{abstract}
+
+\paragraph*{Problem 1.} State the integration by parts formula and prove this formula holds true using the following steps.
+\begin{enumerate}
+\item	Let $h(x)=u(x)v(x)$ and apply the product rule to compute $h^{'}(x)$. 
+\item	Find an antiderivative of both sides of the equation relating $h^{'}(x)$ to $u(x)$, $v(x)$, and their derivatives. 
+\item	Rearrange to obtain the desired equation of integration by parts. 
+\end{enumerate}
+~\\
+\textbf{Solution:} Let $h(x)=u(x)v(x)$, applying the product rule we have
+\[
+h^{'}(x)=u^{'}(x)v(x)+u(x)v^{'}(x).
+\]
+Integrating both sides gives us
+\[
+h(x)=\int v(x)u^{'}(x)dx + \int u(x)v^{'}(x),
+\]
+which we can rearrange as follows:
+\[
+\int u(x)v^{'}(x)dx = u(x)v(x) - \int v(x)u^{'}(x)dx.
+\]
+
+\paragraph*{Problem 2.} Consider computing the integral
+\[
+\int x\arctan x dx
+\]
+using integration by parts. 
+\begin{enumerate}[(\alph{enumi})]
+\item	Apply the integration parts formula with $u(x)=\arctan x$ and $v(x)=\frac{x^{2}}{2}+c$, where $c$ is some constant. 
+\item	Find a $c$ value that will simplify the integration by parts formula as much as possible, then proceed to finish computing the integral. 
+\end{enumerate}
+~\\
+\textbf{Solution:} Applying the integration by parts formula with $u(x)=\arctan x$ and $v(x)=\frac{x^{2}}{2}+c$ gives us
+\[
+\int x\arctan x dx = \left(\frac{x^{2}}{2}+c\right)\arctan x - \int \left(\frac{x^{2}}{2}+c\right)\frac{1}{1+x^{2}}dx.
+\]
+If we select $c=\frac{1}{2}$, then we get the following
+\begin{align*}
+\int x\arctan x dx &= \frac{x^{2}+1}{2}\arctan x - \frac{1}{2}\int dx \\
+&=\frac{x^{2}+1}{2}\arctan x - \frac{1}{2}x + C.
+\end{align*}
+
+
+\end{document}

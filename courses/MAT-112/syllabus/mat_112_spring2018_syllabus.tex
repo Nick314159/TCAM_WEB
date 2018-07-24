@@ -1,0 +1,178 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\usepackage{epigraph}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Calculus I and Modeling} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Spring 2018} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                         % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{minipage}{0.5\textwidth}
+\vspace*{-5em}
+{\large \textsc{MAT-112: Calculus I and Modeling}}\\
+\hspace*{5em}{\normalsize \emph{Spring 2018}}\\
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\epigraph{The enchanting charms of this sublime science reveal only to those who have the courage to go deeply into it.}{\textit{Carl Friedrich Gauss}}
+\end{minipage}
+
+\begin{center}
+\rule{7in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Instructor:} & Thomas R. Cameron & & &  & \textbf{Time:} & M,W,F 2:30 -- 3:20 pm\\
+\textbf{Email:} &  \href{mailto:thcameron@davidson.edu}{thcameron@davidson.edu} & & & & \textbf{Place:} &  CHAM 2187
+\end{tabular}
+\end{minipage}
+\rule{7in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Course Page:} \url{https://www.thomasrcameron.com/courses/MAT-112/mat_112.php}\\
+\noindent\textbf{Office Hours:} T, R 1:45 -- 3:30 and W, F 10:15 -- 12:00, or via appointment in CHAM 3044. 
+
+\vspace*{.15in}
+\noindent\textbf{Textbook:} Raymond Greenwell, Nathan Ritchey, and Margaret Lial. \emph{Calculus for the Life Sciences}. Pearson Education, New York, NY, 2015. \\
+\noindent\textbf{Prerequisite:} Previous exposure to (not proficiency in) some calculus concepts. 
+
+\vspace*{.15in}
+\noindent\textbf{Course Description:}
+An introduction to the differential and integral calculus of algebraic, trigonometric, exponential, and inverse trigonometric functions with applications including graphical analysis, optimization, and numerical methods. An emphasis on investigating mathematical approaches to describing and understanding change in the context of problems in the life sciences.
+
+\vspace*{.15in}
+\noindent\textbf{Learning Outcomes:} Students will be able to
+\begin{itemize}
+\item Use sequences to model discrete growth and decay, find equilibrium values and deter- mine if they are stable or unstable.
+\item	Compute and interpret limits of simple functions and determine points of continuity and discontinuity.
+\item	Define the derivative of a function and use the definition to compute the derivative of simple functions.
+\item	Find the derivative of any elementary function using the derivative rules.
+\item	Use derivatives to analyze the graphs of functions and to solve optimization and related
+rates problems.
+\item	Evaluate simple integrals using antiderivative rules and apply them to geometric and modeling problems.
+\end{itemize}
+
+\noindent\textbf{Grading Policy:}~\\
+Your final grade is broken up as follows. 
+\begin{center}
+\begin{tabular}{|cc|}
+  \hline
+  Category & Percentage\\
+  \hline
+  EFY & $10\%$\\
+  Homework & $25\%$\\
+  Reviews (15\% each) & $45\%$\\
+  Final Presentation & $20\%$\\
+  \hline
+\end{tabular}
+\end{center}
+
+\newpage
+Your final letter grade is based on the following scale.
+\begin{center}
+\begin{tabular}{|cc | cc | cc|}
+  \hline
+  Grade & Percentage Interval & Grade & Percentage Interval\\
+  \hline
+  A & $[93,100]$ & C+ & $[76,80)$\\
+  A- & $[90,93)$ & C & $[73,76)$ \\
+  B+ & $[86,90)$ & C- & $[70,73)$\\
+  B & $[83,86)$ & D+ & $[66,70)$\\
+  B- & $[80,83)$ & D & $[63,66)$\\
+     &           & F & $[0,63)$\\
+  \hline
+\end{tabular}
+\end{center}
+
+\vspace*{0.5em}
+\noindent\textbf{EFY:}
+Exercises For You will be given throughout the semester. Some of these will be done in class and others outside of class. They are intended to test the student's understanding of the course topics, give quick feedback, and to provide additional challenging exercises that highlight advanced features of these topics. Because several EFYs will be done in class, I will drop the 3 lowest scores for each student in order to accommodate with a reasonable number of absences. 
+
+\vspace*{0.5em}
+\noindent\textbf{Homework:}
+Nearly every week, homework assignments will be due that include a large range of book problems and a few written problems from the instructor. The book problems are intended to give you the necessary practice in solving problems and exploring the concepts of calculus. These problems are mainly computational, and will be graded largely on completion and accuracy. The written problems are intended to be more challenging, as they force you to explore the concepts in a more theoretical fashion. These problems will be graded with higher expectations on your writing skills, grasp of concepts, and your ability to explain your understanding. Students are expected to engage in conversational collaboration, discuss any questions they have with me, but should turn in their own work so that I may interpret their understanding while grading. 
+
+\vspace*{0.5em}
+\noindent\textbf{Reviews:}
+There are three reviews given throughout the semester that are intended to test the students understanding of the course concepts. Each review may be completed within the given week, dates are posted on the course website. There will be a suggested time limit for each student, but it is loosely enforced. 
+
+\vspace*{0.5em}
+\noindent\textbf{Final Presentation:}
+In the last month of the semester, we will discuss special topics in modeling. Students will form groups of 3, or a maximum of 4. Each group will select a special topic from modeling and will be expected to research the topic and present their findings in a final presentation. Each group will be given 10 - 15 minutes to present their findings in the last week of class, dates are posted on the course website. 
+
+\vspace*{0.5em}
+\noindent\textbf{Academic Honesty:} 
+Students are expected to complete all graded work in accordance
+with the \href{http://www.davidson.edu/about/distinctly-davidson/honor-code}{Davidson College Honor Code}, as it applied to each assignment in this class. 
+
+\vspace*{0.5em}
+\noindent\textbf{Math \& Science Center:}
+The Math \& Science Center (MSC) offers free assistance to students in all areas of math and science, with a focus on the introductory courses. Trained and highly qualified peers hold one-on-one and small-group tutoring sessions on a drop-in basis or by appointment, as well as timely recap sessions ahead of scheduled reviews. Emphasis is placed on thinking critically, understanding concepts, making connections, and communicating effectively, not just getting correct answers. In addition, students can start or join a study group and use the MSC as a group or individual study space. Located in the Center for Teaching \& Learning (CTL) on the first floor of the College Library, drop-in hours are Sunday through Thursday, 8--11 PM, and Sunday, Tuesday, Thursday, 4--6 PM, beginning Sunday, January 21. Appointments are available at other times. For more information, visit \url{http://www.davidson.edu/offices/ctl/students/math-science-and-economics-center}, or contact Dr. Mark Barsoum (mabarsoum or ext. 2796).
+
+\vspace*{0.5em}
+\noindent\textbf{Special Accommodations:}
+Davidson College values the diversity of its community and is an equal access institution that admits otherwise qualified applicants without regard to disability.  The college seeks to accommodate requests for accommodations related to disability that are determined to be reasonable and do not compromise the integrity of a program or curriculum. To make such a request or to begin a conversation about a possible request, please contact Beth Bleil, Director of Academic Access and Disability Resources, in the Center for Teaching and Learning by visiting her office in the E.H. Little Library, by emailing her at bebleil@davidson.edu, or by calling 704-894-2129.  It is best to submit accommodation requests within the drop/add period; however, requests can be made at any time in the semester.  Please keep in mind that accommodations are not retroactive.
+
+\vspace*{0.5em}
+\noindent\textbf{Disclaimer:}
+I reserve the right to diverge from this syllabus in the best interest of the course. Any changes made will be announced. 
+
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Solution 4}}
+\author{Thomas R. Cameron}
+\date{2/23/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.}	We can find the rate at which the period changes with respect to the temperature ($dT/du$) by taking the derivative of the equation
+\[
+T=2\pi\sqrt{\frac{L}{g}}
+\]
+with respect to $u$. To that end, we have
+\[
+\frac{dT}{du}=2\pi\frac{d}{du}\sqrt{\frac{L}{g}},
+\]
+which requires the chain rule with outside function $\sqrt{x}$ and inside function $\frac{L}{g}$. Thus, we have
+\begin{align*}
+\frac{dT}{du}&=2\pi\left(\frac{1}{2}\left(\frac{L}{g}\right)^{-1/2}\frac{1}{g}\frac{dL}{du}\right) \\
+&=\pi\left(\frac{L}{g}\right)^{-1/2}\frac{1}{g}(kL) \\
+&=k\pi\sqrt{\frac{L}{g}}.
+\end{align*}
+
+\end{document}

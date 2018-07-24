@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{pgfplots}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\pgfplotsset{holdot/.style={color=blue,fill=white,only marks,mark=*}}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Numerical Integration}}
+\author{Instructor: Thomas R. Cameron}
+\date{April 20, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Below is a review of the numerical integration techniques you should know from this course. For each rule, the interval $[a,b]$ is being split into $n$ subintervals of length $h=(b-a)/n$. The subintervals are denoted by $[x_{i},x_{i+1}]$ for $i=0,1,2,\ldots,n-1$, where $a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b$. 
+\end{abstract}
+
+\paragraph*{Left-Hand Rule.} The definite integral is approximated as follows:
+\[
+\int_{a}^{b}f(x)dx\approx h\left(f(x_{0})+f(x_{1})+\cdots+f(x_{n-1})\right).
+\]
+
+\paragraph*{Trapezoidal Rule.} The definite integral is approximated as follows:
+\[
+\int_{a}^{b}f(x)dx\approx h\left(\frac{1}{2}f(x_{0})+f(x_{1})+\cdots+f(x_{n-1})+\frac{1}{2}f(x_{n})\right)
+\]
+
+\paragraph*{Simpson's Rule.} The definite integral is approximated as follows:
+\begin{align*}
+\int_{a}^{b}f(x)dx\approx \frac{h}{6}\biggl(f(x_{0})+4f\left(\frac{x_{0}+x_{1}}{2}\right)+2f(x_{1})&+4f\left(\frac{x_{1}+x_{2}}{2}\right)+\cdots \\
+&+2f(x_{n-1})+4f\left(\frac{x_{n-1}+x_{n}}{2}\right)+f(x_{n})\biggr)
+\end{align*}
+
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Product Rule}}
+\author{Thomas R. Cameron}
+\date{February 12, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Write out your own proof of the product using the outline below. Fill in the blanks and follow the prompts given. 
+\end{abstract}
+
+\paragraph*{Product Rule.} Let $f$ and $g$ be functions that are differentiable at $x$, then
+\[
+\frac{d}{dx}(fg)(x)=f^{'}(x)g(x)+f(x)g^{'}(x).
+\]
+\begin{proof}
+Note that
+\begin{align*}
+\frac{d}{dx}(fg)(x)&=\lim_{h\rightarrow 0}\frac{(fg)(x+h)-fg(x)}{h} \\
+&=\lim_{h\rightarrow 0}\frac{f(x+h)g(x+h)-f(x)g(x)}{h} \\
+&=\lim_{h\rightarrow 0}\frac{f(x+h)g(x+h) -f(x)g(x+h)+f(x)g(x+h)-f(x)g(x)}{h}\quad\text{(Justify)} \\ 
+&=\rule{4cm}{0.15mm}\quad\text{(Use sum limit rule)}\\
+&=\lim_{h\rightarrow 0}g(x+h)\lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{h}+\lim_{h\rightarrow 0}f(x)\lim_{h\rightarrow 0}\frac{g(x+h)-g(x)}{h}\quad\text{(Justify)} \\
+&=g(x)f^{'}(x)+f(x)g^{'}(x) \\
+&=f^{'}(x)g(x)+f(x)g^{'}(x).
+\end{align*}
+\end{proof}
+
+\end{document}

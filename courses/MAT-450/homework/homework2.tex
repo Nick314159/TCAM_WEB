@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\newcommand{\spn}{{span\mkern1mu}}
+
+\title{MAT -- 450: Advanced Linear Algebra\\
+\large{Homework 2}}
+\author{Instructor: Thomas R. Cameron}
+\date{Due: 2/9/2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+You must complete all other problems and type your solutions in \LaTeX. The book problems are listed for your edification and I \emph{strongly} encourage you to work through them. You will find that some of the book problems will be helpful in completing the other problems. In addition, the book problems may show up on a EFY or Review. Note that the other problems are graded rigorously with high expectations on clear and concise mathematical writing as outlined in~\href{https://www.thomasrcameron.com/courses/MAT-450/handouts/math_writing.pdf}{the mathematical writing handout}. Lastly, you may work with other students and ask me any questions, but you must write your solutions independently so I may interpret your understanding while grading. Any sources you use, including internet sources must be cited using {\verb+\thebibliography+} environment. 
+\end{abstract}
+
+\subsection*{Book Problems}
+\begin{itemize}
+\item   [\S 2.1:] 1, 24, 28 -- 32
+\item   [\S 2.2:] 1, 8
+\item   [\S 2.3:] 1, 15
+\item   [\S 2.4:] 1, 4, 5, 10, 17, 20
+\item   [\S 2.5:] 1, 13
+\end{itemize}
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.} Let $V$ be a vector space of dimension $n$, and let $T\colon~V\rightarrow~V$ be linear. Suppose that $W$ is a subspace of $V$ with ordered basis $\gamma=\{x_{1},\ldots,x_{k}\}$. Prove the following:
+\begin{enumerate}[(i.)]
+\item	If $W$ is $T$-invariant, then the ordered basis $\beta=\{x_{1},\ldots,x_{k},x_{k+1},\ldots,x_{n}\}$ for $V$ satisfies $[T]_{\beta}=\begin{bmatrix}B_{11} & B_{12}\\ 0 & B_{22}\end{bmatrix}$, where $B_{11}=[T_{W}]_{\gamma}$. 
+\item	If the ordered basis $\gamma$ satisfies 
+\[
+\spn(x_{1},\ldots,x_{j})
+\]
+being T-invariant for $j=1,\ldots,k$, then $[T_{W}]_{\gamma}$ is a $k\times k$ upper triangular matrix. 
+\end{enumerate}
+
+\paragraph*{Problem 2.}	The $l^{2}$ sequence space is the vector space of all real or complex sequences $x=(x_{1},x_{2},\ldots)$ such that
+\[
+\left(\sum_{i=1}^{\infty}|x_{i}|^{2}\right)^{\frac{1}{2}}<\infty.
+\]
+The metric on $l^{2}$ is defined by
+\[
+d(x,y)=\left(\sum_{i=1}^{\infty}|x_{i}-y_{i}|^{2}\right)^{\frac{1}{2}},
+\]
+for $x,y\in l^{2}$. Do each of the following:
+\begin{enumerate}[(i.)]
+\item	The right shift operator $T\colon~l^{2}\rightarrow~l^{2}$ is defined by $T(x)=(0,x_{1},x_{2},\ldots)$ and the left shift operator $U\colon~l^{2}\rightarrow~l^{2}$ is defined by $U(x)=(x_{2},x_{3},\ldots)$. Prove that both $T$ and $U$ are linear, $T$ is one-to-one but not onto, and $U$ is onto but not one-to-one.
+\item	An operator is called isometric if it preserves distances. Show that the right shift operator $T$ is isometric, but the left shift operator $U$ is not. 
+\end{enumerate}
+
+\paragraph*{Problem 3.}	Prove that $P_{n}(\mathbb{F})$ is isomorphic to $F^{n+1}$ for all $n\in\mathbb{N}$. 
+
+
+\end{document}

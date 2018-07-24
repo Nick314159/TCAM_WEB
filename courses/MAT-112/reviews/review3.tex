@@ -1,0 +1,134 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\newcommand{\class}{MAT -- 112}
+\newcommand{\term}{Spring 2018}
+\newcommand{\examnum}{Review 3}
+\newcommand{\examdate}{Dates: 4/18 -- 4/23}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\textbf{Start Time:}}{\textbf{End Time:}}{}
+\runningheadrule
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} & \textbf{Pledge:}	& \makebox[2in]{\hrulefill}\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+Each question topic and the point value is recorded in the tables below. You may review these topics from any resource at your leisure. Once you decide to start a review problem, you are on the clock and you must work without any external resources, including no calculator. Each problem can be done one at a time but must be finished in a single sitting. Answer each question in the space provided; if you run out of space, then you may continue on the back of the page. It is your responsibility to plan out your time to ensure that you can finish all problems within the $4.0$ hours allotted. By writing your name and signing the pledge you are stating that your work adheres to these terms and the Davidson honor code. }}}
+\end{center}
+
+\vspace*{1em}
+
+\begin{multicols}{2}
+%% Scoring Table
+\centering
+\textbf{Scoring Table}\\
+\addpoints
+\gradetable[v][questions]
+
+\columnbreak
+%% Topics Table
+\centering
+\textbf{Topics Table}\\
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{| c | c |}
+\hline
+Question & Topic\\
+\hline
+1 & Implicit Differentiation\\
+\hline
+2 &The Antiderivative\\
+\hline
+3 &  The Fundamental Theorem of Calculus\\
+\hline
+4 & Volume of Solids of Revolution \\
+\hline
+&\\
+\hline
+\end{tabular}
+\end{multicols}
+
+\vspace*{2em}
+%%Time Table
+\begin{center}
+\textbf{Time Table}\\
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | }
+\hline
+Question & ~~~~1~~~~ & ~~~~2~~~~ & ~~~~3~~~~ & ~~~~4~~~~ \\
+\hline
+Time & & & &  \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\begin{questions}
+
+\question 
+\begin{parts}
+\part [4] Use implicit differentiation to find $\frac{d^{2}y}{dx^{2}}$ in terms of $x$ and $y$, where 
+\[
+4y^{2}+2=3x^{2}.
+\]
+\vspace{\stretch{1}}
+\part [6] The radius and height of a right circular cone are both changing with respect to time. The radius is changing at the constant rate of $2~cm/sec$; in addition, the radius and height satisfy the implicit equation:
+\[
+r^{2}+h^{2}=25.
+\]
+Find the rate at which of the volume of the cone ($\pi r^{2}\frac{h}{3}$) is changing with respect to time when $r=3~cm$.
+\vspace{\stretch{2}}
+\end{parts}
+
+\newpage
+
+\question Evaluate each indefinite integral.
+\begin{parts}
+\part [3] $\int\frac{20e^{5x}}{e^{5x}+3}dx$
+\vspace{\stretch{1}}
+\part [3] $\int 5x e^{2x+3}dx$
+\vspace{\stretch{1}}
+\part [4] $\int\ln(x+7)dx$
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+\begin{parts}
+\part [4] State both parts of the Fundamental Theorem of Calculus.
+\vspace{\stretch{1}}
+\part [3] Evaluate $\int_{0}^{\frac{\pi}{4}}2\cos x dx$
+\vspace{\stretch{1}}
+\part [3] Find $F^{'}(x)$, where $F(x)=\int_{-1}^{x^{2}}(-2t+2)dt$. 
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question A $4$ cm diameter drill bit is used to drill a cylindrical hole through the middle of a right circular cone, starting at its circular bottom moving up. The hole is drilled until the cone is split into two pieces. 
+\begin{parts}
+\part [4] If the right circular cone has a radius of $5$ cm and a height of $10$ cm, how long is the drilled hole?
+\vspace{\stretch{1}}
+\part [6] What is the total volume of the two remaining pieces after the hole is drilled?
+\vspace{\stretch{2}}
+\end{parts}
+
+\end{questions}
+
+\end{document}

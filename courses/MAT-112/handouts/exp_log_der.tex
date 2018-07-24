@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\makeatletter
+\renewcommand{\abstractname}{Instructions}
+\makeatother
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Logarithm and Exponent Derivatives}}
+\author{Instructor: Thomas R. Cameron}
+\date{February 21, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Read the section on the natural exponent derivative. Use the writing style I use in the proof as a guideline for the next two sections, where you are asked to
+prove derivative rules for exponent and logarithm functions.
+\end{abstract}
+
+\paragraph*{Natural Exponent Derivative.} The following holds true
+\[
+\frac{d}{dx}e^{x}=e^{x}.
+\] 
+\begin{proof}
+Using the limit definition of the derivative we have
+\begin{align*}
+\frac{d}{dx}e^{x}&=\lim_{h\rightarrow 0}\frac{e^{x+h}-e^{x}}{h} \\
+&=\lim_{h\rightarrow 0}\frac{e^{x}\left(e^{h}-1\right)}{h} \\
+&=e^{x}\lim_{h\rightarrow 0}\frac{e^{h}-1}{h}.
+\end{align*}
+All that remains is to show that $\lim_{h\rightarrow 0}\frac{e^{h}-1}{h}=1$. To this end, we introduce the change of variables
+\[
+u=e^{h}-1,
+\]
+which implies that $\ln(u+1)=h$. Since $u\rightarrow 0$ as $h\rightarrow 0$ we have
+\[
+\lim_{h\rightarrow 0}\frac{e^{h}-1}{h}=\lim_{u\rightarrow 0}\frac{u}{\ln(u+1)}. 
+\]
+Next, we multiply the numerator and denominator by $(1/u)$ to give
+\[
+\lim_{u\rightarrow 0}\frac{1}{\frac{1}{u}\ln(u+1)} = \lim_{u\rightarrow 0}\frac{1}{\ln(1+u)^{1/u}}.
+\]
+Let $n=1/u$ and note that $n\rightarrow\infty$ as $u\rightarrow 0$. Therefore, we have
+\[
+\lim_{n\rightarrow\infty}\frac{1}{\ln(1+\frac{1}{n})^{n}}=\frac{1}{\ln(e)}=1.
+\]
+\end{proof}
+
+\paragraph*{Exponent Derivative.}	Use the previous result to show that
+\[
+\frac{d}{dx}a^{x}=(\ln a)a^{x}.
+\]
+
+\vspace{17em}
+
+\paragraph*{Logarithm Derivative.}	Use the previous result to show that
+\[
+\frac{d}{dx}\log_{a}(x) = \frac{1}{(\ln a) x}.
+\]
+Then deduce formula for $\frac{d}{dx}\ln(x)$. 
+
+\newpage
+
+\paragraph*{Applications.}
+\begin{enumerate}
+\item	The altitude (feet) of a plane $t$ (min) after takeoff is given by
+\[
+h(t)=2000\ln(t+1),~\quad~0\leq t\leq 5.
+\]
+
+\vspace*{10em}
+
+\item	The sound pressure $P$ (dB) for a given sound can be modeled by
+\[
+P=20\log_{10}\frac{W}{W_{0}},
+\]
+where $W$ is the size of the variable energy source and $W_{0}$ is a constant. 
+Compute $\frac{dP}{dt}$ at $t=3$, if $W=7.2$ and $\frac{dW}{dt}=0.5$ at $t=3$. 
+
+\vspace*{10em}
+
+\item	The charge of a capacitor in a circuit containing a capacitance $C$, resistance $R$, and source voltage $E$ is given by
+\[
+q=CE\left(1-e^{-t/RC}\right).
+\]
+Show that the follow equation holds true
+\[
+R\frac{dq}{dt}+\frac{q}{C}=E
+\]
+\end{enumerate}
+
+\end{document}

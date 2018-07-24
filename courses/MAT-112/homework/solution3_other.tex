@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\title{MAT -- 112: Calculus I and Modeling\\
+\large{Solution 3}}
+\author{Thomas R. Cameron}
+\date{2/16/2018}
+
+\begin{document}
+\maketitle
+
+\subsection*{Other Problems}
+
+\paragraph*{Problem 1.}	Here we use the limit definition of the derivative to derive formula for computing the derivative of $x^{2}$, $\sqrt{x}$, and $1/x$. 
+\begin{itemize}
+\item	Let $f(x)=x^{2}$ and note that
+\begin{align*}
+\frac{d}{dx}f(x)&=\lim_{h\rightarrow 0}\frac{(x+h)^{2}-x^{2}}{h} \\
+&=\lim_{h\rightarrow 0}\frac{[x^{2}+2xh+h^{2}]-[x^{2}]}{h} \\
+&=\lim_{h\rightarrow 0}\frac{2xh+h^{2}}{h} \\
+&=\lim_{h\rightarrow 0}(2x+h)=2x.
+\end{align*}
+\item	Let $f(x)=\sqrt{x}$ and note that
+\begin{align*}
+\frac{d}{dx}f(x)&=\lim_{h\rightarrow 0}\frac{\sqrt{x+h}-\sqrt{x}}{h} \\
+&=\lim_{h\rightarrow 0}\frac{\sqrt{x+h}-\sqrt{x}}{h}\left(\frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}}\right) \\
+&=\lim_{h\rightarrow 0}\frac{(x+h)-(x)}{h\left(\sqrt{x+h}+\sqrt{x}\right)} \\
+&=\lim_{h\rightarrow 0}\frac{1}{\sqrt{x+h}+\sqrt{x}}=\frac{1}{2\sqrt{x}}.
+\end{align*}
+\item	Let $f(x)=1/x$ and note that
+\begin{align*}
+\frac{d}{dx}f(x)&=\lim_{h\rightarrow 0}\frac{\left(\frac{1}{x+h}\right)-\left(\frac{1}{x}\right)}{h} \\
+&=\lim_{h\rightarrow 0}\frac{x-(x+h)}{hx(x+h)} \\
+&=\lim_{h\rightarrow 0}\frac{-1}{x(x+h)}=-\frac{1}{x^{2}}. 
+\end{align*}
+\end{itemize}
+
+\end{document}
